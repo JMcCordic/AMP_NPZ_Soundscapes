@@ -1,0 +1,130 @@
+---
+title: "Explore_HMD_plots"
+output: html_document
+date: "2025-07-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load lib}
+library(PAMscapes)
+library(PAMmisc)
+library(tcltk2) # handles interactively navigating to network file paths
+library(tidyverse)
+library(tictoc) # allows for time tracking of longer processes
+library(svDialogs) # allows for some interactive inputs
+```
+
+
+Merge hourly HMD data from all deployments
+
+```{r merge datasets}
+
+dir_hmd <- tk_choose.dir(caption = "Select folder with hourly HMD files (.csv)")
+  hmd_tables <- dir_hmd |>
+    # list all files with .txt extension
+    list.files(pattern = ".csv") |>
+    map_chr(~paste0(dir_hmd,"\\",  .)) |>
+    # use map to iterate read.delim() function over each file in the directory
+    map(~read_csv(.))
+
+all_hmd_data <- do.call("rbind", hmd_tables) 
+
+all_hmd_data <- all_hmd_data |>
+  mutate(
+    # create NPZ column to simplify plot labels
+    npz_id = str_replace(platform, "Parks Australia Cod Grounds Marine Park", "Cod Grounds"),
+    npz_id = str_replace(npz_id, "Parks Australia Solitary Islands Marine Park, West Pimpernel mooring", "Solitary Islands"),
+    npz_id = str_replace(npz_id, "Parks Australia Dampier Marine Park", "Dampier"),
+    npz_id = str_replace(npz_id, "Parks Australia Ningaloo Marine Park, North mooring", "Ninglaoo"),
+    npz_id = str_replace(npz_id, "Parks Australia Jurien Marine Park, Northeast mooring", "Jurien"),
+    npz_id = str_replace(npz_id, "Parks Australia Geographe Marine Park", "Geographe"),
+    npz_id = str_replace(npz_id, "Parks Australia Two Rocks Marine Park, West mooring", "Two Rocks"),
+    npz_id = str_replace(npz_id, "Parks Australia South-west Corner Marine Park, South mooring", "South-west Corner"),
+    npz_id = str_replace(npz_id, "Parks Australia Murat Marine Park, East mooring", "Murat"),
+    
+    # add network for grouping/faceting later
+    network = case_when(platform == "Parks Australia Cod Grounds Marine Park" | 
+                          platform == "Parks Australia Solitary Islands Marine Park, West Pimpernel mooring" 
+                        ~ "Temperate East",
+                        platform == "Parks Australia Dampier Marine Park" | 
+                          platform == "Parks Australia Ningaloo Marine Park, North mooring" ~ "Northwest",
+                        TRUE ~ "South-west"
+    ),
+    network = fct(network),
+    network = fct_relevel(network, c("Temperate East","Northwest"))
+  )
+```
+
+
+```{r Soundscape explorer}
+
+runSoundscapeExplorer(all_hmd_data)
+
+```
+
+
+
+
+###Default PAMScapes plots
+
+```{r default plots}
+# each NPZ, deployment PSDs
+plotPSD(all_hmd_data, 
+        style="quantile", 
+        by="Dep_ID", 
+        facet="npz_id", 
+        q=0.1)
+
+ggsave(paste0("figs/", "PSD_all_npz_facet_dep.png"), width=12, height=8,
+       units="in", dpi=300)
+
+
+# Network PSDs
+plotPSD(all_hmd_data, 
+        style="quantile", 
+        by="npz_id", 
+        facet="network",
+        q=0.1)
+
+ggsave(paste0("figs/", "PSD_all_npz_facet_network.png"), width=12, height=8,
+       units="in", dpi=300)
+
+
+# All NPZs together, full PSD
+# bit of spaghetti soup but kind of interesting
+plotPSD(all_hmd_data, style="quantile", by="npz_id", q=0.1)
+
+ggsave(paste0("figs/", "PSD_all_npz.png"), width=12, height=8,
+       units="in", dpi=300)
+
+
+
+# hourly PSD by NPZ
+plotPSD(all_hmd_data, style="quantile", by="hour", facet="npz_id", q=0.1)
+
+
+
+
+# Monthly PSD across all NPZs
+plotPSD(all_hmd_data, style="quantile", by="month", q=0.1)
+
+# Monthly PSDs, faceted by NPZ
+plotPSD(all_hmd_data, style="quantile", by="month", facet="npz_id", q=0.1)
+
+ggsave(paste0("figs/", "PSD_month_facet_npz.png"), width=12, height=8,
+       units="in", dpi=300)
+
+# Monthly PSDs, faceted by network
+plotPSD(all_hmd_data, style="quantile", by="month", facet="network", q=0.1)
+
+ggsave(paste0("figs/", "PSD_month_facet_network.png"), width=12, height=8,
+       units="in", dpi=300)
+
+
+```
+
+
+
