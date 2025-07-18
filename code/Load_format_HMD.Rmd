@@ -1,0 +1,74 @@
+---
+title: "Load_format_HMD"
+author: "Jessica McCordic"
+date: "2025-07-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## General workflow
+
+For each deployment
+- load in HMD data
+- summarize to hourly HMD
+- summarize to percentiles
+
+```{r Load_libraries}
+library(here)
+library(PAMscapes)
+library(PAMmisc)
+library(tcltk2) # handles interactively navigating to network file paths
+library(tidyverse)
+library(tictoc) # allows for time tracking of longer processes
+library(svDialogs) # allows for some interactive inputs
+source("AMP_pkgs_funs.R")
+```
+
+# Load hybrid millidecade data
+
+The function that handles all the data loading (regardless of format!)
+is `checkSoundscapeInput`. You can give this a single file or multiple
+files and it will load them up.
+
+```{r Load HMD}
+# Navigate to directory & list netCDF files with HMD data
+
+# set path for directory with netCDF files
+# Could maybe set this up as a list for AMP deployments
+# could have c("dep1","dep2","dep3") and then use map function 
+# for setting directory & running checkSoundscapeInput
+
+deployment_id <- "PARKSAUSTRALIA_TWOROCKS_202105_TRW"
+
+ncFolder <- paste0("/home/jmccordic/PassiveAcoustics/DETECTOR_OUTPUT/PYTHON_SOUNDSCAPE_PYPAM/Raw/PARKS_AUSTRALIA/",deployment_id, "/NC")
+ncFiles <- list.files(ncFolder, pattern='nc$', full.names=TRUE)
+
+tic()
+hmd_data_hr <- loadSoundscapeData(ncFiles) |>
+  # remove HMD values < 10 Hz for better viz
+  select(-c(HMD_0:HMD_9))|> 
+  # summarize into 1 hour bins
+  binSoundscapeData(bin = "1hour", 
+                    method = "median",
+                    binCount = TRUE) |>
+  # add deployment ID to data
+  mutate(Dep_ID = deployment_id)
+toc()
+
+write_csv(hmd_data_hr, 
+          file = paste0("/home/jmccordic/Jessica.Mccordic/Github/AMP_NPZ_Soundscapes/data/",deployment_id, "_HMD_hourlymed.csv"))
+
+# was ~27 seconds in NEFSC office
+# ~35 seconds on RStudio container via VPN
+```
+
+
+```{r Shiny_explorer}
+# explore data in shiny app, also helps figure out which viz function you're interested in
+runSoundscapeExplorer(hmd_data_hr)
+
+```
+
