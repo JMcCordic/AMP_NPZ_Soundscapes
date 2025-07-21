@@ -1,7 +1,7 @@
 #' -------------------------------------------------------
 #' 
 #' 
-#' Reshaping hourly presence data for SMM 2024 poster plots
+#' Reshaping hourly presence data to merge with PyPAM output
 #'
 #'
 #' -------------------------------------------------------
@@ -16,21 +16,44 @@ library(tcltk2)
 library(svDialogs)
 
 # source helper file
-source("scripts/AMP_pkgs_funs.R")
+source("code/AMP_summary_ves_funs.R")
 
 
 # Load data ---------------------------------------------------------------
 
-#' deployments to potentially include (cetacean review & pypam both complete):
+# Assign user-defined inputs ----------------------------------------------
 
-#' Need to review dol detections and fix BIO_HP - PARKSAUSTRALIA_DAMPIER_202009_DNE (old hp format)
-#'      DONE - PARKSAUSTRALIA_NINGALOO_201909_NGN (old hp format), need to rerun PYPAM
-#'      DONE - PARKSAUSTRALIA_SIMP_201808_WP (old old hp format but look at 2021 paper analyses?)
-#' Not browsed?? - PARKSAUSTRALIA_SIMP_201906_EP (old hp format) --> Pypam on deck but hp should be ready
-#' PARKSAUSTRALIA_SWC_202201_SWS (new bio hp format)
-#'      DONE - PARKSAUSTRALIA_TWOROCKS_202105_TRW (old hp format)
-#' PARKSAUSTRALIA_MURAT_202002_MRE (new bio hp format) --> bio presence = 3-day subsample
-#'      DONE - PARKSAUSTRALIA_CGMP_201807_CG (old old hp format) --> obnoxious chain noise, might just do bal? or exclude?
+# Since server folders are in a standard structure, use parent folder to get list of all deployments
+dep_names <- list.dirs(tk_choose.dir(caption = "Select parent dir for all deployment folders"), recursive = FALSE, full.names = FALSE)
+
+# select the deployment(s) to be plotted
+dep_list <- dlg_list(title = "Select deployments to plot", choices = dep_names, multiple = TRUE)$res |>
+  str_sub(start = 16)
+
+# apply getDeploymentInfo() from AMP_pkgs_funs.R to each deployment
+#   prompts user for site name, start/end date, and time zones
+dep_info <- dep_list |>
+  map(~getDeploymentInfo(.)) |>
+  set_names(dep_list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 deployment_id <- dlgInput("Deployment ID")$res
