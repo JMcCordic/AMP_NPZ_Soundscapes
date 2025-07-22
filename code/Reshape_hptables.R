@@ -30,27 +30,56 @@ dep_names <- list.dirs(tk_choose.dir(caption = "Select parent dir for all deploy
 dep_list <- dlg_list(title = "Select deployments to plot", choices = dep_names, multiple = TRUE)$res |>
   str_sub(start = 16)
 
-# apply getDeploymentInfo() from AMP_pkgs_funs.R to each deployment
+# apply getDeploymentInfo() from AMP_ves_summary_funs.R to each deployment
 #   prompts user for site name, start/end date, and time zones
 dep_info <- dep_list |>
   map(~getDeploymentInfo(.)) |>
   set_names(dep_list)
 
+# For each deployment in the dep_info list, load in hourly presence table
+hp_og_bio <- dep_info |>
+  map(~read_csv(choose.files(caption = paste0({.}$site_id, {.}$dep_id, " Hourly Presence sheet .csv"))))|>
+  # use imap() to get info based on index of each iteration
+  # in this case, we want the name of the list element, designated as ".y"
+  imap(~mutate(., Dep_ID = .y))
+
+
+# load in vessel hourly presence to join with bio: 2018 - 2022 deps previously compiled for vessels manuscript
+hp_ves <- read_csv(choose.files(caption = "Select compiled vessel hourly presence .csv"))
 
 
 
+# Mutate bio tables -------------------------------------------------------
 
 
+#### May be more useful in the long run to work on bio selections --> hp script instead
+#     to remake HP sheets in a more standardized way from the start, similar to what I 
+#     did for vessels. ughhhhhhhhhhhhhh.
+
+#     OR, maybe in the amount of time it would take to do that, I could just make 
+#     individual hp tables for each NPZ and just rename everything individually like
+#     I did for SMM2024
 
 
+#' For each hp table in hp_og_bio
+#' - Want to end up with common set of hp columns:
+#'    - humpback
+#'    - pygmy_blue
+#'    - minke
+#'    - fish_chorus
+#'    - sperm_whale
+#'    - uk_bal
+#'    - dolphin 
+#' Can adapt this code from vessel script:
+#' new_cols <- c("Maneuver" = 0,"Transit" = 0, "Not_Assigned" = 0)
+#' hp_allcols <- hp_og |>
+#'   # add columns for Transit and Maneuver if they don't exist
+#' map(~add_column(., !!!new_cols[!names(new_cols) %in% names(.)])
+#'   ) 
 
-
-
-
-
-
-
-
+#'    
+#'    
+#'    
 
 
 
