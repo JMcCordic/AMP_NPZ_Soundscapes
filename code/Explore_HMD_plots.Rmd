@@ -15,6 +15,8 @@ library(tcltk2) # handles interactively navigating to network file paths
 library(tidyverse)
 library(tictoc) # allows for time tracking of longer processes
 library(svDialogs) # allows for some interactive inputs
+library(suntools) # tools for working with sunrise/sunset etc.
+library(suncalc) # more options for sun things
 ```
 
 
@@ -24,15 +26,18 @@ Merge hourly HMD data from all deployments
 
 dir_hmd <- tk_choose.dir(caption = "Select folder with hourly HMD files (.csv)")
   hmd_tables <- dir_hmd |>
-    # list all files with .txt extension
+    # list all files with .csv extension
     list.files(pattern = ".csv") |>
     map_chr(~paste0(dir_hmd,"\\",  .)) |>
     # use map to iterate read.delim() function over each file in the directory
     map(~read_csv(.))
 
-all_hmd_data <- do.call("rbind", hmd_tables) 
+all_hmd_og <- do.call("rbind", hmd_tables) 
+```
 
-all_hmd_data <- all_hmd_data |>
+
+```{r add columns}
+all_hmd_data <- all_hmd_og |>
   mutate(
     # create NPZ column to simplify plot labels
     npz_id = str_replace(platform, "Parks Australia Cod Grounds Marine Park", "Cod Grounds"),
@@ -54,7 +59,12 @@ all_hmd_data <- all_hmd_data |>
                         TRUE ~ "South-west"
     ),
     network = fct(network),
-    network = fct_relevel(network, c("Temperate East","Northwest"))
+    network = fct_relevel(network, c("Temperate East","Northwest")),
+    
+    # parse out time info for plotting
+    Begin_Hour_UTC = hour(UTC),
+    Month_UTC = month(UTC)
+    
   )
 ```
 
@@ -65,12 +75,85 @@ runSoundscapeExplorer(all_hmd_data)
 
 ```
 
+``` {r generate TOL data}
+
+all_tol_data <- all_hmd_data |>
+  group_by(Dep_ID) |>
+  createOctaveLevel(type = "tol")
+
+
+# get hourly quantiles for plotting
+TOL10khz_hour <- all_tol_data |>
+  # remove rows with NA values
+  filter(is.na(TOL_13) == FALSE) |>
+  # group by Dep_ID and hour, retain other grouping vars
+  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Begin_Hour_UTC) |>
+  # calculate q10, q50, q90
+  summarise(
+    q10_tol = quantile(TOL_10000, 0.1),
+    med_tol = quantile(TOL_10000, 0.5),
+    q90_tol = quantile(TOL_10000, 0.9)
+  )
+
+
+# get hourly quantiles for plotting
+TOL10khz_month_hour <- all_tol_data |>
+  # remove rows with NA values
+  filter(is.na(TOL_13) == FALSE) |>
+  # group by Dep_ID and hour, retain other grouping vars
+  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Month_UTC, Begin_Hour_UTC) |>
+  # calculate q10, q50, q90
+  summarise(
+    q10_tol = quantile(TOL_10000, 0.1),
+    med_tol = quantile(TOL_10000, 0.5),
+    q90_tol = quantile(TOL_10000, 0.9)
+  )
+
+
+```
+
+### Plots to try out
+
+
+```{r diel line plots}
+
+# Adapting code from Bella for diel plots
+
+ggplot(data = TOL10khz_hour,
+       aes(x = Begin_Hour_UTC,
+           fill = npz_id,
+           color = npz_id)) +
+  geom_ribbon(aes(ymin = q10_tol, 
+                  ymax = q90_tol,
+                  group = Dep_ID),
+              alpha = 0.2) +
+  geom_line(aes(y = med_tol,
+                group = Dep_ID)) + 
+  # facet_grid(rows = vars(network))+
+  theme_bw()
 
 
 
-###Default PAMScapes plots
+ggplot(data = TOL10khz_month_hour,
+       aes(x = Begin_Hour_UTC,
+           fill = npz_id,
+           color = npz_id)) +
+  geom_ribbon(aes(ymin = q10_tol, 
+                  ymax = q90_tol,
+                  group = as.factor(Month_UTC)),
+              alpha = 0.2) +
+  geom_line(aes(y = med_tol,
+                group = Dep_ID)) + 
+  facet_grid(rows = vars(Month_UTC))+
+  theme_bw()
 
-```{r default plots}
+
+
+```
+
+
+
+```{r PSD plots}
 # each NPZ, deployment PSDs
 plotPSD(all_hmd_data, 
         style="quantile", 
