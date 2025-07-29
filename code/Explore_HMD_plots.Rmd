@@ -75,8 +75,8 @@ all_hmd_data <- all_hmd_og |>
     # parse out specific elements for plotting
     Begin_Hour_UTC = hour(UTC),
     Month_UTC = month(UTC),
-    Begin_Hour_local = hour(Begin_datetime_local)
-    
+    Begin_Hour_local = hour(Begin_datetime_local),
+
   )
 ```
 
@@ -129,6 +129,17 @@ TOL10khz_month <- all_tol_data |>
 
 ```{r diel line plots}
 
+
+# full time series of TOL values?
+# this looks horrid...try single NPZ 
+ggplot(data = all_tol_data |> filter(npz_id == "Ninglaoo"),
+       aes(x = Begin_datetime_local,
+           y = TOL_10000)) +
+  geom_line(aes(group = Dep_ID)) +
+  facet_grid(rows = vars(npz_id)) +
+  theme_bw()
+
+
 # Adapting code from Bella for diel plots
 
 ggplot(data = TOL10khz_hour,
@@ -151,14 +162,14 @@ ggplot(data = TOL10khz_hour,
   geom_line(aes(y = med_tol,
                 group = Dep_ID),
             linewidth = 1) + 
-  facet_wrap(vars(npz_id), scales = "free_y")+
+  facet_grid(cols = vars(network))+
   labs(y = "TOL_10kHz",
        x = "Hour of day (local time)")+
-  coord_polar()+
+  # coord_polar()+
   theme_bw()
 
 
-ggsave(paste0("figs/", "Diel_TOL10khz_facet_npz_polar.png"), width=8, height=10,
+ggsave(paste0("figs/", "Diel_TOL10khz_facet_network.png"), width=8, height=10,
        units="in", dpi=300)
 
 
