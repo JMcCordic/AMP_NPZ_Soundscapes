@@ -61,9 +61,21 @@ all_hmd_data <- all_hmd_og |>
     network = fct(network),
     network = fct_relevel(network, c("Temperate East","Northwest")),
     
-    # parse out time info for plotting
+    
+    # Rework date-times
+    
+    # assign local time zones based on NPZ location
+    tz_local = case_when(npz_id == "Cod Grounds" | npz_id == "Solitary Islands" ~ "Australia/Canberra",
+                         npz_id == "Murat" ~ "Australia/South",
+                         TRUE ~ "Australia/West"),
+    
+    # convert UTC time to local time
+    Begin_datetime_local = with_tz(UTC, tzone = tz_local),
+    
+    # parse out specific elements for plotting
     Begin_Hour_UTC = hour(UTC),
-    Month_UTC = month(UTC)
+    Month_UTC = month(UTC),
+    Begin_Hour_local = hour(Begin_datetime_local)
     
   )
 ```
@@ -87,7 +99,7 @@ TOL10khz_hour <- all_tol_data |>
   # remove rows with NA values
   filter(is.na(TOL_13) == FALSE) |>
   # group by Dep_ID and hour, retain other grouping vars
-  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Begin_Hour_UTC) |>
+  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Begin_Hour_local) |>
   # calculate q10, q50, q90
   summarise(
     q10_tol = quantile(TOL_10000, 0.1),
@@ -120,7 +132,7 @@ TOL10khz_month <- all_tol_data |>
 # Adapting code from Bella for diel plots
 
 ggplot(data = TOL10khz_hour,
-       aes(x = Begin_Hour_UTC,
+       aes(x = Begin_Hour_local,
            fill = npz_id,
            color = npz_id)) +
   geom_ribbon(aes(ymin = q10_tol, 
@@ -139,11 +151,14 @@ ggplot(data = TOL10khz_hour,
   geom_line(aes(y = med_tol,
                 group = Dep_ID),
             linewidth = 1) + 
-  facet_grid(rows = vars(network))+
+  facet_wrap(vars(npz_id), scales = "free_y")+
+  labs(y = "TOL_10kHz",
+       x = "Hour of day (local time)")+
+  coord_polar()+
   theme_bw()
 
 
-ggsave(paste0("figs/", "Diel_TOL10khz_facet_network.png"), width=8, height=10,
+ggsave(paste0("figs/", "Diel_TOL10khz_facet_npz_polar.png"), width=8, height=10,
        units="in", dpi=300)
 
 
