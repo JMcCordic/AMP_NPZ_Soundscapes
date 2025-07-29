@@ -96,12 +96,12 @@ TOL10khz_hour <- all_tol_data |>
   )
 
 
-# get hourly quantiles for plotting
-TOL10khz_month_hour <- all_tol_data |>
+# get monthly quantiles for plotting
+TOL10khz_month <- all_tol_data |>
   # remove rows with NA values
   filter(is.na(TOL_13) == FALSE) |>
   # group by Dep_ID and hour, retain other grouping vars
-  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Month_UTC, Begin_Hour_UTC) |>
+  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Month_UTC) |>
   # calculate q10, q50, q90
   summarise(
     q10_tol = quantile(TOL_10000, 0.1),
@@ -126,25 +126,52 @@ ggplot(data = TOL10khz_hour,
   geom_ribbon(aes(ymin = q10_tol, 
                   ymax = q90_tol,
                   group = Dep_ID),
-              alpha = 0.2) +
+              alpha = 0.2,
+              color = NA) +
+  geom_line(aes(y = q10_tol,
+                group = Dep_ID),
+            linewidth = 0.5,
+            alpha = 0.4) +
+  geom_line(aes(y = q90_tol,
+                group = Dep_ID),
+            linewidth = 0.5,
+            alpha = 0.4) +
   geom_line(aes(y = med_tol,
-                group = Dep_ID)) + 
-  # facet_grid(rows = vars(network))+
+                group = Dep_ID),
+            linewidth = 1) + 
+  facet_grid(rows = vars(network))+
   theme_bw()
 
 
+ggsave(paste0("figs/", "Diel_TOL10khz_facet_network.png"), width=8, height=10,
+       units="in", dpi=300)
 
-ggplot(data = TOL10khz_month_hour,
+
+
+# snapping shrimp by month...?  --> Better approach would probably be to get temperature data from STs
+
+
+ggplot(data = TOL10khz_hour,
        aes(x = Begin_Hour_UTC,
            fill = npz_id,
            color = npz_id)) +
   geom_ribbon(aes(ymin = q10_tol, 
                   ymax = q90_tol,
-                  group = as.factor(Month_UTC)),
-              alpha = 0.2) +
+                  group = Dep_ID),
+              alpha = 0.2,
+              color = NA) +
+  geom_line(aes(y = q10_tol,
+                group = Dep_ID),
+            linewidth = 0.5,
+            alpha = 0.4) +
+  geom_line(aes(y = q90_tol,
+                group = Dep_ID),
+            linewidth = 0.5,
+            alpha = 0.4) +
   geom_line(aes(y = med_tol,
-                group = Dep_ID)) + 
-  facet_grid(rows = vars(Month_UTC))+
+                group = Dep_ID),
+            linewidth = 1) + 
+  facet_grid(rows = vars(network))+
   theme_bw()
 
 
