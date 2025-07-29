@@ -43,7 +43,7 @@ all_hmd_data <- all_hmd_og |>
     npz_id = str_replace(platform, "Parks Australia Cod Grounds Marine Park", "Cod Grounds"),
     npz_id = str_replace(npz_id, "Parks Australia Solitary Islands Marine Park, West Pimpernel mooring", "Solitary Islands"),
     npz_id = str_replace(npz_id, "Parks Australia Dampier Marine Park", "Dampier"),
-    npz_id = str_replace(npz_id, "Parks Australia Ningaloo Marine Park, North mooring", "Ninglaoo"),
+    npz_id = str_replace(npz_id, "Parks Australia Ningaloo Marine Park, North mooring", "Ningaloo"),
     npz_id = str_replace(npz_id, "Parks Australia Jurien Marine Park, Northeast mooring", "Jurien"),
     npz_id = str_replace(npz_id, "Parks Australia Geographe Marine Park", "Geographe"),
     npz_id = str_replace(npz_id, "Parks Australia Two Rocks Marine Park, West mooring", "Two Rocks"),
@@ -132,10 +132,11 @@ TOL10khz_month <- all_tol_data |>
 
 # full time series of TOL values?
 # this looks horrid...try single NPZ 
-ggplot(data = all_tol_data |> filter(npz_id == "Ninglaoo"),
+ggplot(data = all_tol_data |> 
+         filter(npz_id == "Ningaloo"),
        aes(x = Begin_datetime_local,
            y = TOL_10000)) +
-  geom_line(aes(group = Dep_ID)) +
+  geom_line() +
   facet_grid(rows = vars(npz_id)) +
   theme_bw()
 
