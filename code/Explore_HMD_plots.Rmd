@@ -91,7 +91,10 @@ runSoundscapeExplorer(all_hmd_data)
 
 all_tol_data <- all_hmd_data |>
   group_by(Dep_ID) |>
-  createOctaveLevel(type = "tol")
+  createOctaveLevel(type = "tol") |>
+  mutate(
+    Begin_date_local = date(Begin_datetime_local)
+  )
 
 
 # get hourly quantiles for plotting
@@ -132,10 +135,15 @@ TOL10khz_month <- all_tol_data |>
 
 # full time series of TOL values?
 # this looks horrid...try single NPZ 
-ggplot(data = all_tol_data, 
-       aes(x = Begin_datetime_local,
+ggplot(data = all_tol_data |>
+         filter(npz_id == "Dampier"), 
+       aes(x = Begin_Hour_local,
            y = TOL_10000)) +
-  geom_line() +
+  geom_line(aes(group = Begin_date_local,
+                color = Begin_date_local),
+             alpha = 0.8) +
+  scale_color_date(low = "blue",
+                   high = "yellow")+
   facet_wrap(vars(Dep_ID),
              nrow = 13,
              scales = "free_x") +
