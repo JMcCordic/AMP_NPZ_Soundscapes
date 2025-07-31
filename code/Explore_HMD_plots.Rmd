@@ -76,7 +76,11 @@ all_hmd_data <- all_hmd_og |>
     Begin_Hour_UTC = hour(UTC),
     Month_UTC = month(UTC),
     Begin_Hour_local = hour(Begin_datetime_local),
-
+    Begin_date_local = date(Begin_datetime_local)
+  ) |>
+  rowwise()|>
+  mutate(
+    sun_altitude = getSunlightPosition(date = UTC, lat = Latitude, lon = Longitude, keep = "altitude")$altitude
   )
 ```
 
@@ -91,10 +95,7 @@ runSoundscapeExplorer(all_hmd_data)
 
 all_tol_data <- all_hmd_data |>
   group_by(Dep_ID) |>
-  createOctaveLevel(type = "tol") |>
-  mutate(
-    Begin_date_local = date(Begin_datetime_local)
-  )
+  createOctaveLevel(type = "tol")
 
 
 # get hourly quantiles for plotting
@@ -137,8 +138,11 @@ TOL10khz_month <- all_tol_data |>
 # this looks horrid...try single NPZ 
 ggplot(data = all_tol_data |>
          filter(npz_id == "Dampier"), 
-       aes(x = Begin_Hour_local,
+       aes(x = Begin_datetime_local,
            y = TOL_10000)) +
+  geom_line()+
+  geom_line(aes(y = sun_altitude), 
+            color = "red")+
   geom_line(aes(group = Begin_date_local,
                 color = Begin_date_local),
              alpha = 0.8) +
@@ -151,8 +155,8 @@ ggplot(data = all_tol_data |>
 
 
 
-ggsave(paste0("figs/", "Timeseries_TOL10khz_facet_npz.png"), width=6, height=15,
-       units="in", dpi=300)
+# ggsave(paste0("figs/", "Timeseries_TOL10khz_facet_npz.png"), width=6, height=15,
+#        units="in", dpi=300)
 
 
 
