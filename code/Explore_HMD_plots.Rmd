@@ -289,13 +289,24 @@ plotPSD(all_hmd_data, style="quantile", by="hour", facet="npz_id", q=0.1)
 
 
 # seaonal PSD across all NPZs
-plotPSD(all_hmd_data, style="quantile", by="season_astro", q=0.1)
-ggsave(paste0("figs/", "PSD_season_all.png"), width=12, height=8,
+season_plot <- plotPSD(all_hmd_data, 
+                       style="quantile", 
+                       by = "npz_id", 
+                       facet = "season_astro",
+                       ncol = 4,
+                       q=0.1)
+
+
+ggsave(paste0("figs/", "PSD_season_npz.png"), width=12, height=8,
        units="in", dpi=300)
 
 
 
-plotPSD(all_hmd_data, style="quantile", by="season_astro", facet = "network", q=0.1)
+plotPSD(all_hmd_data, style="quantile", by="npz_id", facet = "season_astro", q=0.1)
+
+
+
+
 ggsave(paste0("figs/", "PSD_season_network.png"), width=12, height=8,
        units="in", dpi=300)
 
