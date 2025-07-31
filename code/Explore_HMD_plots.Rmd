@@ -75,13 +75,38 @@ all_hmd_data <- all_hmd_og |>
     # parse out specific elements for plotting
     Begin_Hour_UTC = hour(UTC),
     Month_UTC = month(UTC),
+    # Get hour (numeric)
     Begin_Hour_local = hour(Begin_datetime_local),
-    Begin_date_local = date(Begin_datetime_local)
+    # Get date without times
+    Begin_date_local = date(Begin_datetime_local),
+    # Get month
+    Month_local = month(Begin_datetime_local),
+    # Get just day of month
+    Day_month_local = mday(Begin_datetime_local),
+    # re-create dates as all in the same year for plotting on single graph
+    Date_noyr = as_date(paste0("2000", "-", Month_local, "-", Day_month_local), format = "%Y-%m-%d"),
+    
+    season_astro = case_when(
+      # Spring: Sept 21 - Dec 20
+      between(Date_noyr, as_date("2000-09-21"), as_date("2000-12-20")) ~ "spring",
+      # Summer: Dec 21 - March 19
+      between(Date_noyr, as_date("2000-12-21"), as_date("2000-12-31")) ~ "summer",
+      between(Date_noyr, as_date("2000-01-01"), as_date("2000-03-19")) ~ "summer",
+      # Autumn: March 20 - June 20
+      between(Date_noyr, as_date("2000-03-20"), as_date("2000-06-20")) ~ "autumn",
+      # Winter: all other dates (June 21 - Sept 20)
+      TRUE ~ "winter"
+    )
+    
   ) |>
+  # specify row wise operations for suncalc functions
   rowwise()|>
   mutate(
-    sun_altitude = getSunlightPosition(date = UTC, lat = Latitude, lon = Longitude, keep = "altitude")$altitude
+    sun_altitude = getSunlightPosition(date = UTC, lat = Latitude, lon = Longitude, keep = "altitude")$altitude, 
+    moon_illum = getMoonIllumination(date = UTC, keep = "fraction")$fraction
   )
+
+
 ```
 
 
@@ -263,7 +288,16 @@ ggsave(paste0("figs/", "PSD_all_npz.png"), width=12, height=8,
 plotPSD(all_hmd_data, style="quantile", by="hour", facet="npz_id", q=0.1)
 
 
+# seaonal PSD across all NPZs
+plotPSD(all_hmd_data, style="quantile", by="season_astro", q=0.1)
+ggsave(paste0("figs/", "PSD_season_all.png"), width=12, height=8,
+       units="in", dpi=300)
 
+
+
+plotPSD(all_hmd_data, style="quantile", by="season_astro", facet = "network", q=0.1)
+ggsave(paste0("figs/", "PSD_season_network.png"), width=12, height=8,
+       units="in", dpi=300)
 
 # Monthly PSD across all NPZs
 plotPSD(all_hmd_data, style="quantile", by="month", q=0.1)
