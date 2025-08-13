@@ -14,16 +14,9 @@ Load libraries
 
 ```{r load lib}
 
-### Note to self to pare down list depending on what actually gets used
-
 library(PAMscapes)
 library(PAMmisc)
-library(tcltk2) # handles interactively navigating to network file paths
 library(tidyverse)
-library(tictoc) # allows for time tracking of longer processes
-library(svDialogs) # allows for some interactive inputs
-library(suntools) # tools for working with sunrise/sunset etc.
-library(suncalc) # more options for sun things
 
 ```
 
