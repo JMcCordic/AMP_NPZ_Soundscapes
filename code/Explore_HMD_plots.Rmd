@@ -325,6 +325,11 @@ plotPSD(all_hmd_data, style="quantile", by="month", facet="network", q=0.1)
 ggsave(paste0("figs/", "PSD_month_facet_network.png"), width=12, height=8,
        units="in", dpi=300)
 
+# Faceted by month
+plotPSD(all_hmd_data, style="quantile", by="Dep_ID", facet="Month_local", q=0.1)
+ggsave(paste0("figs/", "PSD_deployment_by_month.png"), width=12, height=8,
+       units="in", dpi=300)
+
 
 ```
 
