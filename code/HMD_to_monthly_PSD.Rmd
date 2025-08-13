@@ -1,0 +1,100 @@
+---
+title: "Reshape_HMD"
+author: "Jessica McCordic"
+date: "2025-08-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Load libraries
+
+```{r load lib}
+
+### Note to self to pare down list depending on what actually gets used
+
+library(PAMscapes)
+library(PAMmisc)
+library(tcltk2) # handles interactively navigating to network file paths
+library(tidyverse)
+library(tictoc) # allows for time tracking of longer processes
+library(svDialogs) # allows for some interactive inputs
+library(suntools) # tools for working with sunrise/sunset etc.
+library(suncalc) # more options for sun things
+
+```
+
+Load HMD data
+
+```{r load data}
+
+# bring in hourly HMD spectra
+
+dir_hmd <- "data/HMD_hourly"
+
+hmd_tables <- dir_hmd |>
+    # list all files with .csv extension
+    list.files(pattern = ".csv") |>
+    map_chr(~paste0(dir_hmd,"\\",  .)) |>
+    # use map to iterate read.delim() function over each file in the directory
+    map(~read_csv(.))
+
+all_hmd_og <- do.call("rbind", hmd_tables) 
+
+```
+
+
+Clean up table a bit and add columns for grouping
+
+```{r add columns}
+
+hmd_data_month <- all_hmd_og |>
+  # remove NA values from data gaps or start/end of deployment
+  filter(!is.na(HMD_10)) |> 
+  # add grouping variables for dates
+  mutate(hour_UTC = hour(UTC),
+         day_UTC = day(UTC),
+         month_UTC = month(UTC),
+         year_UTC = year(UTC)) |>
+  
+  # group to day level per deployment
+  group_by(Dep_ID, year_UTC, month_UTC, day_UTC) |>
+  # only keep full days
+  filter(n_distinct(hour_UTC) == 24) |>
+  
+  # ungroup and regroup back out to month level per deployment
+  ungroup() |>
+  group_by(Dep_ID, year_UTC, month_UTC) |>
+  
+  # count days of effort per month
+  mutate(effort_days = n_distinct(day_UTC))
+
+```
+
+
+Get median PSD per month per deployment
+
+```{r median PSD}
+
+psd_month <- hmd_data_month |>
+  # group by month, include effort_days in grouping so it's retained in final df
+  group_by(Dep_ID, year_UTC, month_UTC, effort_days) |>  
+  # use plotPSD with returnData = TRUE to get values of monthly PSDs
+  # use group_modify to calculate per group
+  group_modify(~plotPSD((.), 
+                        style = "quantile", 
+                        q = c(0.1, 0.5, 0.9), 
+                        returnData = TRUE))
+
+
+write_csv(psd_month, "data/Df_analysis/All_deps_monthly_PSD.csv")
+
+
+
+```
+
+
+
