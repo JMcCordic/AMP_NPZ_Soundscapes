@@ -1,0 +1,48 @@
+---
+title: "Dissimilarity_calc"
+author: "Jessica McCordic"
+date: "2025-08-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r load lib and data}
+
+library(tidyverse)
+
+
+# read in CSV with summarized PSD to compare
+psd_og <- read_csv("data/Df_analysis/All_deps_monthly_PSD.csv")
+
+# pivot wider to create new df with one column per deployment-month combination
+psd_wide <- psd_og |>
+  # only keep data from months with at least half of the month represented
+  filter(effort_days >= 0.5*days_in_month(month_UTC))|>
+  # drop quantiles not using
+  select(Dep_ID, month_UTC, effort_days, frequency, qmed)|>
+  # new col names = Deployment_month_effortdays
+  pivot_wider(names_from = c(Dep_ID, month_UTC, effort_days), values_from = c(qmed))
+
+
+
+
+```
+
+
+Function for calculating dissimilarity between spectra
+
+```{r dissim}
+
+# based on sound_Df matlab function from Becca
+
+
+
+
+
+
+
+```
