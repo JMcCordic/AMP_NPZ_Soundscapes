@@ -128,7 +128,7 @@ TOL10khz_hour <- all_tol_data |>
   # remove rows with NA values
   filter(is.na(TOL_13) == FALSE) |>
   # group by Dep_ID and hour, retain other grouping vars
-  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Begin_Hour_local) |>
+  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Begin_Hour_local, Begin_Hour_UTC) |>
   # calculate q10, q50, q90
   summarise(
     q10_tol = quantile(TOL_10000, 0.1),
@@ -215,8 +215,8 @@ ggplot(data = TOL10khz_hour,
   theme_bw()
 
 
-ggsave(paste0("figs/", "Diel_TOL10khz_facet_network.png"), width=8, height=10,
-       units="in", dpi=300)
+# ggsave(paste0("figs/", "Diel_TOL10khz_facet_network.png"), width=8, height=10,
+#        units="in", dpi=300)
 
 
 
@@ -302,7 +302,7 @@ ggsave(paste0("figs/", "PSD_season_npz.png"), width=12, height=8,
 
 
 
-plotPSD(all_hmd_data, style="quantile", by="npz_id", facet = "season_astro", q=0.1)
+plotPSD(all_hmd_data |> filter(network == "South"), style="quantile", by="npz_id", facet = "season_astro", q=0.1)
 
 
 
@@ -314,15 +314,15 @@ ggsave(paste0("figs/", "PSD_season_network.png"), width=12, height=8,
 plotPSD(all_hmd_data, style="quantile", by="month", q=0.1)
 
 # Monthly PSDs, faceted by NPZ
-plotPSD(all_hmd_data, style="quantile", by="month", facet="npz_id", q=0.1)
+plotPSD(all_hmd_data|> filter(network == "South-west"), style="quantile", by="month", facet="npz_id", q=0.1)
 
 ggsave(paste0("figs/", "PSD_month_facet_npz.png"), width=12, height=8,
        units="in", dpi=300)
 
 # Monthly PSDs, faceted by network
-plotPSD(all_hmd_data, style="quantile", by="month", facet="network", q=0.1)
+plotPSD(all_hmd_data |> filter(network == "South-west"), style="quantile", by="npz_id", facet="Month_local", q=0.1)
 
-ggsave(paste0("figs/", "PSD_month_facet_network.png"), width=12, height=8,
+ggsave(paste0("figs/", "PSD_month_facet_SWnetwork.png"), width=12, height=8,
        units="in", dpi=300)
 
 # Faceted by month
