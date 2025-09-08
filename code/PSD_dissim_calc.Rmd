@@ -144,6 +144,74 @@ psd_wide |>
 ```
 
 
+Creating dissimilarity matrix
+```{r pairwise setup}
+
+# what I want it to do:
+
+# For each combination of columns
+# calculate dissimilarity between columns
+# store in matrix
+
+# pairwise operations adapted largely from this approach:
+# https://www.bryanshalloway.com/2020/06/03/tidy-2-way-column-combinations/
+
+# nest & pivot to get lists of values as columns within new df
+df_lists <- psd_wide |>
+  summarize_all(list) |>
+  pivot_longer(cols = c(-frequency), 
+               names_to = "dep",
+               values_to = "psd_lev") |>
+  select(-frequency)
+
+# expand combinations to make all 2-way combos
+
+df_lists_combos <- expand(df_lists, 
+                          nesting(dep, psd_lev),
+                          nesting(dep2 = dep, psd_lev2 = psd_lev)) |>
+  # filter(dep != dep2) |>
+  arrange(dep, dep2) |>
+  mutate(dep_pwise = paste0(dep, ".", dep2)) |>
+  select(contains("dep"), everything())
+
+# now each row contains relevant combinations of variables
+
+
+
+```
+
+Try out dissim calculation over pairwise combinations of deployment-months
+
+```{r dissim calc}
+
+freqs = psd_wide$frequency
+
+dissim_vals <- df_lists_combos |>
+  mutate(dissim_value = map2(psd_lev, psd_lev2, 
+                             # use tilde operator and specify .x and .y as inputs
+                             ~dissim_calc(.x, .y, freqs = freqs))) |>
+  select(-c(psd_lev, psd_lev2))|>
+  mutate(dissim_value = as.numeric(dissim_value))
+
+# omg it worked!!!
+
+ggplot(data = dissim_vals) +
+  geom_tile(aes(x = dep, 
+                y = dep2, 
+                fill = dissim_value)) +
+  scale_fill_viridis_c()+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 90))
+
+ggsave("figs/dissim_matrix_deployment_month.jpg", device = "jpeg",
+       width=10, height=8, units="in", dpi=600)
+
+```
+
+
+
+
+
 
 
 
