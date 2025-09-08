@@ -37,12 +37,117 @@ Function for calculating dissimilarity between spectra
 
 ```{r dissim}
 
-# based on sound_Df matlab function from Becca
+
+dissim_calc <- function( 
+    # first PSD
+  spec1 = numeric(),
+  # second PSD
+  spec2 = numeric(),
+  # vector with frequency bins
+  freqs = numeric(),
+  # specify fmin and fmax if subsetting frequency range
+  fmin = numeric(), 
+  fmax = numeric()){
+  
+  
+  # based on sound_Df matlab function from Becca
+  
+  #' Inputs
+  #'  spec1 = median spectra of time series 1
+  #'  spec2 = median spectra of time series 2
+  #'  
+  #'  freqs = vector of frequencies in spectra (same length as specs)
+  #'    for HMD data, should be named column in HMD df
+  #'    
+  #'  c(f1, f2) = specific frequency range of interest
+  #'    If using full spectra, f1 = min(freqs), f2 = max(freqs)
+  #'    
+  
+  # Trim spectra to freq range if fmin and fmax provided
+  # if they are not specified, use whole freq range
+  
+  if(missing(fmin) & missing(fmax)){
+    f1 <- min(freqs)
+    f2 <- max(freqs)
+  } else {
+    f1 <- fmin
+    f2 <- fmax
+  }
+  
+  
+  # index to subset frequencies
+  f_range <- which(freqs >= f1 & freqs <= f2)
+  
+  # normalize PSD
+  
+  # normalized PSD = level at each freq / sum of levels across all freqs
+  n_spec1 <- spec1[f_range] / sum(spec1[f_range])
+  n_spec2 <- spec2[f_range] / sum(spec2[f_range])
+  
+  # sanity check -- should sum to 1
+  # --> could maybe add this in as a Warning?
+  sum(n_spec1)
+  sum(n_spec2)
+  
+  # Calculate dissimilarity between normalized spectra
+  # "integral of pointwise differences" based on Sueur et al. 2008, cited in Lellouch et al. 2014
+  
+  dissim <- 0.5*(sum(abs(n_spec1 - n_spec2)))
+  
+  return(dissim)
+  
+}
 
 
+# test function in a pipe
+psd_wide |>
+  summarize(dissim = dissim_calc(spec1 = PARKSAUSTRALIA_CGMP_201807_CG_7_30, 
+              spec2 = PARKSAUSTRALIA_SWC_202201_SWS_2_28, 
+              freqs = frequency))
 
-
-
-
+# ------------------------------------------------------
+# Matlab version below:
+# % sound_Df calculates the spectral dissimilarity between two mean spectra
+# 
+# % Inputs
+# % S1 = average (or median) spectra of time series 1
+# % S2 = average (or median) spectra of time series 2
+# % f = frequency vector
+# % [f1 f2] = frequency range of interest --> used to trim spectra 
+# 
+# % NOTE: using median spectra for each site - when using mean, trend is
+# % similar in highband but large variability in lowband inflates SPLs so
+# % that spectra looks a little different
+# 
+# % Attemped Jan 2018 OC
+# 
+# % trim spectra and calculate pdf (mean spectra normalized by total power)
+# 
+# a=find(f>f1 & f<f2); 
+# 
+# Sf1=S1(a)/sum(S1(a));
+# Sf2=S2(a)/sum(S2(a));
+# sum(Sf2)  %should sum to 1
+# sum(Sf1)
+# 
+# % D calculation
+# Df=(1/2)*sum(abs(Sf1-Sf2));
+# 
+# 
+# % plotting
+# if plt==1
+#     figure; subplot(1,2,1); semilogx(f(a),Sf1,'b'); hold on; semilogx(f(a),Sf2,'r'); %plot normalized data
+#     subplot(1,2,2); semilogx(f(a),S1(a),'b'); hold on; semilogx(f(a),S2(a),'r');  %plot non-normalized data
+# end
+# end
 
 ```
+
+
+
+
+
+
+
+
+
