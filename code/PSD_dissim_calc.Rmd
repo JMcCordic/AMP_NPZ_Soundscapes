@@ -180,21 +180,26 @@ df_lists_combos <- expand(df_lists,
 
 ```
 
-Try out dissim calculation over pairwise combinations of deployment-months
+Calculate dissimilarity value over pairwise combinations of deployment-months
 
 ```{r dissim calc}
 
+# assign frequency bins ahead of time
+# -- probably not needed, but it makes the map2() operation slightly less confusing?
 freqs = psd_wide$frequency
 
 dissim_vals <- df_lists_combos |>
   mutate(dissim_value = map2(psd_lev, psd_lev2, 
                              # use tilde operator and specify .x and .y as inputs
                              ~dissim_calc(.x, .y, freqs = freqs))) |>
+  # remove list-columns of psd values to make it less cumbersome
   select(-c(psd_lev, psd_lev2))|>
+  # change dissimilarity values from list to numeric
   mutate(dissim_value = as.numeric(dissim_value))
 
 # omg it worked!!!
 
+# plot values in heatmap to check
 ggplot(data = dissim_vals) +
   geom_tile(aes(x = dep, 
                 y = dep2, 
@@ -202,12 +207,30 @@ ggplot(data = dissim_vals) +
   scale_fill_viridis_c()+
   theme_bw()+
   theme(axis.text.x = element_text(angle = 90))
+# woohoo!
 
-ggsave("figs/dissim_matrix_deployment_month.jpg", device = "jpeg",
-       width=10, height=8, units="in", dpi=600)
+# ggsave("figs/dissim_matrix_deployment_month.jpg", device = "jpeg",
+#        width=10, height=8, units="in", dpi=600)
 
 ```
 
+
+Rearrange into symmetric matrix and save as CSV
+
+```{r rearrange df matrix}
+
+dissim_matrix <- dissim_vals |>
+  pivot_wider(id_cols = dep, 
+              id_expand = TRUE,
+              names_from = dep2, 
+              values_from = dissim_value)
+
+write_csv(dissim_matrix, 
+          "output/dissim_matrix_dep_month.csv")
+
+
+
+```
 
 
 
