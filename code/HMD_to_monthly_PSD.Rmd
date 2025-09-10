@@ -51,7 +51,28 @@ hmd_data_month <- all_hmd_og |>
   mutate(hour_UTC = hour(UTC),
          day_UTC = day(UTC),
          month_UTC = month(UTC),
-         year_UTC = year(UTC)) |>
+         year_UTC = year(UTC),
+          # create NPZ column to simplify plot labels
+    npz_id = str_replace(platform, "Parks Australia Cod Grounds Marine Park", "Cod Grounds"),
+    npz_id = str_replace(npz_id, "Parks Australia Solitary Islands Marine Park, West Pimpernel mooring", "Solitary Islands"),
+    npz_id = str_replace(npz_id, "Parks Australia Dampier Marine Park", "Dampier"),
+    npz_id = str_replace(npz_id, "Parks Australia Ningaloo Marine Park, North mooring", "Ningaloo"),
+    npz_id = str_replace(npz_id, "Parks Australia Jurien Marine Park, Northeast mooring", "Jurien"),
+    npz_id = str_replace(npz_id, "Parks Australia Geographe Marine Park", "Geographe"),
+    npz_id = str_replace(npz_id, "Parks Australia Two Rocks Marine Park, West mooring", "Two Rocks"),
+    npz_id = str_replace(npz_id, "Parks Australia South-west Corner Marine Park, South mooring", "South-west Corner"),
+    npz_id = str_replace(npz_id, "Parks Australia Murat Marine Park, East mooring", "Murat"),
+    
+    # add network for grouping/faceting later
+    network = case_when(platform == "Parks Australia Cod Grounds Marine Park" | 
+                          platform == "Parks Australia Solitary Islands Marine Park, West Pimpernel mooring" 
+                        ~ "Temperate East",
+                        platform == "Parks Australia Dampier Marine Park" | 
+                          platform == "Parks Australia Ningaloo Marine Park, North mooring" ~ "Northwest",
+                        TRUE ~ "South-west"
+    ),
+    network = fct(network),
+    network = fct_relevel(network, c("Temperate East","Northwest"))) |>
   
   # group to day level per deployment
   group_by(Dep_ID, year_UTC, month_UTC, day_UTC) |>
@@ -60,7 +81,7 @@ hmd_data_month <- all_hmd_og |>
   
   # ungroup and regroup back out to month level per deployment
   ungroup() |>
-  group_by(Dep_ID, year_UTC, month_UTC) |>
+  group_by(network, npz_id, Dep_ID, year_UTC, month_UTC) |>
   
   # count days of effort per month
   mutate(effort_days = n_distinct(day_UTC))
@@ -74,7 +95,7 @@ Get median PSD per month per deployment
 
 psd_month <- hmd_data_month |>
   # group by month, include effort_days in grouping so it's retained in final df
-  group_by(Dep_ID, year_UTC, month_UTC, effort_days) |>  
+  group_by(network, npz_id, Dep_ID, year_UTC, month_UTC, effort_days) |>  
   # use plotPSD with returnData = TRUE to get values of monthly PSDs
   # use group_modify to calculate per group
   group_modify(~plotPSD((.), 
