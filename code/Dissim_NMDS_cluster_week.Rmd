@@ -1,0 +1,95 @@
+---
+title: "Dissim_NMDS_cluster"
+author: "Jessica McCordic"
+date: "2025-09-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Load libraries
+
+```{r load lib}
+library(tidyverse)
+library(vegan)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(cluster)
+library(RColorBrewer)
+library(here)
+
+```
+
+## Vegan NMDS - Weekly comparisons by deployment
+
+### Temperate East
+```{r}
+#read in distance matrix and metadata
+dissim_og_te = read_csv("output/Weekly_dissim/dissim_matrix_dep_week_tempeast.csv")
+
+dissim_filter <- dissim_og_te |>
+  filter(!grepl("GEOGRAPHE", dep),
+         !grepl("JURIEN", dep)) |>
+  select(-c(PARKSAUSTRALIA_GEOGRAPHE_202201_GEO_1_19, PARKSAUSTRALIA_GEOGRAPHE_202201_GEO_2_28,PARKSAUSTRALIA_GEOGRAPHE_202201_GEO_3_31,PARKSAUSTRALIA_JURIEN_202201_JNE_1_26,PARKSAUSTRALIA_JURIEN_202201_JNE_2_28))
+
+# get rid of deployment column to make square matrix
+dissim_dist = as.dist(dissim_filter |>
+                        select(-dep))
+
+# load HMD weekly  data -- has deployment ID and ISO week info
+all_dep_metadata = read_csv("data/Df_analysis/All_deps_weekly_PSD.csv")
+
+
+# get grouping info from original PSD data
+all_dep_labels <- all_dep_metadata |>
+  select(network, npz_id, Dep_ID, isoweek_UTC, effort_days) |>
+  # use same filter for effort to only keep full weeks
+  filter(effort_days == 7) |>
+  # distinct combinations
+  distinct() |>
+  # create label that will match pivoted data to enable filtering
+  mutate(dep = paste(Dep_ID, isoweek_UTC, sep = "_"))
+  
+
+
+# calculate nmds ordination # from vegan package
+nmds_1 = metaMDS(dissim_dist, k=2, trymax = 20, autotransform = FALSE, plot = FALSE)
+
+# get nmds scores as data frame
+nmdsScores = as.data.frame(scores(nmds_1)) |>
+  # add deployment-months (rownames) as separate column
+  rownames_to_column(var = "dep") |>
+  # join to label info
+  left_join(all_dep_labels) |>
+  mutate(month_fac = factor(month_UTC))
+
+
+# explore initial patterns in ordination
+# network 
+ggplot(aes(x = NMDS1, y = NMDS2, color = network), data = nmdsScores)+ theme_bw()+
+  geom_point(size = 3)+
+  geom_text(aes(label = dep), vjust = -1, hjust = 1.0)
+
+# Month alone: nothing obvious 
+ggplot(aes(x = NMDS1, y = NMDS2), data = nmdsScores)+ theme_bw()+
+  geom_point(size = 3, aes(color = month_fac))
+
+# NPZ, network, and month
+ggplot(aes(x = NMDS1, y = NMDS2), data = nmdsScores)+ theme_bw()+
+  geom_point(size = 3, aes(shape = network, color = npz_id))+
+  geom_text(aes(label = month_fac), vjust = -1, hjust = 1.0)+
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major = element_blank())+
+  geom_hline(yintercept = 0, color = "grey")+
+  geom_vline(xintercept = 0, color = "grey")
+
+ggsave(paste0("figs/", "NMDS_month_labels_noJMPGMP.png"), width=12, height=8,
+       units="in", dpi=300)
+
+
+
+```
