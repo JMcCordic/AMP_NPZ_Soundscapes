@@ -1,0 +1,115 @@
+---
+title: "Reshape_HMD"
+author: "Jessica McCordic"
+date: "2025-08-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Load libraries
+
+```{r load lib}
+
+library(PAMscapes)
+library(PAMmisc)
+library(tidyverse)
+
+```
+
+Load HMD data
+
+```{r load data}
+
+# bring in hourly HMD spectra
+
+dir_hmd <- "data/HMD_hourly"
+
+hmd_tables <- dir_hmd |>
+    # list all files with .csv extension
+    list.files(pattern = ".csv") |>
+    map_chr(~paste0(dir_hmd,"\\",  .)) |>
+    # use map to iterate read.delim() function over each file in the directory
+    map(~read_csv(.))
+
+all_hmd_og <- do.call("rbind", hmd_tables) 
+
+```
+
+
+Clean up table a bit and add columns for grouping
+
+```{r add columns}
+
+hmd_data_week <- all_hmd_og |>
+  # remove NA values from data gaps or start/end of deployment
+  filter(!is.na(HMD_10)) |> 
+  # add grouping variables for dates
+  mutate(hour_UTC = hour(UTC),
+         day_UTC = day(UTC),
+         month_UTC = month(UTC),
+         isoweek_UTC = isoweek(UTC),
+         year_UTC = year(UTC),
+          # create NPZ column to simplify plot labels
+    npz_id = str_replace(platform, "Parks Australia Cod Grounds Marine Park", "Cod Grounds"),
+    npz_id = str_replace(npz_id, "Parks Australia Solitary Islands Marine Park, West Pimpernel mooring", "Solitary Islands"),
+    npz_id = str_replace(npz_id, "Parks Australia Dampier Marine Park", "Dampier"),
+    npz_id = str_replace(npz_id, "Parks Australia Ningaloo Marine Park, North mooring", "Ningaloo"),
+    npz_id = str_replace(npz_id, "Parks Australia Jurien Marine Park, Northeast mooring", "Jurien"),
+    npz_id = str_replace(npz_id, "Parks Australia Geographe Marine Park", "Geographe"),
+    npz_id = str_replace(npz_id, "Parks Australia Two Rocks Marine Park, West mooring", "Two Rocks"),
+    npz_id = str_replace(npz_id, "Parks Australia South-west Corner Marine Park, South mooring", "South-west Corner"),
+    npz_id = str_replace(npz_id, "Parks Australia Murat Marine Park, East mooring", "Murat"),
+    
+    # add network for grouping/faceting later
+    network = case_when(platform == "Parks Australia Cod Grounds Marine Park" | 
+                          platform == "Parks Australia Solitary Islands Marine Park, West Pimpernel mooring" 
+                        ~ "Temperate East",
+                        platform == "Parks Australia Dampier Marine Park" | 
+                          platform == "Parks Australia Ningaloo Marine Park, North mooring" ~ "Northwest",
+                        TRUE ~ "South-west"
+    ),
+    network = fct(network),
+    network = fct_relevel(network, c("Temperate East","Northwest"))) |>
+  
+  # group to day level per deployment
+  group_by(Dep_ID, year_UTC, isoweek_UTC, day_UTC) |>
+  # only keep full days
+  filter(n_distinct(hour_UTC) == 24) |>
+  
+  # ungroup and regroup back out to week level per deployment
+  ungroup() |>
+  group_by(network, npz_id, Dep_ID, year_UTC, isoweek_UTC) |>
+  
+  # count days of effort per month
+  mutate(effort_days = n_distinct(day_UTC))
+
+```
+
+
+Get median PSD per week per deployment
+
+```{r median PSD}
+
+psd_week <- hmd_data_week |>
+  # group by week, include effort_days in grouping so it's retained in final df
+  group_by(network, npz_id, Dep_ID, year_UTC, isoweek_UTC, effort_days) |>  
+  # use plotPSD with returnData = TRUE to get values of monthly PSDs
+  # use group_modify to calculate per group
+  group_modify(~plotPSD((.), 
+                        style = "quantile", 
+                        q = c(0.1, 0.5, 0.9), 
+                        returnData = TRUE))
+
+
+write_csv(psd_week, "data/Df_analysis/All_deps_weekly_PSD.csv")
+
+
+
+```
+
+
+
