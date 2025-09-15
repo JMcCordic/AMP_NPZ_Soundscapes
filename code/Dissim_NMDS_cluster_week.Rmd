@@ -67,48 +67,97 @@ dissim_all <- dissim_og |>
 ### Filter to separate network matrices
 ```{r filter data}
 
+#'---------------------------------------------------------------
+#' Temperate East
+#'---------------------------------------------------------------
 
 
 dissim_te <- dissim_all |>
   select(dep, contains("CGMP") | contains("SIMP")) |>
   filter(grepl("CGMP", dep) | grepl("SIMP", dep)) |>
+  # join to get week info by deployment
   left_join(all_dep_labels, by="dep") |>
+  # join with subset of weeks common to multiple deployments
   left_join(weeks_to_use) |>
+  # filter out remaining weeks
   filter(!is.na(n_deps_wk)) 
+# get values of deployments left
 dep_wk_te <- all_of(dissim_te$dep)
+# select those columns to just get dissim values we care about
 dissim_te <- dissim_te |>
-  select(dep, dep_wk_te)
+  select(dep, all_of(dep_wk_te))
 
 
-# get rid of deployment column to make square matrix
+# get rid of deployment column to make square matrix, format as distance matrix
 dissim_dist_te = as.dist(dissim_te |>
                         select(-dep))
 
 
+
+
+#'---------------------------------------------------------------
+#' North-west
+#'---------------------------------------------------------------
+
 dissim_nw <- dissim_all |>
   select(dep, contains("NINGALOO") | contains("DAMPIER")) |>
-  filter(grepl("NINGALOO", dep) | grepl("DAMPIER", dep))
+  filter(grepl("NINGALOO", dep) | grepl("DAMPIER", dep)) |>
+  # join to get week info by deployment
+  left_join(all_dep_labels, by="dep") |>
+  # join with subset of weeks common to multiple deployments
+  left_join(weeks_to_use) |>
+  # filter out remaining weeks
+  filter(!is.na(n_deps_wk)) 
+# get values of deployments left
+dep_wk_nw <- all_of(dissim_nw$dep)
+# select those columns to just get dissim values we care about
+dissim_nw <- dissim_nw |>
+  select(dep, all_of(dep_wk_nw))
 
-# get rid of deployment column to make square matrix
+
+# get rid of deployment column to make square matrix, format as distance matrix
 dissim_dist_nw = as.dist(dissim_nw |>
                         select(-dep))
 
 
+
+
+#'---------------------------------------------------------------
+#' South-west
+#'---------------------------------------------------------------
+
 dissim_sw <- dissim_all |>
   select(dep, contains("SWC") | contains("MURAT")) |>
-  filter(grepl("SWC", dep) | grepl("MURAT", dep))
+  filter(grepl("SWC", dep) | grepl("MURAT", dep))|>
+  # join to get week info by deployment
+  left_join(all_dep_labels, by="dep") |>
+  # join with subset of weeks common to multiple deployments
+  left_join(weeks_to_use) |>
+  # filter out remaining weeks
+  filter(!is.na(n_deps_wk)) 
+# get values of deployments left
+dep_wk_sw <- all_of(dissim_sw$dep)
+# select those columns to just get dissim values we care about
+dissim_sw <- dissim_sw |>
+  select(dep, all_of(dep_wk_sw))
 
-# get rid of deployment column to make square matrix
+
+# get rid of deployment column to make square matrix, format as distance matrix
 dissim_dist_sw = as.dist(dissim_sw |>
                         select(-dep))
+```
 
 
 
 
+### NMDS by network
+
+```{r NMDS}
 
 
-
-
+#'-----------------------------------------------
+#' Temperate East NMDS
+#' ---------------------------------------------
 
 # calculate nmds ordination from vegan package
 nmds_te <- metaMDS(dissim_dist_te, k=2, trymax = 20, autotransform = FALSE, plot = FALSE)
@@ -132,24 +181,79 @@ ggplot(aes(x = NMDS1, y = NMDS2,
   geom_point(size = 3)+
   geom_text(aes(label = week_fac), 
             vjust = -1, 
-            hjust = 1.0)
+            hjust = 1.0)+
+  labs(caption = "stress = 0.064")
 
-# Month alone: nothing obvious 
-ggplot(aes(x = NMDS1, y = NMDS2), data = nmdsScores)+ theme_bw()+
-  geom_point(size = 3, aes(color = month_fac))
+# ggsave(paste0("figs/", "NMDS_week_tempeast.png"), width=12, height=8,
+#        units="in", dpi=300)
 
-# NPZ, network, and month
-ggplot(aes(x = NMDS1, y = NMDS2), data = nmdsScores)+ theme_bw()+
-  geom_point(size = 3, aes(shape = network, color = npz_id))+
-  geom_text(aes(label = month_fac), vjust = -1, hjust = 1.0)+
-  theme(panel.grid.minor = element_blank(), 
-        panel.grid.major = element_blank())+
-  geom_hline(yintercept = 0, color = "grey")+
-  geom_vline(xintercept = 0, color = "grey")
 
-ggsave(paste0("figs/", "NMDS_month_labels_noJMPGMP.png"), width=12, height=8,
-       units="in", dpi=300)
 
+#'-----------------------------------------------
+#' North-west NMDS
+#' ---------------------------------------------
+
+# calculate nmds ordination from vegan package
+nmds_nw <- metaMDS(dissim_dist_nw, k=2, trymax = 20, autotransform = FALSE, plot = TRUE)
+
+# get nmds scores as data frame
+nmdsScores_nw <- as.data.frame(scores(nmds_nw)) |>
+  # add deployment-months (rownames) as separate column
+  rownames_to_column(var = "dep") |>
+  # join to label info
+  left_join(all_dep_labels) |>
+  mutate(week_fac = factor(isoweek_UTC))
+
+
+# explore initial patterns in ordination
+# network 
+ggplot(aes(x = NMDS1, y = NMDS2, 
+           color = Dep_ID,
+           shape = npz_id), 
+       data = nmdsScores_nw)+ 
+  theme_bw()+
+  geom_point(size = 3)+
+  geom_text(aes(label = week_fac), 
+            vjust = -1, 
+            hjust = 1.0) +
+  labs(caption = "stress = 0.217 (may have insufficient data)")
+
+# ggsave(paste0("figs/", "NMDS_week_northwest.png"), width=12, height=8,
+#        units="in", dpi=300)
+
+
+
+#'-----------------------------------------------
+#' South-west NMDS
+#' ---------------------------------------------
+
+# calculate nmds ordination from vegan package
+nmds_sw <- metaMDS(dissim_dist_sw, k=2, trymax = 20, autotransform = FALSE, plot = FALSE)
+
+# get nmds scores as data frame
+nmdsScores_sw <- as.data.frame(scores(nmds_sw)) |>
+  # add deployment-months (rownames) as separate column
+  rownames_to_column(var = "dep") |>
+  # join to label info
+  left_join(all_dep_labels) |>
+  mutate(week_fac = factor(isoweek_UTC))
+
+
+# explore initial patterns in ordination
+# network 
+ggplot(aes(x = NMDS1, y = NMDS2, 
+           color = Dep_ID,
+           shape = npz_id), 
+       data = nmdsScores_sw)+ 
+  theme_bw()+
+  geom_point(size = 3)+
+  geom_text(aes(label = week_fac), 
+            vjust = -1, 
+            hjust = 1.0) +
+  labs(caption = "stress = 0.0024")
+
+# ggsave(paste0("figs/", "NMDS_week_southwest.png"), width=12, height=8,
+#        units="in", dpi=300)
 
 
 ```
