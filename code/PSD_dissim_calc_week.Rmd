@@ -230,8 +230,8 @@ ggplot(data = dissim_vals) +
   theme(axis.text.x = element_text(angle = 90))
 # woohoo!
 # 
-# ggsave("figs/dissim_matrix_dep_week_southwest.jpg", device = "jpeg",
-#        width=10, height=8, units="in", dpi=600)
+# ggsave("figs/dissim_matrix_dep_week_all.jpg", device = "jpeg",
+#        width=12, height=12, units="in", dpi=600)
 
 ```
 
