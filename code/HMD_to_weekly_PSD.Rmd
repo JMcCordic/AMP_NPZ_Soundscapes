@@ -82,7 +82,7 @@ hmd_data_week <- all_hmd_og |>
   
   # ungroup and regroup back out to week level per deployment
   ungroup() |>
-  group_by(network, npz_id, Dep_ID, year_UTC, isoweek_UTC) |>
+  group_by(network, npz_id, Dep_ID, isoweek_UTC) |>
   
   # count days of effort per month
   mutate(effort_days = n_distinct(day_UTC))
@@ -96,7 +96,7 @@ Get median PSD per week per deployment
 
 psd_week <- hmd_data_week |>
   # group by week, include effort_days in grouping so it's retained in final df
-  group_by(network, npz_id, Dep_ID, year_UTC, isoweek_UTC, effort_days) |>  
+  group_by(network, npz_id, Dep_ID, isoweek_UTC, effort_days) |>  
   # use plotPSD with returnData = TRUE to get values of monthly PSDs
   # use group_modify to calculate per group
   group_modify(~plotPSD((.), 
