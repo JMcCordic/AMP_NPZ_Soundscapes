@@ -57,7 +57,11 @@ weeks_to_use <- all_dep_labels |>
 
 dissim_all <- dissim_og |>
   left_join(all_dep_labels, by = "dep") |>
-  filter(!is.na(Dep_ID))
+  filter(!is.na(Dep_ID)) |>
+  # join with subset of weeks common to multiple deployments
+  left_join(weeks_to_use) |>
+  # filter out remaining weeks
+  filter(!is.na(n_deps_wk)) 
 
 
 ```
@@ -66,6 +70,22 @@ dissim_all <- dissim_og |>
 
 ### Filter to separate network matrices
 ```{r filter data}
+
+
+#' --------------------------------------------------------------
+#' All weeks with multiple NPZs
+#' --------------------------------------------------------------
+
+# get values of deployments left
+dep_wk_all <- dissim_all$dep
+# select those columns to just get dissim values we care about
+dissim_all <- dissim_all |>
+  select(dep, all_of(dep_wk_all))
+
+# get rid of deployment column to make square matrix, format as distance matrix
+dissim_dist_all = as.dist(dissim_all |>
+                        select(-dep))
+
 
 #'---------------------------------------------------------------
 #' Temperate East
@@ -82,7 +102,7 @@ dissim_te <- dissim_all |>
   # filter out remaining weeks
   filter(!is.na(n_deps_wk)) 
 # get values of deployments left
-dep_wk_te <- all_of(dissim_te$dep)
+dep_wk_te <- dissim_te$dep
 # select those columns to just get dissim values we care about
 dissim_te <- dissim_te |>
   select(dep, all_of(dep_wk_te))
@@ -147,12 +167,46 @@ dissim_dist_sw = as.dist(dissim_sw |>
                         select(-dep))
 ```
 
+### NMDS all weeks
 
+```{r NMDS all weeks}
+
+
+# calculate nmds ordination from vegan package
+nmds_all <- metaMDS(dissim_dist_all, k=2, trymax = 20, autotransform = FALSE, plot = FALSE)
+
+# get nmds scores as data frame
+nmdsScores_all <- as.data.frame(scores(nmds_all)) |>
+  # add deployment-months (rownames) as separate column
+  rownames_to_column(var = "dep") |>
+  # join to label info
+  left_join(all_dep_labels) |>
+  mutate(week_fac = factor(isoweek_UTC))
+
+
+# explore initial patterns in ordination
+
+ggplot(data = nmdsScores_all,
+       aes(x = NMDS1, y = NMDS2, 
+           color = npz_id,
+           shape = network)
+       )+ 
+  theme_bw()+
+  geom_point(size = 4,
+       alpha = 0.5)+
+  geom_text(aes(label = week_fac),
+            vjust = -1, 
+            hjust = 1.0)+
+  labs(caption = "stress = 0.043")
+
+# ggsave(paste0("figs/", "NMDS_week_all.png"), width=12, height=8,
+#        units="in", dpi=300)
+```
 
 
 ### NMDS by network
 
-```{r NMDS}
+```{r NMDS by network}
 
 
 #'-----------------------------------------------
