@@ -1,0 +1,809 @@
+SiteID,Start.date,Start.hour,PresentTotal,PresenceTime,CPAPresent,TBPresent,ManeuverCPAPres,ManeuverTAPres,TAPresent,VesselCount,HumpbackPresent,DolphinPresent,Baleen,Minke,Other_Bio,FishChorusP,SnappingShrimp,Notes,ExtraNotes,Biology,Weekday
+West Pimpernel,12/12/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,patrol boat not counted,1st file (181212110026) is pre-deployment,Snapping Shrimp,Wednesday
+West Pimpernel,12/12/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/12/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/12/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/12/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/12/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/12/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/12/2018,18,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/12/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,"weird broadband noise (~0-1.5kHz) at 19:22:06, wave? Weather?","Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/12/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 hz, 1-2 khz",,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/12/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/12/2018,22,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/12/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/13/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+West Pimpernel,12/13/2018,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+West Pimpernel,12/13/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/13/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,8,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/13/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/13/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 hz, 1-2 khz",,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/13/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/13/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/13/2018,23,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,"unk possible baleen calls, either RW or humpback starting at 23:27:33","Delphinid spp., Snapping Shrimp",Thursday
+West Pimpernel,12/14/2018,0,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,"chirpy calls 00:08:58, dolphins?","Delphinid spp., Snapping Shrimp",Friday
+West Pimpernel,12/14/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/14/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,20,0,,0,0,0,0,0,0,0,1,0,0,,1,1,1-2 khz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/14/2018,21,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/14/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/14/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/15/2018,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+West Pimpernel,12/15/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+West Pimpernel,12/15/2018,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+West Pimpernel,12/15/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/15/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/15/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+West Pimpernel,12/15/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/15/2018,23,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+West Pimpernel,12/16/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,2,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,"squeak at 02:14:00, not sure what it is",Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+West Pimpernel,12/16/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/16/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,11,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/16/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check upsweeps starting 21:04:21,Snapping Shrimp,Sunday
+West Pimpernel,12/16/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+West Pimpernel,12/16/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/17/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 00:28:12,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/17/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/17/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/17/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/17/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/17/2018,23,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/18/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,faint upsweep 04:20:24,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/18/2018,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,7,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,13,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check upsweeps 15:10:07,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/18/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/18/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/18/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 hz, 1-2 khz",,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/18/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/18/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/18/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/19/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,5,1,,0,1,0,0,0,1,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/19/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,9,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,10,1,,0,0,0,0,1,1,0,0,0,0,1,0,1,10:08:15 weird biological dolphin laughing sound???,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/19/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/19/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/19/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/19/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/20/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+West Pimpernel,12/20/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/20/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check upsweeps 06:28:57,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check upsweeps 07:13:52,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/20/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/20/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/20/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,0-1 khz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/20/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/20/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/21/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/21/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,14,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/21/2018,17,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+West Pimpernel,12/21/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/21/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,0-1 khz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/21/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/21/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,0-1 khz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/21/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/21/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/22/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/22/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check upsweep 06:23:17,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,8,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/22/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/22/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/22/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/22/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/23/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/23/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check upsweeps 08:30:22,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/23/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/23/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/23/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/23/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/23/2018,23,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,"chirpy/barky calls starting 23:27:44 to end of file, maybe humpback?","Delphinid spp., Snapping Shrimp",Sunday
+West Pimpernel,12/24/2018,0,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,"chirpy/barky calls starting 00:18:02, continue throughout file… starting to think these are dolphins, maybe spinners?","Delphinid spp., Snapping Shrimp",Monday
+West Pimpernel,12/24/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/24/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/24/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/24/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/24/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/24/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/25/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/25/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/25/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 hz, very faint chorus",,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,12/25/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/25/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,12/26/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+West Pimpernel,12/26/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/26/2018,6,1,,0,1,0,0,0,1,0,0,0,0,1,0,1,,"weird, probably dolphin 06:16:36",Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,8,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,10,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,11,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,14,1,,1,0,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,15,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/26/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,12/26/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/26/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,12/27/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,3,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,"weird sound at 03:08:39, probably fish?",Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/27/2018,6,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,possible humpback at 07:22:12,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,9,1,,0,0,0,1,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,possible humpback at 11:07:15,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,12,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible humpback 14:27:54,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible humpback 15:19:58,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible humpback 16:05:34,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/27/2018,19,1,,1,0,0,0,0,1,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/27/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,12/27/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible humpback 22:10:52,Snapping Shrimp,Thursday
+West Pimpernel,12/27/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,12/28/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+West Pimpernel,12/28/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,5,1,,0,0,1,0,0,1,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/28/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,7,1,,0,2,0,0,1,3,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,8,1,,1,0,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,10,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,11,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,12,1,,0,1,1,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/28/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/28/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,12/28/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/28/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,12/29/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,5,1,,0,0,0,1,0,1,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/29/2018,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,7,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,9,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,11,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/29/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/29/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,12/29/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/29/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,12/30/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 02:06:18,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/30/2018,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,faint upsweeps 06:28:30,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/30/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/30/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,12/30/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/30/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,12/31/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible humpack 01:33:07,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,possible humpback 06:13:38,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,7,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,9,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,possible humpback 09:32:04,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,10,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,possible humpback 10:08:12,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,12,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,13,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,14,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,possible humpback 14:11:14,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,15,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,16,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,possible humpback 16:24:56,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,faint upsweeps 19:06:24,Snapping Shrimp,Monday
+West Pimpernel,12/31/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,12/31/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/1/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"possible humpback 01:22:33, continues… not entirely sure these squeaks are humpback or even biological",Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible humpback 02:08:33,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/1/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,7,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+West Pimpernel,1/1/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,9,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+West Pimpernel,1/1/2019,10,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+West Pimpernel,1/1/2019,11,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,possible humpback 11:27:36,"Baleen Whales, Snapping Shrimp",Tuesday
+West Pimpernel,1/1/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/1/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/1/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/1/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/2/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/2/2019,4,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/2/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,1/2/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,9,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,10,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/2/2019,11,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/2/2019,12,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,13,1,,1,0,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,14,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/2/2019,20,0,,0,0,0,0,0,0,0,1,0,0,,1,1,"1-2 khz, 500 hz",,"Delphinid spp., Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,1/2/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,1/2/2019,22,0,,0,0,0,0,0,0,1,0,0,0,,1,1,500 hz,possible humpback 22:18:56,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,1/2/2019,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/3/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,2,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,4,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,5,1,,0,0,0,1,0,1,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,8,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,9,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,10,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,11,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible humpback 04:11:06,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/3/2019,18,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,squeaky/chirpy calls at 18:15:01,"Delphinid spp., Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/3/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/4/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,7,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,9,1,,0,2,0,0,0,2,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,11,1,,0,1,0,0,1,2,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,12,1,,0,2,0,0,0,2,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/4/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/4/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/5/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,2,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+West Pimpernel,1/5/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/5/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,14,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+West Pimpernel,1/5/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/5/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/5/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/5/2019,21,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/5/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/5/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/6/2019,0,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,1,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,2,1,,0,1,0,0,0,1,1,1,0,0,1,0,1,,squeaky calls 02:29:33,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,8,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,9,1,,0,2,0,0,1,3,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,10,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,11,1,,0,0,0,2,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,12,1,,1,0,0,0,0,1,0,0,0,0,1,0,1,,squeaky calls 12:10:12,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,15,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/6/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,19,0,,0,0,0,0,0,0,1,0,0,0,,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/6/2019,23,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+West Pimpernel,1/7/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+West Pimpernel,1/7/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,1/7/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,7,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,10,1,,0,0,0,1,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,11,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,12,1,,0,0,0,0,2,2,0,0,0,0,,0,1,,possible whale downsweep 12:05:02,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,14,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,chirps at 14:04:03,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,15,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,lots of dolphin activity,"Delphinid spp., Snapping Shrimp",Monday
+West Pimpernel,1/7/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/7/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,1/7/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,1/7/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,1/7/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,1/7/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/8/2019,0,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,2,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/8/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,7,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,8,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,11,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,12,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,13,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,15,1,,0,2,1,1,0,4,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,16,1,,2,0,2,1,0,5,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+West Pimpernel,1/8/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/8/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/8/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/8/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/8/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+West Pimpernel,1/9/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,2,1,,0,3,0,0,0,3,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,9,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,10,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,11,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,12,1,,0,2,0,0,0,2,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,13,1,,0,1,0,0,0,1,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,16,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,17,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,18,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+West Pimpernel,1/9/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,21,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,22,0,,0,0,0,0,0,0,1,0,0,0,,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+West Pimpernel,1/9/2019,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+West Pimpernel,1/10/2019,0,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,1,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,2,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,4,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,7,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,9,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,10,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,11,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,13,1,,0,0,0,1,0,1,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,15,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Thursday
+West Pimpernel,1/10/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/10/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+West Pimpernel,1/11/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,3,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/11/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,upsweeps 07:05:25,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,10,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,14,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+West Pimpernel,1/11/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/11/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/11/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/11/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/11/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/11/2019,22,0,,0,0,0,0,0,0,0,1,0,0,1,1,1,500 hz,chirps at 22:27:12,"Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+West Pimpernel,1/11/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+West Pimpernel,1/12/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,2,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/12/2019,6,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,8,1,,0,1,1,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,10,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,11,1,,0,0,0,1,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,12,1,,1,0,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,13,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/12/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/12/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Saturday
+West Pimpernel,1/12/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/12/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+West Pimpernel,1/13/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 khz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,7,1,,0,4,0,0,0,4,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,8,1,,0,2,0,0,1,3,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,11,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,12,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,13,1,,0,2,0,0,0,2,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,14,1,,0,0,1,0,0,1,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,16,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,18,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Sunday
+West Pimpernel,1/13/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+West Pimpernel,1/13/2019,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+West Pimpernel,1/14/2019,0,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,1,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/14/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/14/2019,4,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,5,0,,0,0,0,0,0,0,1,0,0,0,,1,1,1-2 khz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,6,1,,0,1,0,0,1,2,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,7,1,,0,1,0,0,0,1,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,8,1,,0,0,0,1,0,1,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,9,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/14/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/14/2019,11,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/14/2019,12,1,,0,0,1,0,0,1,1,0,0,0,,0,1,,upsweeps 12:23:06,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,13,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,upsweeps 13:11:06,Snapping Shrimp,Monday
+West Pimpernel,1/14/2019,14,1,,0,0,1,0,0,1,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,15,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,16,1,,0,1,0,0,0,1,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,17,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,18,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+West Pimpernel,1/14/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"1-2 khz, 500 hz",,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 hz,,"Fish Chorus, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,22,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/14/2019,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+West Pimpernel,1/15/2019,0,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+West Pimpernel,1/15/2019,1,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+West Pimpernel,1/15/2019,2,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday

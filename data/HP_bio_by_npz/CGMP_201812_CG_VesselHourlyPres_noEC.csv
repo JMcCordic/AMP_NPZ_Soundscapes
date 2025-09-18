@@ -1,0 +1,1685 @@
+SiteID,Start.date,Start.hour,PresentTotal,PresenceTime,CPAPresent,TBPresent,ManeuverCPAPres,ManeuverTAPres,TAPresent,VesselCount,HumpbackPresent,DolphinPresent,Baleen,Minke,Other_Bio,FishChorusP,SnappingShrimp,Notes,ExtraNotes,Biology,Weekday
+Cod Grounds,12/12/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,12,1,,0,3,0,0,0,3,0,0,0,0,,0,1,,"possible RW gunshots, also a tonal call that doesn't quite sound like Mn ~12:32:30, continues intermittently throughout the day",Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,what's calling at 13:13:35,Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,tonal call again 14:25:24,Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"tonal call again 15:12:07, 15:29:54",Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/12/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,tonal call 18:20:38,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/12/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/12/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/12/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/12/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/12/2018,23,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/13/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,Two LF pulses at 12:07:51,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,3,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,LF pulse at 03:08:18,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,4,0,,0,0,0,0,0,0,1,1,0,0,1,0,1,,"weird fish/dolphin pulses start 04:09:25, again at 04:31:58; check possible Mn at 04:26:25","Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"weird sound, don't think it's biological 08:14:10",Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"~50 Hz pulse at 09:15:54, whale?",Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible RW gunshot ~10:21:12,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"fish (?) at 11:15:11, 11:32:25",Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"13:21:58 has same ~50 Hz pulse as 09:15:54, whale?",Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/13/2018,18,0,,0,0,0,0,0,0,1,0,0,0,,1,1,500 Hz,humpback 18:05:34,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,22,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/13/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/14/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,also individual fish pulses; does this count as chorus?,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,1,0,,0,0,0,0,0,0,1,0,0,0,,1,1,500 Hz,"humpback at 1:04:49, 1:19:58; also individual fish pulses; does this count as chorus?","Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,2,0,,0,0,0,0,0,0,1,0,0,0,,1,1,500 Hz,humpback 02:29:55,"Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback at 3:33:10,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/14/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/14/2018,6,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/14/2018,8,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,check re: chorus ~9:10:00,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,10,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 10:26:12,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,11,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/14/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/14/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/14/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/14/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/14/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,fish might be too faint?,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,20,0,,0,0,0,0,0,0,0,1,0,0,,1,1,"500 Hz, 1-2 kHz",,"Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",21:05:00 -- rain?,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/14/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/15/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,check 01:21:35 downsweep in LF pass,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/15/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,weird barky calls ~2:32:26,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/15/2018,4,0,,0,0,0,0,0,0,1,1,0,0,,0,1,,humpback 4:32:05,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/15/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,7,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 7:20:19,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,12/15/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,13,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/15/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unlikely to be biological (GD verified),Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unlikely to be biological (GD verified),Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unlikely to be biological (GD verified),Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/15/2018,21,0,,0,0,0,0,0,0,1,1,0,0,,0,1,,"humpback at 21:14:06, also 21:26:33","Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/15/2018,22,0,,0,0,0,0,0,0,1,1,0,0,,0,1,,humpback at 22:21:02,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/15/2018,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback at 23:22:13,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,12/16/2018,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,1,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,"humpback starting 01:06:35, again at 01:22:08","Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,6,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,7,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,9,0,,0,0,0,0,0,0,1,1,0,0,1,0,1,,humpback 9:22:13; weird dolphin/fish sound ~9:29:16,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,10,1,,0,1,0,0,0,1,1,0,0,0,,0,1,,humpback 10:06:53,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,11,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,"humpback 11:07:26; RW gunshots 11:10:34, 11:32:43","Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,13,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,15,0,,0,0,0,0,0,0,0,1,1,0,,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,17,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,19,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,"lots of EC, esp towards beginning of file","Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/16/2018,22,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,check humpback 22:08:42,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,12/16/2018,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 23:06:50,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,12/17/2018,0,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,1,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,3,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,some non BP/EC clicks ~3:13:15; more dolphin monkey sounds 3:21:01,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,6,0,,0,0,0,0,0,0,0,0,1,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,9,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,10,0,,0,0,0,0,0,0,1,0,0,0,,0,1,humpback 10:30:53,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,15,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,16,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unlikely to be biological (GD verified),Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/17/2018,22,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,12/17/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/18/2018,0,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,1,0,,0,0,0,0,0,0,1,1,0,0,,0,1,,humpback at 01:16:47,"Baleen Whales, Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,2,0,,0,0,0,0,0,0,2,1,0,0,,0,1,,"humpback 2:13:16, 2:22:34","Baleen Whales, Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,3,1,,0,1,0,0,0,1,1,0,0,0,,0,1,,humpback 3:06:02,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,4,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,6,1,,0,1,0,0,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,9,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,possible RW gunshot 9:32:00,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,14,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,loud broadband vessel sound within overall TA+M 14:13:48,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"clicks 16:32:50 -- EC?, possible unk baleen whale 16:20:44","Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,17,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,clicks 17:10:20 -- not sure what's making them…fish? Dolphin?,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,18,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,19,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,12/18/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,22,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/18/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/19/2018,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,dolphins going bananas starting ~1:15:00; unk baleen call 01:32:03,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,weird lower freq dolphin(?) sounds at 2:23:34,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,5,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,6,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,7,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,8,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,9,1,,0,0,0,1,0,1,0,1,0,0,,0,1,,good example vessel overlapping with a few whistles,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,11,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,13,1,,0,0,0,0,1,1,0,1,0,0,,0,1,,"minke star wars at 13:06:50 (faint with vessel overlapping, not enough to be definitive)","Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,14,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/19/2018,16,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,dolphin monkey sounds and clicks ~16:26:30,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,17,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,dolphin clicks ~17:26:00,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,18,1,,0,1,0,0,0,1,0,0,0,0,,1,1,500 Hz,dolphin clicks ~18:15:40,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,19,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz","500 Hz seems faint, check whether to include","Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/19/2018,23,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/20/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,9,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,10,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,several isolated fish calls but not really chorusing,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,13,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,dolphin clicks and monkey sounds 13:14:01; dolphin(?) clicking 13:22:00,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,14,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,dolphin(?) clicks 14:17:38,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,15,1,,0,3,0,0,0,3,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,16,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,17,1,,0,1,0,0,0,1,2,0,0,0,,0,1,,humpback at 17:20:52 and 17:21:26,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,18,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,"dolphin clicks and monkey sounds 18:10:30, more clicks 18:18:45",Snapping Shrimp,Thursday
+Cod Grounds,12/20/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,fish very faint,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",rain(?) in last part of file,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/20/2018,23,1,,0,1,0,0,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,12/21/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,12/21/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,7,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,dolphin clicks and monkey calls 7:17:32; possible RW gunshot 7:21:30,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,12/21/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",500 Hz chorus very faint,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,12/21/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/21/2018,23,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/22/2018,0,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/22/2018,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/22/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,5,1,,0,1,0,0,0,1,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/22/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/22/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"lots of background noise, no distinct fish chorus",Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"lots of background noise, no distinct fish chorus",Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"lots of background noise, no distinct fish chorus",Snapping Shrimp,Saturday
+Cod Grounds,12/22/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"lots of background noise, no distinct fish chorus",Snapping Shrimp,Saturday
+Cod Grounds,12/23/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,12/23/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/23/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,12/23/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,12/23/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,12/23/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,12/23/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,12/24/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,12/24/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,12/24/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,very loud fish pulses 3:06:11,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,7,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,8,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,10,1,,0,0,1,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,11,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,18,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/24/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,12/24/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,12/24/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,12/24/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,12/25/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,1,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,12/25/2018,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 03:27:28,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,12/25/2018,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,check selection table for unk baleen calls,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,12/25/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,6,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,7,1,,0,0,0,2,0,2,0,0,0,0,,0,1,,possible whale upsweeps 07:13:32,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,8,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,9,1,,1,1,0,0,0,2,0,1,0,0,,0,1,,"very high whistles beginning of file, could be aliased? Not sure spp.","Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,12/25/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",500 Hz is very faint,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,12/25/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale upsweeps starting 21:07:08,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale upsweeps starting 22:05:41,Snapping Shrimp,Tuesday
+Cod Grounds,12/25/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,12/26/2018,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/26/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback at 03:17:26,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,12/26/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,5,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/26/2018,6,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/26/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,8,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/26/2018,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale upsweep 12:19:42,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,14,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale upsweep 18:24:55,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale upsweep 19:06:39,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,12/26/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/26/2018,22,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,12/26/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,12/27/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale upsweeps starting 00:13:53,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/27/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,12/27/2018,23,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,12/28/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"something clicking 8:08:42, but doesn't quite sound like dolphin or fish; possible whale upsweep 08:21:39",Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,13,1,,1,0,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,21,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,12/28/2018,22,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,weird squeaky dolphin/fish calls at 22:13:49,Snapping Shrimp,Friday
+Cod Grounds,12/28/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,12/29/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,12/29/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,"fish chorusing 0-400 Hz, comes and goes but strong in places throughout the next few hours","Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,18,0,,0,0,0,0,0,0,0,0,0,0,1,1,1,,"clicking ~18:13:02, not sure what it is","Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,check upsweep 20:10:43,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,22,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/29/2018,23,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,12/30/2018,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/30/2018,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/30/2018,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/30/2018,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/30/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,8,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,12,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,14,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/30/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,17,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,12/30/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,21,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback at 21:08:34,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,12/30/2018,22,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback at 22:07:49,Snapping Shrimp,Sunday
+Cod Grounds,12/30/2018,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback at 23:22:16,Snapping Shrimp,Sunday
+Cod Grounds,12/31/2018,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,1,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback calls 01:05:34,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,12/31/2018,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 02:07:48,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,mystery sound 03:27:26,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible Bp 04:06:51,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible Bp 05:06:15,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unk baleen call 06:17:11; possible Bp 06:33:02,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible Bp 07:19:25,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible Bp 08:08:32,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible Bp 09:21:34,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible Bp 10:07:10,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,12,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,so many whistles ~12:11:30,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,12/31/2018,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 18:06:46,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,12/31/2018,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/1/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,1/1/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 3:24:47,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,1/1/2019,4,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,7,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish sounds 07:16:59,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,11,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish sounds 11:22:31,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,13,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,16,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,17,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,18,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,19,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,dolphin/fish clicking/squeaking at 19:17:00,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check possible whale 20:13:41,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/1/2019,23,0,,0,0,0,0,0,0,2,0,0,0,,0,1,,"humpback 23:08:12, 23:15:09","Baleen Whales, Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,1/2/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,"loud EC at 0:10:26; weird lower frequency buzzes, not quite BP ~0:13:44","Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,1/2/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,1/2/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,1/2/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check possible whale 04:23:17,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/2/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,7,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 7:05:30,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,1/2/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check possible blue whale 15:15:03,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"unk baleen downsweeps, maybe RW? 20:18:57, 20:20:32, 20:27:45",Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,21,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,"weird clicking and calling at 21:32:56, maybe dolphins?",Snapping Shrimp,Wednesday
+Cod Grounds,1/2/2019,22,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,squeaky calls at 22:33:19,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,1/2/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/3/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,"~800Hz tonal sounds that don't quite sound biological, also seen in other files/days; mooring noise?","Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,7,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,10,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,11,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,13,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,14,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,1-2 kHz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/3/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,squeaky dolphin/fish calls 22:07:35,Snapping Shrimp,Thursday
+Cod Grounds,1/3/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/4/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,4,1,,0,0,0,0,1,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,10,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,18,0,,0,0,0,0,0,0,0,0,0,0,1,1,1,500 Hz,squeaky dolphin/fish calls 18:27:12,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/4/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/4/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/5/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/5/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/5/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,7,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/5/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,12,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/5/2019,13,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,more squeaky calls 13:16:56,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,15,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish calls 15:09:05,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,17,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/5/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/5/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/6/2019,0,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,1,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,squeaky dolphin/fish calls 01:10:22,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,2,1,,0,0,0,0,1,1,0,1,0,0,1,0,1,,"squeaky calls 2:11:40, maybe fish?","Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,squeaky dolphin/fish calls 03:13:33; tonal call 3:32:38 but don't know what it is,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,5,1,,0,0,0,1,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,6,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,13,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,15,1,,0,0,0,0,1,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/6/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,22,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/6/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/7/2019,0,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,5,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,6,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,7,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,9,1,,0,1,1,0,1,3,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,10,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,12,1,,1,0,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,13,1,,0,0,0,1,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/7/2019,14,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,15,1,,0,0,0,1,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/7/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible Mn 16:09:20,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/7/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/7/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,22,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish calls w/clicks 22:04:37,Snapping Shrimp,Monday
+Cod Grounds,1/7/2019,23,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,squeaky dolphin/fish calls w/clicks 23:04:05,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/8/2019,0,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish calls 01:04:05,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,1/8/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,1/8/2019,3,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/8/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,7,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,8,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,10,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,11,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,22,0,,0,0,0,0,0,0,0,0,0,0,0,0,1,,unk baleen whale 22:16:13 -- fish (JM 20200914),Snapping Shrimp,Tuesday
+Cod Grounds,1/8/2019,23,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,1/9/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,3,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/9/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/9/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/9/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/9/2019,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,10,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,12,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,14,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,1/9/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,17,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,19,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",check possible whale 20:28:29,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/9/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/9/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/10/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,2,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,squeaky calls 02:26:24,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,3,1,,0,2,0,0,0,2,0,0,0,0,,1,1,,squeaky calls 03:14:05,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,5,1,,0,1,0,0,0,1,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,7,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,downsweep at 07:04:59 -- probably part of vessel noise (JM 20200914),Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,8,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,10,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,13,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,14,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,15,1,,0,0,0,1,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,16,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,17,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,18,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/10/2019,19,1,,0,0,0,1,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,21,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,22,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,check upsweep at 22:26:38,"Delphinid spp., Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/10/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/11/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/11/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,1/11/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,1/11/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/11/2019,6,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,7,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,9,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,10,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,11,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,14,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky calls 14:06:25,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/11/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/11/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/11/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/11/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/12/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,1,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,squeaky calls at 01:15:22,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,6,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,7,1,,0,0,0,1,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,9,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,10,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,12,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,16,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/12/2019,19,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/12/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/13/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,1,1,,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,6,1,,0,0,0,1,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,7,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,8,1,,0,0,0,1,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,12,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,squeaky calls 12:08:50,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,unk upsweep 13:12:17 -- not loud enough to definitively say it's a whale or not (JM 20200914),Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,14,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,15,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/13/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/13/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/14/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,2,0,,0,0,0,0,0,0,2,0,0,0,,0,1,,humpback 02:15:44 and 02:16:50; check possible whale at 02:12:53 but could be fish?,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 03:26:38,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,4,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,5,1,,0,1,0,0,0,1,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,6,1,,0,0,0,1,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,7,1,,0,0,0,2,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,9,1,,0,0,0,2,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,10,1,,0,0,0,2,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,11,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,12,1,,0,1,0,1,0,2,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,13,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,16,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,17,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/14/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,Also lots of loud individual fish pulses,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/14/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,Also lots of loud individual fish pulses,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/15/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,2,0,,0,0,0,0,0,0,6,0,0,0,,0,1,,a few humpback calls starting 02:31:27,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,1/15/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/15/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,8,1,,1,0,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,16,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,"humpback 16:09:43, other sounds around it don't sound biological",Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/15/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/15/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/15/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/15/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/15/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/16/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/16/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/16/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/16/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible RW gunshot 12:18:58,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,18,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/16/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/16/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/16/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/17/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,1,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish calls 01:19:36,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/17/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,check upsweeps at 11:17:19,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,14,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,possible humpback 14:23:30,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/17/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/18/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,weird tone 1:05:13,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/18/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 09:22:23,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,12,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,14,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,1/18/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/18/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/19/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/19/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,5,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,squeaky dolphin/fish calls 05:31:57,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/19/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,13,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,14,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,15,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,squeaky calls with clicks 15:30:14 and onwards,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,squeaky calls with clicks 17:12:33 and onwards,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/19/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/20/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,3,0,,0,0,0,0,0,0,2,1,0,0,,0,1,,"humpback 03:04:40, 03:20:26","Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/20/2019,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/20/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/20/2019,6,1,,0,1,0,0,1,2,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/20/2019,7,1,,0,3,0,0,0,3,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,8,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,10,1,,0,1,1,0,0,2,0,0,0,0,1,0,1,,squeaky dolphin/fish calls with clicks 10:05:18,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,11,1,,0,1,0,0,0,1,0,0,0,0,1,0,1,,squeaky dolphin/fish calls with clicks 11:18:10,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,13,1,,0,0,0,2,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,14,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,15,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,16,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,17,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/20/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,19,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish calls 19:11:04,Snapping Shrimp,Sunday
+Cod Grounds,1/20/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/20/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,"unk baleen whale call, possibly RW? 21:30:31","Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/20/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/20/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/21/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"check upsweeps at 02:14:03, loud examples",Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,7,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,8,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,10,1,,0,1,1,0,0,2,0,0,0,0,,0,1,,unk grumbly fish call 10:05:19,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,11,1,,1,0,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,12,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,14,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/21/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,21,1,,0,0,0,0,1,1,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,22,0,,0,0,0,0,0,0,0,1,1,0,,1,1,500 Hz,weird call 22:04:24 *** ask Gen!  Downsweep 22:27:09,"Delphinid spp., Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,1/21/2019,23,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/22/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/22/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,4,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,unk pulsed call--whale or fish? 04:30:27,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,1/22/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,possible humpback 05:06:48,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/22/2019,6,1,,0,1,0,0,2,3,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,7,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,9,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,11,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/22/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/23/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"check upsweeps at 00:13:33, loud examples",Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/23/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/23/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,10,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,12,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,15,1,,0,2,0,0,0,2,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,1/23/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,17,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/23/2019,23,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,1/24/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/24/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/24/2019,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/24/2019,5,0,,0,0,0,0,0,0,0,1,0,0,,1,1,"500 Hz, 1-2 kHz",,"Delphinid spp., Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/24/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,7,1,,0,0,0,1,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/24/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,10,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,12,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,17,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,possible minke 17:04:24 but very faint and not really sure; possible baleen call 17:19:23,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/24/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/24/2019,21,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/24/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/24/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/25/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,1/25/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,5,1,,0,1,0,0,0,1,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/25/2019,6,1,,0,2,0,0,0,2,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/25/2019,7,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,8,1,,1,1,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,9,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,10,1,,0,0,0,2,0,2,0,0,0,0,,0,1,,metallic rattling (chain?) beginning at 10:22:35 within TA+M,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,11,1,,0,0,0,2,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,1/25/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/25/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/25/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,1/26/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,1/26/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible Mn 05:12:10,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,8,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,1/26/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/26/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/26/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/26/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,1/27/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/27/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,1/27/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,5,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,8,1,,0,1,0,0,1,2,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/27/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,12,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,1/27/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,1/27/2019,22,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 22:19:01,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,1/27/2019,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 23:33:34,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,1/28/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,3,0,,0,0,0,0,0,0,2,0,0,0,,0,1,,"humpback 03:26:54, possibly 03:11:31","Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,1/28/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,6,1,,1,0,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,7,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,11,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish calls 11:33:18,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,16,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky dolphin/fish calls 16:11:17,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,1/28/2019,22,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,1/28/2019,23,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 23:33:24,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,1/29/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible baleen call (Mn or RW?) 00:17:16,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,3,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 03:16:37,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,1/29/2019,4,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,"humpback 04:10:08; possible whale ~35-50Hz, 04:06:04","Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,1/29/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,1/29/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,8,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,9,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,10,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/29/2019,22,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback downsweeps 22:28:45,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,1/29/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,1/30/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,2,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback calls 02:15:45,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,1/30/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/30/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/30/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/30/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,1/30/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,1/31/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,1/31/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/31/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/31/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/31/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,1/31/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/31/2019,21,1,,0,0,0,0,1,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/31/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,1/31/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,2/1/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,4,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/1/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/1/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/2/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,4,0,,0,0,0,0,0,0,0,0,1,0,,1,1,500 Hz,unk baleen call 04:17:55 **ask Gen,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,8,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,9,1,,0,0,0,1,1,2,0,1,0,0,,0,1,,tons of whistles ~09:26:00,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,10,1,,1,1,0,0,0,2,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,14,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,15,1,,0,1,0,0,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,17,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/2/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,22,0,,0,0,0,0,0,0,0,0,1,0,,1,1,500 Hz,unk whale 22:27:13 (27 - 56 Hz) **ask Gen,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/2/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/3/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,possible whale pulses 01:14:42,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,6,1,,0,0,0,1,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,7,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,11,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,15,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/3/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/3/2019,23,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/4/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,15,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,funny dolphin calls at 16:09:08,"Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 18:28:58,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/4/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/4/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/5/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,5,0,,0,0,0,0,0,0,0,1,0,0,1,1,1,500 Hz,"squeaky dolphin/fish 05:22:26, similar but not quite same as before","Delphinid spp., Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,7,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky calls 07:27:15,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,8,1,,0,0,0,1,0,1,0,0,0,0,1,0,1,,squeaky calls 08:05:49; possible baleen whale call at 08:15:00,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,10,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,11,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,14,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,15,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,"unk baleen call 15:23:02 -- more likely boat sound, consistent with ves sounds before and after (JM 20200915)",Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,16,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,18,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/5/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,22,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,2/5/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/6/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,possible humpback 01:33:03,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,4,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,5,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,9,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,10,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,11,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,12,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,13,1,,0,1,0,0,0,1,0,1,0,0,1,0,1,,"tons of whistles ~13:15:29, possible baleen whale(?) at 13:16:16; loud fish(?) pulses/squeaks at 13:28:35","Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,14,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,15,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky calls 15:20:29,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,16,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,different squeaky calls 16:04:10,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,18,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,squeaky calls 18:09:25,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,19,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky calls 19:26:19,Snapping Shrimp,Wednesday
+Cod Grounds,2/6/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,22,0,,0,0,0,0,0,0,0,0,0,0,1,1,1,500 Hz,squeaky calls 22:11:48,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/6/2019,23,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky calls 23:05:57,Snapping Shrimp,Wednesday
+Cod Grounds,2/7/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,2/7/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,2/7/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unk whale 02:09:36 ~40Hz - can't confirm either way (JM 20200915),Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unk possible whale  03:04:17 ~40Hz; possible whale 03:28:16 86-70Hz downsweep but really low SNR,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,4,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,5,0,,0,0,0,0,0,0,4,0,0,0,,0,1,,"humpback 05:15:12, 05:28:15, 5:28:33, 05:30:53","Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,2/7/2019,6,1,,0,0,0,0,1,1,0,0,1,0,1,0,1,,"unknown baleen calls starting 06:20:00, pulses ~135Hz *ask Gen",Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,7,0,,0,0,0,0,0,0,0,0,1,0,1,0,1,,"unknown baleen calls 07:10:57, same as 06:20:00",Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,8,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,9,1,,0,0,0,0,1,1,0,1,0,0,1,0,1,,weird squeaky calls + clicks ~09:13:15,"Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,2/7/2019,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,possible whale 10:30:43,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,14,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,15,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,unk whale 15:16:26 ~45Hz - can't confirm either way (JM 20200915),Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unk whale 16:23:11 ~45Hz - can't confirm either way (JM 20200915),Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unk whale 21:08:10 ~45Hz - can't confirm either way (JM 20200915),Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/7/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unk whale 23:19:05 ~45Hz - can't confirm either way (JM 20200915),Snapping Shrimp,Thursday
+Cod Grounds,2/8/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,1,0,,0,0,0,0,0,0,1,0,0,0,,0,1,,humpback 01:14:04; unk whale 01:22:03 ~45 Hz -- can't confirm whale (JM 20200915),"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unk whale 02:05:56 ~45Hz  -- can't confirm whale (JM 20200915),Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,3,0,,0,0,0,0,0,0,0,1,0,0,1,0,1,,"something calling at 03:07:17 between ~200-800Hz, tonal, maybe baleen whale?  Squeaky calls and clicks 03:31:08","Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,5,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,possible baleen whale 07:32:18,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,8,1,,0,3,0,0,0,3,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,10,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,11,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,13,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,16,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,17,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,18,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,19,0,,0,0,0,0,0,0,0,0,0,0,1,0,1,,squeaky calls 19:07:06,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,21,0,,0,0,0,0,0,0,1,1,0,0,,0,1,,"baleen whale call 21:25:32  -- can't confirm whale (JM 20200915), humpback 21:28:22","Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,2/8/2019,22,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/8/2019,23,0,,0,0,0,0,0,0,1,1,0,0,1,0,1,,"humpback 23:07:44, cool whistles ~23:30:09; what's calling 23:31:24?","Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,2/9/2019,0,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,tonal call 00:12:03 logged as whistles but might not be dolphins (~3200 Hz),"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,3,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,4,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,6,1,,0,0,0,1,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,7,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,unk whale 09:26:49 -- too faint to tell (JM 20200915),Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,11,1,,0,1,0,0,0,1,0,1,0,0,,0,1,,unk whale 11:05:52 -- too faint to tell (JM 20200915),"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,12,1,,0,0,0,0,1,1,0,1,0,0,1,0,1,,squeaky calls 12:32:48,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,13,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,14,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,15,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,what's calling 15:26:41??,"Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,16,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,17,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,18,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/9/2019,20,1,,0,1,0,0,1,2,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,21,1,,0,1,0,0,0,1,1,1,0,0,,1,1,500 Hz,humpback 21:12:12,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,22,1,,0,1,0,0,0,1,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/9/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/10/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,squeaky calls 06:23:24,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,8,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,unk whale 14:25:21 ~40Hz -- probably fish (JM 20200915),Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/10/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,possible whale 18:15:05,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/10/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/11/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,6,1,,0,0,0,0,1,1,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible baleen whale call 11:15:58,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,narrow band fish chorus ~250Hz,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/11/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,1,1,,narrow band fish chorus ~250Hz,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/11/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/11/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/11/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/11/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/11/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/12/2019,0,0,,0,0,0,0,0,0,0,0,0,0,1,1,1,500 Hz,what's calling 0:04:31? Downsweeps ~1.5-1 kHz,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/12/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,5,0,,0,0,0,0,0,0,2,0,0,0,,1,1,500 Hz,humpback calls 05:29:40 - 05:31:11,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/12/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/12/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/12/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/12/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/12/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/12/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/13/2019,0,0,,0,0,0,0,0,0,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/13/2019,1,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/13/2019,2,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,"Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,2/13/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 14:05:07,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/13/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,possible whale 20:33:04,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/13/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/13/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/13/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/14/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,5,0,,0,0,0,0,0,0,0,1,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,2/14/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,2/14/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,2/14/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,2/14/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,2/14/2019,23,1,,1,0,0,0,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,2/15/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,squeaky calls 10:27:52,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Friday
+Cod Grounds,2/15/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/15/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/15/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/15/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/15/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/15/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,2/16/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,5,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,6,1,,0,0,0,0,1,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/16/2019,7,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,8,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,10,1,,0,1,0,0,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,14,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,15,1,,0,1,0,1,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,16,1,,0,2,0,0,0,2,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,2/16/2019,19,1,,0,1,0,0,0,1,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/16/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/16/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/16/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/16/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,2/17/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,4,1,,1,0,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,6,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,7,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,8,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,9,1,,0,0,1,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,10,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,11,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,12,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,2/17/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/17/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/17/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/17/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,2/18/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,6,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/18/2019,7,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,11,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,"possible baleen calls 11:23:12, 11:24:52",Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Monday
+Cod Grounds,2/18/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/18/2019,20,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/18/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/18/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/18/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,2/19/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 05:14:36,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,6,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,7,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,8,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,9,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,10,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,12,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,13,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,14,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,15,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,16,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,17,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,18,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,possible whale 18:05:59,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,19,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,2/19/2019,20,0,,0,0,0,0,0,0,0,0,1,0,,1,1,500 Hz,possible blue whale 20:24:04 ** ask Gen,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/19/2019,21,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/19/2019,22,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/19/2019,23,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,2/20/2019,0,0,,0,0,0,0,0,0,0,0,0,0,,1,1,500 Hz,,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/20/2019,1,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,2,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,3,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,4,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,5,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,6,1,,0,1,0,1,0,2,0,0,0,0,,1,1,"500 Hz, 1-2 kHz",,"Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/20/2019,7,1,,0,0,0,1,1,2,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,8,1,,0,0,0,1,0,1,0,1,0,0,,1,1,500 Hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,2/20/2019,9,0,,0,0,0,0,0,0,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,10,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,11,1,,0,1,0,0,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,2/20/2019,12,1,,0,0,0,1,0,1,0,0,0,0,,0,1,,,Snapping Shrimp,Wednesday

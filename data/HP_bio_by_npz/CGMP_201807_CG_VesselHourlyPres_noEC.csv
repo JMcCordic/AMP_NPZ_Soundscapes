@@ -1,0 +1,822 @@
+SiteID,Start.date,Start.hour,PresentTotal,PresenceTime,CPAPresent,TBPresent,ManeuverCPAPres,ManeuverTAPres,TAPresent,VesselCount,HumpbackPresent,DolphinPresent,Baleen,Minke,FishChorusP,SnappingShrimp,Notes,ExtraNotes,Biology,Weekday
+Cod Grounds,7/1/2018,15,1,,0,0,1,0,0,1,0,0,0,0,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,7/1/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/1/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/1/2018,18,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/1/2018,19,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/1/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/1/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/1/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/1/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/2/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/2/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/3/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,11,1,,1,0,0,0,0,1,1,0,0,0,0,1,"far, bathtub visible but faint",,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,hr 19 might also have the same sound as hrs 17 & 18,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/3/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/4/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,11,0,,0,0,0,0,0,0,0,0,0,0,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,7/4/2018,12,0,,0,0,0,0,0,0,0,0,0,0,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,7/4/2018,13,1,,0,1,0,0,0,1,0,0,0,0,0,1,,,Snapping Shrimp,Wednesday
+Cod Grounds,7/4/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,16,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/4/2018,23,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/5/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,continuation of vessel found in 2300,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,6,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,7,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,9,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,10,1,,0,2,0,1,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,11,1,,0,2,0,2,0,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,12,1,,0,0,1,0,0,1,1,0,0,0,0,1,close-ish passage,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,18,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/5/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/6/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,2,1,,0,1,0,0,0,1,1,0,0,0,0,1,just 2 lines in the spectrogram,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,7,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,10,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,possible continuation of vessel at 1000,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,16,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/6/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/7/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,6,1,,0,1,1,0,0,2,1,0,0,0,0,1,looks like this may be a serious candidate for future analysis of proximity,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,7,1,,0,0,0,1,1,2,1,0,0,0,0,1,small boat dropping something into the water,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,majority of the vessel noise occurred in 0700 hr,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,9,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,10,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,15,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/7/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/8/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,2,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,3,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,4,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,10,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,11,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,12,1,,0,1,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,13,1,,0,1,0,0,0,1,0,0,0,0,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,7/8/2018,14,1,,0,0,2,0,0,2,1,0,0,0,0,1,small boat very close,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,small boat very close,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,22,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/8/2018,23,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/9/2018,0,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,1,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,2,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,4,1,,0,1,0,0,0,1,1,0,0,0,0,1,very faint distant vessel,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,10,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,11,1,,1,0,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,large vessel passing close,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,501 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,502 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,503 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,504 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/9/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,"weird bump sound at 23:15, 0 - 100 hz",,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/10/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,6,0,,0,0,0,0,0,0,0,0,0,0,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,7/10/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,8,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,11,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,13:01:43 weird sound,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,15,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,16,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,1 khz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/10/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/11/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,3,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,4,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,9,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,10,0,,0,0,0,0,0,0,1,1,0,1,0,1,Dwarf minke whale,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,11,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,12,1,,1,0,0,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,14,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,15,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,16,1,,0,0,0,1,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,17,1,,0,2,0,0,0,2,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,18,1,,1,0,0,0,0,1,0,0,0,0,1,1,1 khz,"fish chorus too loud to see whale, close approach by small vessel (no maneuvering)","Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,21,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,22,1,,0,1,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/11/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/12/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,1,1,,0,1,0,0,0,1,0,0,0,0,0,1,,,Snapping Shrimp,Thursday
+Cod Grounds,7/12/2018,2,1,,0,0,0,0,1,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,6,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,7,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,8,1,,1,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,9,1,,0,3,0,0,1,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,10,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,11,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,12,1,,0,3,0,0,0,3,1,0,0,0,0,1,weird clicks at 12:15:39,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,14,1,,0,1,1,0,0,2,1,0,0,0,0,1,14:01:17 ????????????????,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,21,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/12/2018,23,1,,0,1,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,7/13/2018,0,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,1,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,2,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,3,1,,0,1,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,4,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,5,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,6,1,,0,1,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,7,1,,0,0,1,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,10,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,14,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,19,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,20,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,21,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,22,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/13/2018,23,1,,0,1,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,7/14/2018,0,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,1,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,2,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,3,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,4,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,7,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,10,0,,0,0,0,0,0,0,0,0,0,0,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,7/14/2018,11,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,12,0,,0,0,0,0,0,0,0,0,0,0,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,7/14/2018,13,1,,0,1,0,0,0,1,1,0,0,0,0,1,13:42?,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,15,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,16,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,22,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/14/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/15/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,3,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,4,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,6,1,,0,1,0,1,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,7,1,,0,3,0,0,1,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,8,1,,0,1,0,1,1,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,9,1,,0,3,1,1,0,5,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,10,1,,0,4,0,0,0,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,11,1,,0,2,0,1,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,12,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,13,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,14,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,16,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,18,1,,0,1,0,0,0,1,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,19,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,21,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,22,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/15/2018,23,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/16/2018,0,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,1,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,2,0,,0,0,0,0,0,0,1,1,0,0,0,1,check 2:21:20 with AID for dolphin,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,6,1,,0,1,0,0,0,1,1,0,0,0,0,1,super faint boat,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,7,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,8,1,,0,0,1,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,13,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,14,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,15,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,19,1,,0,1,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,21,1,,0,1,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,22,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/16/2018,23,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/17/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,2,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,6,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,7,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,8,1,,0,1,0,1,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,9,1,,0,1,0,1,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,10,1,,0,0,0,2,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,11,1,,0,0,0,1,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,12,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,13,1,,0,0,0,1,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,14,1,,0,0,1,0,0,1,1,0,0,0,0,1,2 small boats transiting,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,18,1,,0,1,0,0,0,1,1,0,0,0,0,1,super faint boat,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,21,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/17/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/18/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,1,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,6,1,,0,1,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,9,1,,1,0,0,0,2,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,10,1,,0,2,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,11,1,,0,0,0,1,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,12,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,13,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,14,1,,0,0,0,1,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,15,1,,1,0,0,2,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,16,1,,0,1,1,1,0,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,18,1,,1,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,21,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/18/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/19/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,1,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,2,1,,0,0,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,6,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,7,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,8,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,9,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,10,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,11,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,12,1,,0,3,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,13,1,,1,1,0,0,0,2,1,0,0,0,0,1,13:19 ???? Sounds like an underwater chainsaw,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,14,1,,0,0,0,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,15,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,18,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/19/2018,23,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/20/2018,0,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,9,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/20/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/21/2018,0,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,1,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,2,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,3,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,4,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,8,1,,0,1,0,0,0,1,0,0,0,0,0,1,super faint boat,,Snapping Shrimp,Saturday
+Cod Grounds,7/21/2018,9,1,,0,0,1,0,0,1,0,0,0,0,0,1,,,Snapping Shrimp,Saturday
+Cod Grounds,7/21/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,11,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,13,1,,0,1,0,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,14,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,15,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,16,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,21,1,,0,1,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/21/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/22/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,2,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,6,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,7,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,8,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,9,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,10,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,11,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,14,1,,0,4,0,0,0,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,15,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,17,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,21,1,,0,1,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,22,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/22/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/23/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,3,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,4,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,7,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,8,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,9,1,,1,0,0,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,10,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,11,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,12,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,13,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,14,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,15,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,16,1,,0,1,0,1,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,17,1,,1,0,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,19,1,,1,0,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/23/2018,23,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Monday
+Cod Grounds,7/24/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,2,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,6,1,,0,2,0,0,1,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,7,1,,2,1,0,1,0,5,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,8,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,9,1,,0,0,0,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,10,1,,0,1,0,1,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,12,1,,0,1,0,0,0,1,1,0,0,0,0,1,"2 other possibilites before this one, see notes",,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,13,1,,0,1,0,0,0,1,1,0,0,0,0,1,faint,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,15,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/24/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/25/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,7,1,,0,2,0,0,0,2,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,8,1,,0,1,0,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,9,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,10,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,11,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,12,1,,0,5,0,0,0,5,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,14,1,,0,1,0,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,15,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,16,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,17,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,20,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/25/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,7/26/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,2,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,3,1,,0,0,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,4,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,5,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,6,1,,0,2,0,0,1,3,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,7,1,,0,2,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,8,1,,0,0,0,0,0,1,1,0,0,0,0,1,super faint boat,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,9,1,,1,1,0,0,0,2,1,0,0,0,0,1,good CPA,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,10,1,,1,3,0,1,0,5,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,11,1,,1,1,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,12,1,,0,0,0,1,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,13,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,15,1,,0,2,0,1,1,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,16,1,,0,5,0,1,0,6,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,17,1,,0,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,19,1,,0,1,0,0,1,2,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,20,1,,0,1,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,22,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/26/2018,23,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Thursday
+Cod Grounds,7/27/2018,0,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,1,1,,0,2,0,0,0,2,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,4,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,5,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,6,1,,0,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,7,1,,0,0,0,1,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,8,1,,0,4,0,0,0,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,9,1,,0,2,0,0,0,2,1,0,0,0,0,1,super faint boat,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,10,1,,0,2,0,1,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,11,1,,1,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,12,1,,0,2,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,13,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,19,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,20,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,22,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/27/2018,23,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Friday
+Cod Grounds,7/28/2018,0,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,4,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,5,1,,1,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,6,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,7,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,8,1,,0,2,0,1,0,4,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,9,1,,0,2,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,10,1,,1,1,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,11,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,12,1,,1,2,0,0,0,3,1,0,0,0,0,1,nice CPA,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,diver in the water?,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,14,1,,0,1,0,0,1,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,15,1,,0,0,0,2,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,16,1,,0,1,0,1,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,17,1,,0,0,0,1,0,2,1,0,0,0,1,1,"500 hz, 1-1.5 khz",,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,18,1,,0,0,0,1,0,1,1,0,0,0,1,1,"500 hz, 1-1.5 khz",,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,19,1,,0,0,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,21,1,,0,1,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,22,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,7/28/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,23:53:03??,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,7/29/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,6,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,11,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,14,0,,0,0,0,0,0,0,0,0,0,0,0,1,,,Snapping Shrimp,Sunday
+Cod Grounds,7/29/2018,15,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,16,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,17,0,,0,0,0,0,0,0,0,1,0,0,1,1,"500 hz, 1-1.5 khz",,"Delphinid spp., Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,18,0,,0,0,0,0,0,0,0,1,0,0,1,1,500 hz,,"Delphinid spp., Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,22,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/29/2018,23,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Sunday
+Cod Grounds,7/30/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,7,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,14,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,15,1,,0,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,16,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,17,1,,0,1,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,20,1,,0,1,0,0,0,1,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,22,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/30/2018,23,0,,0,0,0,0,0,0,1,1,0,0,1,1,500 hz,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Monday
+Cod Grounds,7/31/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,1,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,2,1,,0,1,0,0,0,1,1,0,0,0,0,1,super faint boat,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,5,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,7,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,8,1,,0,3,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,9,1,,0,3,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,10,1,,0,2,0,0,0,2,1,0,0,0,0,1,distant small boat,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,11,1,,0,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,12,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,13,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,17,0,,0,0,0,0,0,0,0,0,0,0,0,1,,,Snapping Shrimp,Tuesday
+Cod Grounds,7/31/2018,18,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,19,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,20,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,21,0,,0,0,0,0,0,0,1,0,0,0,1,1,500 hz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,7/31/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Tuesday
+Cod Grounds,8/1/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,4,0,,0,0,0,0,0,0,1,1,0,1,0,1,Dwarf minke whale (s-w sound twice),,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,5,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,6,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,7,1,,0,3,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,8,1,,0,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,9,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,11,1,,0,1,0,1,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,12,1,,0,1,0,1,1,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,13,1,,0,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,14,1,,0,1,1,2,0,4,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,15,1,,0,0,0,2,1,3,1,1,0,0,0,1,small boat,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,16,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,17,1,,0,1,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,18,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,21,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,22,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Wednesday
+Cod Grounds,8/1/2018,23,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Wednesday
+Cod Grounds,8/2/2018,0,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,2,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,3,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,6,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,7,1,,0,2,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,8,1,,0,2,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,9,1,,0,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,10,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,11,1,,0,0,0,0,1,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,13,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,17,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,20,1,,1,0,0,0,0,1,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,21,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,22,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Thursday
+Cod Grounds,8/2/2018,23,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Thursday
+Cod Grounds,8/3/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,4,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,5,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,8,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,9,1,,0,1,0,1,0,2,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,10,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,12,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,13,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,14,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,15,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,16,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,17,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,18,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,19,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,21,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,22,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Friday
+Cod Grounds,8/3/2018,23,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Friday
+Cod Grounds,8/4/2018,0,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,1,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,2,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,3,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,4,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,5,1,,0,0,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,6,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,7,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,8,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,9,1,,0,0,0,1,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,10,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,11,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,12,1,,0,1,0,0,0,1,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,13,1,,0,3,0,0,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,14,1,,0,2,0,1,0,3,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,15,1,,0,1,0,0,0,2,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,16,1,,0,1,1,1,0,3,1,0,0,0,0,1,small boat changing speeds,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,17,1,,0,0,0,0,0,1,1,0,0,0,1,1,1-1.5 khz,,"Baleen Whales, Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,18,1,,0,1,0,0,0,1,1,1,0,0,1,1,,,"Baleen Whales, Delphinid spp., Fish Chorus, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,19,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,20,0,,0,0,0,0,0,0,1,0,0,0,0,1,,,"Baleen Whales, Snapping Shrimp",Saturday
+Cod Grounds,8/4/2018,21,0,,0,0,0,0,0,0,1,1,0,0,0,1,,,"Baleen Whales, Delphinid spp., Snapping Shrimp",Saturday
