@@ -227,9 +227,22 @@ weekly_pres_data <- nmdsScores_all |>
 ## Evaluate correlation between ordination and environmental data
 env_test <- envfit(nmds_all, 
                   weekly_pres_data, 
-                  perm = 999, na.rm = TRUE)
+                  permutations = 999, 
+                  na.rm = TRUE)
 env_test
 envScores <- as.data.frame(scores(env_test, "vectors"))
+
+# scale vector lengths to NMDS scores rather than "unit" length
+scaled_env_scores <- as.data.frame(scores(env_test, 
+                            display = "vectors", 
+                            arrow.mul = 0.1))
+
+# pull out sig scores only
+sig_scaled_scores <- scaled_env_scores |>
+  rownames_to_column(var = "source") |>
+  filter(source == "isoweek_UTC" | source == "fish_c_pres" | source == "dol_pres")
+
+
 
 envCent_network = as.data.frame(scores(env_test, "factors")) |>
   rownames_to_column(var = "cent_label") |>
@@ -251,17 +264,31 @@ ggplot(data = nmdsScores_all,
                 color = npz_id),
             vjust = -1, 
             hjust = 1.0)+
-  geom_segment(data =envScores,
+  geom_segment(data =scaled_env_scores,
                aes(x=0,
                    xend=NMDS1,
                    y=0,
                    yend=NMDS2),
                arrow = arrow(length = unit(0.5, "cm")),
-               colour="black")+
-  geom_text(data = envScores,
+               colour="black",
+               alpha = 0.5)+
+  geom_text(data = scaled_env_scores,
             aes(x = NMDS1, 
                 y = NMDS2,
-                label = rownames(envScores)))+
+                label = rownames(scaled_env_scores)),
+            alpha = 0.5)+
+   geom_segment(data =sig_scaled_scores,
+               aes(x=0,
+                   xend=NMDS1,
+                   y=0,
+                   yend=NMDS2),
+               arrow = arrow(length = unit(0.5, "cm")),
+               colour="black",
+               size = 1.5)+
+  geom_text(data = sig_scaled_scores,
+            aes(x = NMDS1, 
+                y = NMDS2,
+                label = source))+
   # add network centroids from envfit
   # geom_point(data = envCent_network, 
   #            aes(x = NMDS1, y = NMDS2),
@@ -281,9 +308,11 @@ ggplot(data = nmdsScores_all,
   # stat_ellipse(aes(color = npz_id),
   #              data = nmdsScores_all,
   #              size = 1,level = .95) + #95% CI ellipse (assumed multivariate normal)
-  labs(caption = "stress = 0.0405")
+  labs(caption = "stress = 0.0405 \n sig. vectors (p<0.05) in bold")
 # 
 
+ggsave(paste0("figs/", "NMDS_week_all_presence_vectors.png"), width=12, height=8,
+       units="in", dpi=300)
 
 ```
 
