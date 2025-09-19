@@ -38,6 +38,7 @@ all_dep_metadata = read_csv("data/Df_analysis/All_deps_weekly_PSD.csv")
 # get grouping info from original PSD data
 all_dep_labels <- all_dep_metadata |>
   select(network, npz_id, Dep_ID, isoweek_UTC, effort_days) |>
+  mutate(Dep_ID = str_replace(Dep_ID, "PARKSAUSTRALIA_","")) |>
   # use same filter for effort to only keep full weeks
   filter(effort_days == 7,
          # only keep MMP and SWC from Southwest network
@@ -205,6 +206,162 @@ ggplot(data = nmdsScores_all,
 # ggsave(paste0("figs/", "NMDS_week_all.png"), width=12, height=8,
 #        units="in", dpi=300)
 ```
+
+
+
+### Look into weekly presence data
+
+```{r adding presence}
+
+hp_week_prop <- read_csv("data/Df_analysis/prop_presence_by_week.csv") |>
+  rename(isoweek_UTC = iso_week_UTC)
+
+# want to end up with same subset of deployments/weeks included in NMDS
+
+weekly_pres_data <- nmdsScores_all |>
+  # left join with nmds to subset to common weeks and force same order
+  left_join(hp_week_prop, by = c("Dep_ID", "isoweek_UTC")) |>
+  # only keep data columns
+  select(npz_id, network, isoweek_UTC, all_of(ends_with("_pres")))
+
+## Evaluate correlation between ordination and environmental data
+env_test <- envfit(nmds_all, 
+                  weekly_pres_data, 
+                  perm = 999, na.rm = TRUE)
+env_test
+envScores <- as.data.frame(scores(env_test, "vectors"))
+
+envCent_network = as.data.frame(scores(env_test, "factors")) |>
+  rownames_to_column(var = "cent_label") |>
+  filter(grepl("network",cent_label))
+
+
+# plot vectors onto NMDS
+
+
+ggplot(data = nmdsScores_all,
+       aes(x = NMDS1, y = NMDS2)
+       )+ 
+  theme_bw()+
+  geom_point(aes(color = npz_id,
+           shape = network), 
+           size = 4,
+       alpha = 0.5)+
+  geom_text(aes(label = week_fac,
+                color = npz_id),
+            vjust = -1, 
+            hjust = 1.0)+
+  geom_segment(data =envScores,
+               aes(x=0,
+                   xend=NMDS1,
+                   y=0,
+                   yend=NMDS2),
+               arrow = arrow(length = unit(0.5, "cm")),
+               colour="black")+
+  geom_text(data = envScores,
+            aes(x = NMDS1, 
+                y = NMDS2,
+                label = rownames(envScores)))+
+  # add network centroids from envfit
+  # geom_point(data = envCent_network, 
+  #            aes(x = NMDS1, y = NMDS2),
+  #            size = 3)+
+  # geom_text(data=envCent_network,
+  #           aes(x=NMDS1,
+  #               y=NMDS2,
+  #               label=cent_label),
+            # size=4)+
+  # # add network ellipses from NMDS
+  # stat_ellipse(data = nmdsScores_all,
+  #              aes(group = network),
+  #              linetype = "dotted",
+  #              size = 1,
+  #              level = 0.95)+
+  # # add 
+  # stat_ellipse(aes(color = npz_id),
+  #              data = nmdsScores_all,
+  #              size = 1,level = .95) + #95% CI ellipse (assumed multivariate normal)
+  labs(caption = "stress = 0.0405")
+# 
+
+
+```
+
+
+
+# clustering
+
+```{r cluster}
+sdf_agnes = agnes(dissim_dist_all, diss = T, method = "ward")
+plot(sdf_agnes)
+summary(sdf_agnes)
+
+sdf_agnes_cut <- cutree(sdf_agnes, k = 5)
+nmdsScores_all$cluster = factor(sdf_agnes_cut)
+
+
+# plot NMDS with clusters
+
+
+ggplot(data = nmdsScores_all,
+       aes(x = NMDS1, y = NMDS2)
+       )+ 
+  theme_bw()+
+  geom_point(aes(color = npz_id,
+           shape = network), 
+           size = 4,
+       alpha = 0.5)+
+  geom_text(aes(label = cluster),
+            vjust = -1, 
+            hjust = 1.0)+
+  # geom_segment(data =envScores,
+  #              aes(x=0,
+  #                  xend=NMDS1,
+  #                  y=0,
+  #                  yend=NMDS2),
+  #              arrow = arrow(length = unit(0.5, "cm")),
+  #              colour="black")+
+  # # add network centroids from envfit
+  # geom_point(data = envCent_network, 
+  #            aes(x = NMDS1, y = NMDS2),
+  #            size = 3)+
+  # geom_text(data=envCent_network,
+  #           aes(x=NMDS1,
+  #               y=NMDS2,
+  #               label=cent_label),
+  #           size=4)+
+  # add cluster ellipses
+  stat_ellipse(data = nmdsScores_all,
+               aes(group = cluster),
+               linetype = "dotted",
+               size = 1,
+               level = 0.95)+
+    labs(caption = "stress = 0.0405 \n labels = clusters 1-5")
+
+# ggsave(paste0("figs/", "NMDS_week_all_dissim_clusters.png"), width=12, height=8,
+#        units="in", dpi=300)
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### NMDS by network

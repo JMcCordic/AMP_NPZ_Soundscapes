@@ -24,6 +24,8 @@ psd_og <- read_csv("data/Df_analysis/All_deps_weekly_PSD.csv")
 psd_wide <- psd_og |>
   # only keep data from full weeks
   filter(effort_days == 7)|>
+  # change to simpler deployment names
+  mutate(Dep_ID = str_replace(Dep_ID, "PARKSAUSTRALIA_", "")) |>
   # drop quantiles not using
   select(Dep_ID, isoweek_UTC, frequency, qmed)|>
   # new col names = Deployment_month_effortdays
@@ -121,8 +123,8 @@ dissim_calc <- function(
 
 # test function in a pipe
 psd_wide |>
-  summarize(dissim = dissim_calc(spec1 = PARKSAUSTRALIA_CGMP_201807_CG_7_30, 
-              spec2 = PARKSAUSTRALIA_SWC_202201_SWS_2_28, 
+  summarize(dissim = dissim_calc(spec1 = CGMP_201807_CG_30, 
+              spec2 = SWC_202201_SWS_4, 
               freqs = frequency))
 
 # ------------------------------------------------------

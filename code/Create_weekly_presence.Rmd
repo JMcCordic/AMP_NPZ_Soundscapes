@@ -1,0 +1,97 @@
+---
+title: "Compile_weekly_data"
+author: "Jessica McCordic"
+date: "2025-09-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load lib}
+
+library(tidyverse)
+
+
+```
+
+
+
+```{r load data}
+
+# Assign user-defined inputs ----------------------------------------------
+
+# Since server folders are in a standard structure, use parent folder to get list of all deployments
+dep_names <- list.dirs(tk_choose.dir(caption = "Select parent dir for all deployment folders"), recursive = FALSE, full.names = FALSE)
+
+# select the deployment(s) to be plotted
+dep_list <- dlg_list(title = "Select deployments to plot", choices = dep_names, multiple = TRUE)$res |>
+  str_sub(start = 16)
+
+# apply getDeploymentInfo() from AMP_pkgs_funs.R to each deployment
+#   prompts user for site name, start/end date, and time zones
+dep_info <- dep_list |>
+  # map(~getDeploymentInfo(.)) |>
+  set_names(dep_list)
+
+
+# Load data ---------------------------------------------------------------
+
+# For each deployment in the list, load in hourly presence
+hp_og <- dep_info |>
+  map(~read_csv(choose.files(caption = paste0({.}, " Hourly Presence sheet .csv"))))|>
+  # use imap() to get info based on index of each iteration
+  # in this case, we want the name of the list element, designated as ".y"
+  imap(~mutate(., Dep_ID = .y))
+
+
+```
+
+
+```{r reshape and merge hp data}
+
+# making new_cols placeholders to add into original df if they don't exist
+new_cols <- c("bal_pres" = 0 , "hbw_pres" = 0 , "fish_c_pres" = 0, 
+              "dol_pres" = 0 , "mnk_pres" = 0, 
+              "spwh_pres" = 0, "ves_pres" = 0)
+hp_allcols <- hp_og |>
+  # add columns if they don't exist
+  map(~add_column(., !!!new_cols[!names(new_cols) %in% names(.)])
+  ) |>
+  bind_rows()
+
+```
+
+
+
+```{r weekly proportions}
+
+hp_week_prop <- hp_allcols |>
+  mutate(iso_week_UTC = isoweek(UTC),
+         date_UTC = date(UTC),
+         # replace all NA's with 0's in presence cols
+         across(ends_with("_pres"), ~replace_na(., 0))) |>
+  # group to week level
+  group_by(Dep_ID, iso_week_UTC) |>
+  summarise(n_days = n_distinct(date_UTC),
+            n_hours = n(),
+            # calculate prop hours present per source per week
+            bal_pres = sum(bal_pres)/n_hours,
+            hbw_pres = sum(hbw_pres)/n_hours, 
+            fish_c_pres = sum(fish_c_pres)/n_hours,
+            dol_pres = sum(dol_pres)/n_hours,
+            ves_pres = sum(ves_pres)/n_hours,
+            mnk_pres = sum(mnk_pres)/n_hours,
+            spwh_pres = sum(spwh_pres)/n_hours
+    ) |>
+  filter(n_days == 7) # only keep full weeks
+
+```
+
+```{r export table}
+
+write_csv(hp_week_prop,
+          "output/prop_presence_by_week.csv")
+
+```
