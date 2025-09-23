@@ -21,6 +21,7 @@ library(ggplot2)
 library(cluster)
 library(RColorBrewer)
 library(here)
+library(PAMscapes)
 
 ```
 
@@ -235,7 +236,7 @@ envScores <- as.data.frame(scores(env_test, "vectors"))
 # scale vector lengths to NMDS scores rather than "unit" length
 scaled_env_scores <- as.data.frame(scores(env_test, 
                             display = "vectors", 
-                            arrow.mul = 0.1))
+                            arrow.mul = ordiArrowMul(env_test)))
 
 # pull out sig scores only
 sig_scaled_scores <- scaled_env_scores |>
@@ -328,9 +329,27 @@ summary(sdf_agnes)
 sdf_agnes_cut <- cutree(sdf_agnes, k = 5)
 nmdsScores_all$cluster = factor(sdf_agnes_cut)
 
+# plot clusters
+library(ggdendro)
+
+# format cluster model for ggplot
+dendr <- dendro_data(sdf_agnes)
+dendr[["labels"]] <- merge(dendr[["labels"]], nmdsScores_all, by.x="label", by.y = "dep")
+
+
+ggplot() + 
+  geom_segment(data=segment(dendr), 
+               aes(x=x, 
+                   y=y, 
+                   xend=xend,
+                   yend=yend)) + 
+  geom_text(data=label(dendr), 
+            aes(x, y, label=label, hjust=0.5, color=cluster),
+            angle = 270, size = 3)
+ggsave(paste0("figs/", "AGNES_all_clusters.png"), width=12, height=12,
+       units="in", dpi=300)
 
 # plot NMDS with clusters
-
 
 ggplot(data = nmdsScores_all,
        aes(x = NMDS1, y = NMDS2)
@@ -374,7 +393,31 @@ ggplot(data = nmdsScores_all,
 
 ```
 
+```{r psd plots by cluster}
 
+# join cluster ID to weekly PSDs
+
+psd_week_cluster <- all_dep_metadata |>
+  mutate(dep = paste0(Dep_ID, "_", isoweek_UTC),
+         dep = str_replace(dep, "PARKSAUSTRALIA_","")) |>
+  left_join(nmdsScores_all, 
+            by = c("dep"),
+            keep = FALSE) |>
+  filter(!is.na(cluster))
+
+ggplot(data = psd_week_cluster, 
+       aes(x = frequency, 
+           y = qmed)) +
+  geom_line(aes(group = dep,
+                color = isoweek_UTC.x)) +
+  scale_x_log10() +
+  facet_grid(cols = vars(npz_id.x),
+             rows = vars(cluster))
+
+ggsave(paste0("figs/", "PSD_by_clusters.png"), width=12, height=8,
+       units="in", dpi=300)  
+
+```
 
 
 
