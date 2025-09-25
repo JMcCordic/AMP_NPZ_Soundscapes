@@ -416,7 +416,7 @@ ggplot(
 
 # join cluster ID to weekly PSDs
 
-psd_week_cluster <- all_dep_metadata |>
+psd_week_cluster <- all_dep_psd |>
   mutate(dep = paste0(Dep_ID, "_", isoweek_UTC),
          dep = str_replace(dep, "PARKSAUSTRALIA_","")) |>
   left_join(nmdsScores_all, 
@@ -427,14 +427,13 @@ psd_week_cluster <- all_dep_metadata |>
 ggplot(data = psd_week_cluster, 
        aes(x = frequency, 
            y = qmed)) +
-  geom_line(aes(group = dep,
-                color = isoweek_UTC.x)) +
+  geom_line(aes(group = interaction(cluster,dep),
+                color = cluster)) +
   scale_x_log10() +
-  facet_grid(cols = vars(npz_id.x),
-             rows = vars(cluster))
+  scale_color_viridis_d()
 
-ggsave(paste0("figs/", "PSD_by_clusters.png"), width=12, height=8,
-       units="in", dpi=300)  
+# ggsave(paste0("figs/", "PSD_by_clusters.png"), width=12, height=8,
+#        units="in", dpi=300)  
 
 ```
 
