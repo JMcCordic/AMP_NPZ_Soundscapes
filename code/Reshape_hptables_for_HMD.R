@@ -127,7 +127,7 @@ hp_new <- hp_data |>
     # dol_pres = ifelse(Dolphin > 0, 1, 0),
     dol_pres = ifelse(dol_w > 0, 1, 0),
     # mnk_pres = ifelse(Mid_baleen > 0, 1, 0),
-    mnk_pres = ifelse(minke_sw > 0, 1, 0),
+    # mnk_pres = ifelse(minke_sw > 0, 1, 0),
     # spwh_pres = rowSums(across(pm_:Spermwhale_), na.rm = TRUE),
     # spwh_pres = ifelse(pm_frg > 0, 1, 0),
     # Total_Vessels = rowSums(across(c(CPA, CPA_M,TA,TA_M,TB, TRANSIT, M)), na.rm=TRUE),

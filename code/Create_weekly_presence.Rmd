@@ -12,7 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r load lib}
 
 library(tidyverse)
-
+library(tcltk2)
+library(svDialogs)
 
 ```
 
@@ -25,14 +26,12 @@ library(tidyverse)
 # Since server folders are in a standard structure, use parent folder to get list of all deployments
 dep_names <- list.dirs(tk_choose.dir(caption = "Select parent dir for all deployment folders"), recursive = FALSE, full.names = FALSE)
 
-# select the deployment(s) to be plotted
+# select the deployment(s) to summarize
 dep_list <- dlg_list(title = "Select deployments to plot", choices = dep_names, multiple = TRUE)$res |>
   str_sub(start = 16)
 
-# apply getDeploymentInfo() from AMP_pkgs_funs.R to each deployment
-#   prompts user for site name, start/end date, and time zones
+# set deployment names
 dep_info <- dep_list |>
-  # map(~getDeploymentInfo(.)) |>
   set_names(dep_list)
 
 
@@ -65,7 +64,7 @@ hp_allcols <- hp_og |>
 
 
 
-```{r weekly proportions}
+```{r weekly presence}
 
 hp_week_prop <- hp_allcols |>
   mutate(iso_week_UTC = isoweek(UTC),
@@ -76,6 +75,14 @@ hp_week_prop <- hp_allcols |>
   group_by(Dep_ID, iso_week_UTC) |>
   summarise(n_days = n_distinct(date_UTC),
             n_hours = n(),
+            # caculate total counts per source by week
+            bal_count = sum(bal_pres),
+            hbw_count = sum(hbw_pres), 
+            fish_c_count = sum(fish_c_pres),
+            dol_count = sum(dol_pres),
+            ves_count = sum(ves_pres),
+            mnk_count = sum(mnk_pres),
+            spwh_count = sum(spwh_pres),
             # calculate prop hours present per source per week
             bal_pres = sum(bal_pres)/n_hours,
             hbw_pres = sum(hbw_pres)/n_hours, 
@@ -89,9 +96,98 @@ hp_week_prop <- hp_allcols |>
 
 ```
 
+
+```{r light regime by week and light regime}
+
+
+
+hp_allcols_light <- hp_allcols |>
+  # add columns for grouping
+  mutate(iso_week_UTC = isoweek(UTC),
+         date_UTC = date(UTC),
+         # replace all NA's with 0's in presence cols
+         across(ends_with("_pres"), ~replace_na(., 0))) |>
+  
+  # get light regime labels
+  # get sun elevation by lat/lon
+  
+  # add in lat/lon by site
+  mutate(
+    Lat_DD = case_when(
+      grepl("_CG",Dep_ID) ~ -31.681,
+      grepl("_DNE",Dep_ID) ~ -20.329,
+      grepl("_MRE",Dep_ID) ~ -32.584,
+      grepl("_NGN",Dep_ID) ~ -22.705,
+      grepl("_WP",Dep_ID) ~ -29.698,
+      grepl("_SWS",Dep_ID) ~ -33.675,
+      grepl("_TRW",Dep_ID) ~ -31.711
+    ),
+    Lon_DD = case_when(
+      grepl("_CG",Dep_ID) ~ 152.91,
+      grepl("_DNE",Dep_ID) ~ 117.09,
+      grepl("_MRE",Dep_ID) ~ 132.63,
+      grepl("_NGN",Dep_ID) ~ 113.55,
+      grepl("_WP",Dep_ID) ~ 153.40,
+      grepl("_SWS",Dep_ID) ~ 114.58,
+      grepl("_TRW",Dep_ID) ~ 115.58
+    )
+  ) |>
+  
+  rowwise() |> 
+  # assign categories based on sun elev
+  mutate(sun_elev_rad = suncalc::getSunlightPosition(UTC, 
+                                                     Lat_DD,
+                                                     Lon_DD,
+                                                     keep = "altitude")$altitude,
+         sun_elev_deg = (sun_elev_rad*180)/(pi),
+         light_reg = case_when(
+           # if sun elev is positive, daytime
+           sun_elev_deg > 0 ~ "day",
+           # if sun elevation is less than -12, nighttime
+           sun_elev_deg < -12 ~ "night",
+           # if between 0 and -12, "twilight"
+           sun_elev_deg <= 0 & sun_elev_deg >= -12 ~ "twilight"
+         )
+  ) 
+  
+hp_weeklight_prop <- hp_allcols_light |>
+  # group by week + light regime 
+  group_by(Dep_ID, iso_week_UTC, light_reg) |>
+  summarise(n_days = n_distinct(date_UTC),
+            n_hours = n(),
+            # caculate total counts per source by week
+            bal_count = sum(bal_pres),
+            hbw_count = sum(hbw_pres), 
+            fish_c_count = sum(fish_c_pres),
+            dol_count = sum(dol_pres),
+            ves_count = sum(ves_pres),
+            mnk_count = sum(mnk_pres),
+            spwh_count = sum(spwh_pres),
+            # calculate prop hours present per source per week
+            bal_pres = sum(bal_pres)/n_hours,
+            hbw_pres = sum(hbw_pres)/n_hours, 
+            fish_c_pres = sum(fish_c_pres)/n_hours,
+            dol_pres = sum(dol_pres)/n_hours,
+            ves_pres = sum(ves_pres)/n_hours,
+            mnk_pres = sum(mnk_pres)/n_hours,
+            spwh_pres = sum(spwh_pres)/n_hours
+    ) |>
+  filter(n_days == 7) # only keep full weeks
+
+```
+
+
+
+
+
+
+
 ```{r export table}
 
 write_csv(hp_week_prop,
-          "output/prop_presence_by_week.csv")
+          "output/allsources_by_week.csv")
+
+write_csv(hp_weeklight_prop, 
+          "output/allsources_by_week_diel.csv")
 
 ```

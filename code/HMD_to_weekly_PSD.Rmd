@@ -17,6 +17,7 @@ Load libraries
 library(PAMscapes)
 library(PAMmisc)
 library(tidyverse)
+library(suncalc)
 
 ```
 
@@ -44,7 +45,8 @@ Clean up table a bit and add columns for grouping
 
 ```{r add columns}
 
-hmd_data_week <- all_hmd_og |>
+# reshape and add columns
+hmd_data <- all_hmd_og |>
   # remove NA values from data gaps or start/end of deployment
   filter(!is.na(HMD_10)) |> 
   # add grouping variables for dates
@@ -74,6 +76,25 @@ hmd_data_week <- all_hmd_og |>
     ),
     network = fct(network),
     network = fct_relevel(network, c("Temperate East","Northwest"))) |>
+  rowwise() |> 
+  # assign categories based on sun elev
+  mutate(sun_elev_rad = suncalc::getSunlightPosition(UTC, 
+                                                     Latitude,
+                                                     Longitude,
+                                                     keep = "altitude")$altitude,
+         sun_elev_deg = (sun_elev_rad*180)/(pi),
+         light_reg = case_when(
+           # if sun elev is positive, daytime
+           sun_elev_deg > 0 ~ "day",
+           # if sun elevation is less than -12, nighttime
+           sun_elev_deg < -12 ~ "night",
+           # if between 0 and -12, "twilight"
+           sun_elev_deg <= 0 & sun_elev_deg >= -12 ~ "twilight"
+         )
+  ) 
+
+# group to week level
+hmd_data_week <- hmd_data |>
   
   # group to day level per deployment
   group_by(Dep_ID, year_UTC, isoweek_UTC, day_UTC) |>
@@ -84,8 +105,8 @@ hmd_data_week <- all_hmd_og |>
   ungroup() |>
   group_by(network, npz_id, Dep_ID, isoweek_UTC) |>
   
-  # count days of effort per month
-  mutate(effort_days = n_distinct(day_UTC))
+  # only keep full weeks
+  filter(n_distinct(day_UTC)==7)
 
 ```
 
@@ -95,8 +116,8 @@ Get median PSD per week per deployment
 ```{r median PSD}
 
 psd_week <- hmd_data_week |>
-  # group by week, include effort_days in grouping so it's retained in final df
-  group_by(network, npz_id, Dep_ID, isoweek_UTC, effort_days) |>  
+  # group by week
+  group_by(network, npz_id, Dep_ID, isoweek_UTC) |>  
   # use plotPSD with returnData = TRUE to get values of monthly PSDs
   # use group_modify to calculate per group
   group_modify(~plotPSD((.), 
@@ -105,11 +126,34 @@ psd_week <- hmd_data_week |>
                         returnData = TRUE))
 
 
-write_csv(psd_week, "data/Df_analysis/All_deps_weekly_PSD.csv")
+write_csv(psd_week, "output/All_deps_weekly_PSD.csv")
 
 
 
 ```
 
+
+
+
+Get median PSD per diel period per week per deployment
+
+```{r median PSD}
+
+psd_week_light <- hmd_data_weeklight |>
+  # group by week, include effort_days in grouping so it's retained in final df
+  group_by(network, npz_id, Dep_ID, isoweek_UTC, light_reg) |>  
+  # use plotPSD with returnData = TRUE to get values 
+  # use group_modify to calculate per group
+  group_modify(~plotPSD((.), 
+                        style = "quantile", 
+                        q = c(0.1, 0.5, 0.9), 
+                        returnData = TRUE))
+
+
+write_csv(psd_week_light, "output/All_deps_weekly_diel_PSD.csv")
+
+
+
+```
 
 
