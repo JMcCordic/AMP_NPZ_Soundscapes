@@ -44,6 +44,8 @@ hp_og <- dep_info |>
   # in this case, we want the name of the list element, designated as ".y"
   imap(~mutate(., Dep_ID = .y))
 
+# load in hourly shrimp presence based on 10kHz TOL band
+tol_shrimp <- read_csv("data/All_sites_tables/TOL10khz_shrimp.csv") 
 
 ```
 
@@ -58,7 +60,8 @@ hp_allcols <- hp_og |>
   # add columns if they don't exist
   map(~add_column(., !!!new_cols[!names(new_cols) %in% names(.)])
   ) |>
-  bind_rows()
+  bind_rows() |>
+  left_join(tol_shrimp, by = c("Dep_ID","UTC"))
 
 ```
 
@@ -83,6 +86,7 @@ hp_week_prop <- hp_allcols |>
             ves_count = sum(ves_pres),
             mnk_count = sum(mnk_pres),
             spwh_count = sum(spwh_pres),
+            shr_count = sum(shr_pres),
             # calculate prop hours present per source per week
             bal_pres = sum(bal_pres)/n_hours,
             hbw_pres = sum(hbw_pres)/n_hours, 
@@ -90,7 +94,8 @@ hp_week_prop <- hp_allcols |>
             dol_pres = sum(dol_pres)/n_hours,
             ves_pres = sum(ves_pres)/n_hours,
             mnk_pres = sum(mnk_pres)/n_hours,
-            spwh_pres = sum(spwh_pres)/n_hours
+            spwh_pres = sum(spwh_pres)/n_hours,
+            shr_pres = sum(shr_pres)/n_hours
     ) |>
   filter(n_days == 7) # only keep full weeks
 
@@ -163,6 +168,7 @@ hp_weeklight_prop <- hp_allcols_light |>
             ves_count = sum(ves_pres),
             mnk_count = sum(mnk_pres),
             spwh_count = sum(spwh_pres),
+            shr_count = sum(shr_pres),
             # calculate prop hours present per source per week
             bal_pres = sum(bal_pres)/n_hours,
             hbw_pres = sum(hbw_pres)/n_hours, 
@@ -170,7 +176,8 @@ hp_weeklight_prop <- hp_allcols_light |>
             dol_pres = sum(dol_pres)/n_hours,
             ves_pres = sum(ves_pres)/n_hours,
             mnk_pres = sum(mnk_pres)/n_hours,
-            spwh_pres = sum(spwh_pres)/n_hours
+            spwh_pres = sum(spwh_pres)/n_hours,
+            shr_pres = sum(shr_pres)/n_hours
     ) |>
   filter(n_days == 7) # only keep full weeks
 

@@ -75,6 +75,7 @@ all_hmd_data <- all_hmd_og |>
     # parse out specific elements for plotting
     Begin_Hour_UTC = hour(UTC),
     Month_UTC = month(UTC),
+    Begin_date_UTC = date(UTC),
     # Get hour (numeric)
     Begin_Hour_local = hour(Begin_datetime_local),
     # Get date without times
@@ -123,7 +124,7 @@ all_tol_data <- all_hmd_data |>
   createOctaveLevel(type = "tol")
 
 
-# get hourly quantiles for plotting
+# get hourly quantiles summarized over deployments for plotting
 TOL10khz_hour <- all_tol_data |>
   # remove rows with NA values
   filter(is.na(TOL_13) == FALSE) |>
@@ -137,16 +138,17 @@ TOL10khz_hour <- all_tol_data |>
   )
 
 
-# get monthly quantiles for plotting
-TOL10khz_month <- all_tol_data |>
+# get daily quantiles for peak detection
+TOL10khz_day <- all_tol_data |>
   # remove rows with NA values
   filter(is.na(TOL_13) == FALSE) |>
-  # group by Dep_ID and hour, retain other grouping vars
-  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Month_UTC) |>
+  # group by Dep_ID and date, retain other grouping vars
+  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Begin_date_UTC) |>
   # calculate q10, q50, q90
   summarise(
     q10_tol = quantile(TOL_10000, 0.1),
     med_tol = quantile(TOL_10000, 0.5),
+    q75_tol = quantile(TOL_10000, 0.75),
     q90_tol = quantile(TOL_10000, 0.9)
   )
 
@@ -159,24 +161,55 @@ TOL10khz_month <- all_tol_data |>
 ```{r diel line plots}
 
 
+
+TOL10khz_shrimp <- all_tol_data |>
+  # remove rows with NA values
+  filter(is.na(TOL_13) == FALSE) |>
+  # group by Dep_ID and date, retain other grouping vars
+  group_by(network, npz_id, Dep_ID, Latitude, Longitude, Begin_date_UTC) |>
+  mutate(q90_tol = quantile(TOL_10000, 0.9),
+         shr_pres = case_when(
+           # South-west Corner had no daily presence of snapping shrimp from manual LTSA review
+           npz_id == "South-west Corner" ~ 0, 
+           # For remaining NPZs, if TOL > daily 90th percentile, label as shrimp present
+           TOL_10000 >= q90_tol ~ 1,
+           TOL_10000 < q90_tol ~ 0
+         )) 
+
+tol_shrimp_pres <- TOL10khz_shrimp |>
+  select(Dep_ID, UTC, Latitude, Longitude, shr_pres) |>
+  mutate(Dep_ID = str_replace(Dep_ID, "PARKSAUSTRALIA_", ""))
+
+# export shrimp presence CSV
+write_csv(tol_shrimp_pres, "output/TOL10khz_shrimp.csv")
+
 # full time series of TOL values?
 # this looks horrid...try single NPZ 
-ggplot(data = all_tol_data |>
-         filter(npz_id == "Dampier"), 
-       aes(x = Begin_datetime_local,
+ggplot(data = TOL10khz_shrimp |> 
+         filter(npz_id == "Ningaloo"), 
+       aes(x = UTC,
            y = TOL_10000)) +
   geom_line()+
-  geom_line(aes(y = sun_altitude), 
-            color = "red")+
-  geom_line(aes(group = Begin_date_local,
-                color = Begin_date_local),
-             alpha = 0.8) +
-  scale_color_date(low = "blue",
-                   high = "yellow")+
+  geom_point(aes(color = factor(shr_pres)))+
+  
   facet_wrap(vars(Dep_ID),
-             nrow = 13,
+             nrow = 5,
              scales = "free_x") +
   theme_bw()
+  
+  
+  geom_hline(aes(yintercept = q90_tol,
+                 color = Begin_date_UTC))
+# 
+#   geom_line(aes(group = Begin_date_local,
+#                 color = Begin_date_local),
+#              alpha = 0.8) +
+#   scale_color_date(low = "blue",
+#                    high = "yellow")+
+#   facet_wrap(vars(Dep_ID),
+#              nrow = 13,
+#              scales = "free_x") +
+#   theme_bw()
 
 
 
