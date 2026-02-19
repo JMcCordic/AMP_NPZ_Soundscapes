@@ -1,0 +1,200 @@
+---
+title: "Compile_weekly_data"
+author: "Jessica McCordic"
+date: "2025-09-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load lib}
+
+library(tidyverse)
+library(tcltk2)
+library(svDialogs)
+
+```
+
+
+
+```{r load data}
+
+# Assign user-defined inputs ----------------------------------------------
+
+# Since server folders are in a standard structure, use parent folder to get list of all deployments
+dep_names <- list.dirs(tk_choose.dir(caption = "Select parent dir for all deployment folders"), recursive = FALSE, full.names = FALSE)
+
+# select the deployment(s) to summarize
+dep_list <- dlg_list(title = "Select deployments to plot", choices = dep_names, multiple = TRUE)$res |>
+  str_sub(start = 16)
+
+# set deployment names
+dep_info <- dep_list |>
+  set_names(dep_list)
+
+
+# Load data ---------------------------------------------------------------
+
+# For each deployment in the list, load in hourly presence
+hp_og <- dep_info |>
+  map(~read_csv(choose.files(caption = paste0({.}, " Hourly Presence sheet .csv"))))|>
+  # use imap() to get info based on index of each iteration
+  # in this case, we want the name of the list element, designated as ".y"
+  imap(~mutate(., Dep_ID = .y))
+
+# load in hourly shrimp presence based on 10kHz TOL band
+tol_shrimp <- read_csv("data/All_sites_tables/TOL10khz_shrimp.csv") 
+
+```
+
+
+```{r reshape and merge hp data}
+
+# making new_cols placeholders to add into original df if they don't exist
+new_cols <- c("bal_pres" = 0 , "hbw_pres" = 0 , "fish_c_pres" = 0, 
+              "dol_pres" = 0 , "mnk_pres" = 0, 
+              "spwh_pres" = 0, "ves_pres" = 0)
+hp_allcols <- hp_og |>
+  # add columns if they don't exist
+  map(~add_column(., !!!new_cols[!names(new_cols) %in% names(.)])
+  ) |>
+  bind_rows() |>
+  left_join(tol_shrimp, by = c("Dep_ID","UTC"))
+
+```
+
+
+
+```{r monthly presence}
+
+hp_month_prop <- hp_allcols |>
+  mutate(month_UTC = month(UTC),
+         date_UTC = date(UTC),
+         # replace all NA's with 0's in presence cols
+         across(ends_with("_pres"), ~replace_na(., 0))) |>
+  # group to month level
+  group_by(Dep_ID, month_UTC) |>
+  summarise(n_days = n_distinct(date_UTC),
+            n_hours = n(),
+            # caculate total counts per source by week
+            bal_count = sum(bal_pres),
+            hbw_count = sum(hbw_pres), 
+            fish_c_count = sum(fish_c_pres),
+            dol_count = sum(dol_pres),
+            ves_count = sum(ves_pres),
+            mnk_count = sum(mnk_pres),
+            spwh_count = sum(spwh_pres),
+            shr_count = sum(shr_pres),
+            # calculate prop hours present per source per week
+            bal_pres = sum(bal_pres)/n_hours,
+            hbw_pres = sum(hbw_pres)/n_hours, 
+            fish_c_pres = sum(fish_c_pres)/n_hours,
+            dol_pres = sum(dol_pres)/n_hours,
+            ves_pres = sum(ves_pres)/n_hours,
+            mnk_pres = sum(mnk_pres)/n_hours,
+            spwh_pres = sum(spwh_pres)/n_hours,
+            shr_pres = sum(shr_pres)/n_hours
+    ) |>
+  filter(n_days >= 15) # only keep months with 15+ days
+
+```
+
+
+```{r light regime by week and light regime}
+
+
+
+hp_allcols_light <- hp_allcols |>
+  # add columns for grouping
+  mutate(month_UTC = month(UTC),
+         date_UTC = date(UTC),
+         # replace all NA's with 0's in presence cols
+         across(ends_with("_pres"), ~replace_na(., 0))) |>
+  
+  # get light regime labels
+  # get sun elevation by lat/lon
+  
+  # add in lat/lon by site
+  mutate(
+    Lat_DD = case_when(
+      grepl("_CG",Dep_ID) ~ -31.681,
+      grepl("_DNE",Dep_ID) ~ -20.329,
+      grepl("_MRE",Dep_ID) ~ -32.584,
+      grepl("_NGN",Dep_ID) ~ -22.705,
+      grepl("_WP",Dep_ID) ~ -29.698,
+      grepl("_SWS",Dep_ID) ~ -33.675,
+      grepl("_TRW",Dep_ID) ~ -31.711
+    ),
+    Lon_DD = case_when(
+      grepl("_CG",Dep_ID) ~ 152.91,
+      grepl("_DNE",Dep_ID) ~ 117.09,
+      grepl("_MRE",Dep_ID) ~ 132.63,
+      grepl("_NGN",Dep_ID) ~ 113.55,
+      grepl("_WP",Dep_ID) ~ 153.40,
+      grepl("_SWS",Dep_ID) ~ 114.58,
+      grepl("_TRW",Dep_ID) ~ 115.58
+    )
+  ) |>
+  
+  rowwise() |> 
+  # assign categories based on sun elev
+  mutate(sun_elev_rad = suncalc::getSunlightPosition(UTC, 
+                                                     Lat_DD,
+                                                     Lon_DD,
+                                                     keep = "altitude")$altitude,
+         sun_elev_deg = (sun_elev_rad*180)/(pi),
+         light_reg = case_when(
+           # if sun elev is positive, daytime
+           sun_elev_deg > 0 ~ "day",
+           # if sun elevation is less than -12, nighttime
+           sun_elev_deg < -12 ~ "night",
+           # if between 0 and -12, "twilight"
+           sun_elev_deg <= 0 & sun_elev_deg >= -12 ~ "twilight"
+         )
+  ) 
+  
+hp_monthlight_prop <- hp_allcols_light |>
+  # group by week + light regime 
+  group_by(Dep_ID, month_UTC, light_reg) |>
+  summarise(n_days = n_distinct(date_UTC),
+            n_hours = n(),
+            # caculate total counts per source by week
+            bal_count = sum(bal_pres),
+            hbw_count = sum(hbw_pres), 
+            fish_c_count = sum(fish_c_pres),
+            dol_count = sum(dol_pres),
+            ves_count = sum(ves_pres),
+            mnk_count = sum(mnk_pres),
+            spwh_count = sum(spwh_pres),
+            shr_count = sum(shr_pres),
+            # calculate prop hours present per source per week
+            bal_pres = sum(bal_pres)/n_hours,
+            hbw_pres = sum(hbw_pres)/n_hours, 
+            fish_c_pres = sum(fish_c_pres)/n_hours,
+            dol_pres = sum(dol_pres)/n_hours,
+            ves_pres = sum(ves_pres)/n_hours,
+            mnk_pres = sum(mnk_pres)/n_hours,
+            spwh_pres = sum(spwh_pres)/n_hours,
+            shr_pres = sum(shr_pres)/n_hours
+    ) |>
+  filter(n_days >= 15) # only keep months with 15+ days
+
+```
+
+
+
+
+
+
+
+```{r export table}
+
+write_csv(hp_month_prop,
+          "output/allsources_by_month.csv")
+
+write_csv(hp_monthlight_prop, 
+          "output/allsources_by_month_diel.csv")
+
+```
