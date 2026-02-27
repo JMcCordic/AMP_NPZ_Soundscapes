@@ -224,15 +224,16 @@ hp_month_prop <- read_csv("data/All_sites_tables/allsources_by_month_diel.csv")
 # add weekly pres to NMDS scores
 monthly_pres_data <- nmdsScores_all |>
   # left join with nmds to subset to common weeks and force same order
-  left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg")) |>
-  # only keep grouping columns and presence columns
-  select(npz_id, network, month_UTC, light_reg, all_of(ends_with("_pres")))
+  left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg"))
+  
 
-## Evaluate correlation between ordination and environmental data
-env_test <- envfit(nmds_all, 
-                   monthly_pres_data, 
-                   permutations = 999, 
-                   na.rm = TRUE)
+  ## Evaluate correlation between ordination and environmental data
+  env_test <- envfit(nmds_all, 
+                     monthly_pres_data |>
+                       # only keep grouping columns and presence columns
+                       select(npz_id, network, month_UTC, light_reg, all_of(ends_with("_pres"))), 
+                     permutations = 999, 
+                     na.rm = TRUE)
 env_test
 
 
@@ -286,10 +287,6 @@ ggplot(data = nmdsScores_all,
            shape = light_reg), 
            size = 4,
        alpha = 0.5)+
-  # geom_text(aes(label = week_fac,
-  #               color = npz_id),
-  #           vjust = -1, 
-  #           hjust = 1.0)+
   geom_segment(data =scaled_env_scores,
                aes(x=0,
                    xend=NMDS1,
@@ -329,13 +326,7 @@ ggplot(data = nmdsScores_all,
                 y=NMDS2,
                 label=cent_label),
   size=4)+
-  # # add network ellipses from NMDS
-  # stat_ellipse(data = nmdsScores_all,
-  #              aes(group = network),
-  #              linetype = "dotted",
-  #              size = 1,
-  #              level = 0.95)+
-  # add
+  # add network ellipses from NMDS
   stat_ellipse(aes(group = network),
                data = nmdsScores_all,
                size = 1,level = .95) + #95% CI ellipse (assumed multivariate normal)

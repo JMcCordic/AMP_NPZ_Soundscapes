@@ -37,7 +37,7 @@ dep_info <- dep_list |>
 
 # Load data ---------------------------------------------------------------
 
-# For each deployment in the list, load in hourly presence
+# For each deployment in the list, load in UTC hourly presence sheet formatted for HMD join
 hp_og <- dep_info |>
   map(~read_csv(choose.files(caption = paste0({.}, " Hourly Presence sheet .csv"))))|>
   # use imap() to get info based on index of each iteration

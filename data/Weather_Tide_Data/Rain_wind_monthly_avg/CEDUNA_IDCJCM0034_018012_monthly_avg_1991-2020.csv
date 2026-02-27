@@ -1,0 +1,69 @@
+"Monthly Climate Statistics for 'CEDUNA AMO' [018012]"
+"Created on [ 18 Feb 2026 13:53:20 UTC]"
+
+"018012 CEDUNA AMO"
+"Commenced: 1939"
+"Last Record: 2026"
+"Latitude:   32.13 Degrees South"
+"Longitude:  133.70 Degrees East"
+"Elevation:      15 m"
+"State: SA"
+
+"Statistic Element","January","February","March","April","May","June","July","August","September","October","November","December","Annual","Number of Years","Start Year","End Year"
+"Mean maximum temperature (°C) for years 1939 to 2026 ",28.7,28.3,26.8,24.3,20.9,18.2,17.5,18.8,21.7,24.1,26.0,27.5,23.6,84,1939,2026
+"Highest temperature (°C) for years 1939 to 2026 ",49.5,47.3,45.8,41.3,34.0,29.8,32.6,34.3,39.8,43.5,46.5,48.9,49.5,85,1939,2026
+"Date of Highest temperature  °C  for years 1939 to 2026 ",26 Jan  2026,10 Feb  2004,06 Mar  1986,09 Apr  2018,04 May  1990,03 Jun  1957,29 Jul  1975,29 Aug  2024,17 Sep  2023,31 Oct  1987,19 Nov  2009,19 Dec  2019,26 Jan  2026,N/A,1939,2026
+"Lowest maximum temperature (°C) for years 1939 to 2026 ",17.5,17.2,16.7,14.4,10.6,11.5,8.1,9.8,11.5,13.6,15.1,15.4,8.1,85,1939,2026
+"Date of Lowest maximum temperature  °C  for years 1939 to 2026 ",04 Jan  2020,16 Feb  1960,22 Mar  1969,28 Apr  1952,24 May  1955,25 Jun  1968,13 Jul  2006,14 Aug  1972,27 Sep  1974,14 Oct  1978,16 Nov  1961,10 Dec  2023,13 Jul  2006,N/A,1939,2026
+"Decile 1 maximum temperature (°C) for years 1939 to 2025 ",22.2,22.1,21.2,19.3,17.1,15.2,14.4,14.8,16.0,17.6,19.3,20.7, ,82,1939,2025
+"Decile 9 maximum temperature (°C) for years 1939 to 2025 ",40.0,38.5,36.1,31.6,26.3,22.1,21.2,24.6,29.5,33.7,37.0,38.6, ,82,1939,2025
+"Mean number of days >= 30 °C for years 1939 to 2026 ",10.5,8.9,8.1,4.6,0.6,0.0,0.0,0.3,2.9,6.7,8.3,10.0,60.9,85,1939,2026
+"Mean number of days >= 35 °C for years 1939 to 2026 ",6.4,5.5,4.0,0.9,0.0,0.0,0.0,0.0,0.5,2.3,4.3,5.8,29.7,85,1939,2026
+"Mean number of days >= 40 °C for years 1939 to 2026 ",3.2,2.0,0.7,0.0,0.0,0.0,0.0,0.0,0.0,0.2,1.1,2.2,9.4,85,1939,2026
+"Mean minimum temperature (°C) for years 1939 to 2026 ",15.3,15.1,13.4,10.8,8.5,6.5,5.8,6.2,7.9,10.1,12.4,14.2,10.5,84,1939,2026
+"Lowest temperature (°C) for years 1939 to 2026 ",5.0,4.9,1.3,-0.3,-3.2,-4.7,-4.3,-3.3,-1.8,-0.4,1.6,3.4,-4.7,85,1939,2026
+"Date of Lowest temperature  °C  for years 1939 to 2026 ",01 Jan  1971,04 Feb  1948,30 Mar  1970,29 Apr  1999,18 May  1973,13 Jun  1972,18 Jul  1976,07 Aug  1970,08 Sep  2019,06 Oct  1983,02 Nov  1960,04 Dec  1969,13 Jun  1972,N/A,1939,2026
+"Highest minimum temperature (°C) for years 1939 to 2026 ",32.7,30.8,27.8,25.5,21.1,16.4,16.0,17.7,26.0,28.0,31.2,29.5,32.7,85,1939,2026
+"Date of Highest minimum temperature  °C  for years 1939 to 2026 ",29 Jan  2009,01 Feb  1943,09 Mar  1999,01 Apr  2005,04 May  2005,08 Jun  2005,28 Jul  1975,29 Aug  1950,24 Sep  1944,31 Oct  1987,01 Nov  1987,09 Dec  2006,29 Jan  2009,N/A,1939,2026
+"Decile 1 minimum temperature (°C) for years 1939 to 2025 ",10.1,10.1,8.1,5.4,3.7,1.4,1.5,1.6,2.7,4.3,7.1,9.0, ,82,1939,2025
+"Decile 9 minimum temperature (°C) for years 1939 to 2025 ",20.3,19.9,18.4,16.3,13.4,11.1,10.0,10.7,12.9,15.3,17.5,19.1, ,82,1939,2025
+"Mean number of days <= 2 °C for years 1939 to 2026 ",0.0,0.0,0.0,0.1,1.2,4.0,4.1,3.9,2.0,0.6,0.0,0.0,15.9,85,1939,2026
+"Mean number of days <= 0 °C for years 1939 to 2026 ",0.0,0.0,0.0,0.0,0.2,1.2,1.2,1.1,0.3,0.0,0.0,0.0,4.0,85,1939,2026
+"Mean daily ground minimum temperature °C for years 1972 to 2012 ",12.5,12.6,10.3,7.5,5.4,3.4,2.9,3.2,4.9,7.1,9.6,11.6,7.6,39,1972,2012
+"Lowest ground temperature °C for years 1972 to 2015 ",0.2,0.7,-0.1,-2.6,-7.0,-7.4,-9.0,-6.3,-5.8,-4.2,-3.1,-0.1,-9.0,42,1972,2015
+"Date of Lowest ground temperature °C for years 1972 to 2015 ",17 Jan  2009,25 Feb  1987,27 Mar  2008,29 Apr  1999,18 May  1973,15 Jun  2006,20 Jul  1976,01 Aug  1999,21 Sep  1994,14 Oct  2014,05 Nov  1993,26 Dec  1994,20 Jul  1976,N/A,1972,2015
+"Mean number of days ground min. temp. <= -1 °C for years 1972 to 2015 ",0.0,0.0,0.0,0.5,2.0,5.4,5.4,5.4,3.1,1.4,0.1,0.0,23.3,42,1972,2015
+"Mean rainfall (mm) for years 1939 to 2026 ",12.9,13.6,15.8,19.9,31.7,35.4,38.4,33.6,25.7,25.0,19.3,20.4,291.9,87,1939,2026
+"Highest rainfall (mm) for years 1939 to 2026 ",87.6,64.6,96.9,99.2,93.6,89.0,121.8,86.6,86.8,106.8,87.0,124.8,533.6,87,1939,2026
+"Date of Highest rainfall for years 1939 to 2026 ",1995,2011,1968,1983,1956,1953,1951,1973,2005,1992,2021,1966,1968,N/A,1939,2026
+"Lowest rainfall (mm) for years 1939 to 2026 ",0.0,0.0,0.0,0.0,4.6,2.8,7.6,1.0,1.2,0.2,0.0,0.0,133.0,87,1939,2026
+"Date of Lowest rainfall for years 1939 to 2026 ",2026,2024,2005,1981,2024,2007,1999,2014,1981,2006,2016,2025,2024,N/A,1939,2026
+"Decile 1 monthly rainfall (mm) for years 1800 to 3000 ",0.6,0.1,0.5,2.1,9.8,12.3,15.7,8.0,6.3,3.1,2.4,1.4, ,87,n/a,n/a
+"Decile 5 (median) monthly rainfall (mm) for years 1800 to 3000 ",8.8,6.9,6.2,14.1,26.1,31.1,34.0,29.6,18.4,18.4,16.6,11.8, ,87,n/a,n/a
+"Decile 5 (median) monthly rainfall (mm) for years 1800 to 3000 ",28.0,38.9,43.1,41.8,63.8,69.5,62.5,64.6,57.3,56.3,41.7,57.2, ,87,n/a,n/a
+"Highest daily rainfall (mm) for years 1939 to 2026 ",60.4,52.2,55.9,36.4,36.6,36.1,38.6,29.5,45.2,68.0,39.2,63.2,68.0,87,1939,2026
+"Date of Highest daily rainfall for years 1939 to 2026 ",14 Jan  1995,14 Feb  2014,11 Mar  1969,10 Apr  1983,25 May  1979,04 Jun  1939,31 Jul  1951,26 Aug  1973,25 Sep  2005,03 Oct  1993,11 Nov  2021,06 Dec  1990,03 Oct  1993,N/A,1939,2026
+"Mean number of days of rain for years 1939 to 2026 ",3.6,3.5,4.2,6.9,10.5,11.3,13.2,12.1,9.2,7.6,5.8,5.0,92.9,87,1939,2026
+"Mean number of days of rain >= 1 mm for years 1939 to 2026 ",1.9,1.8,2.4,4.1,6.5,7.2,8.4,7.3,5.5,4.4,3.6,2.8,55.9,87,1939,2026
+"Mean number of days of rain >= 10 mm for years 1939 to 2026 ",0.4,0.4,0.4,0.4,0.7,0.8,0.8,0.8,0.5,0.6,0.5,0.6,6.9,87,1939,2026
+"Mean number of days of rain >= 25 mm for years 1939 to 2026 ",0.1,0.1,0.1,0.1,0.0,0.1,0.0,0.0,0.1,0.1,0.0,0.1,0.8,87,1939,2026
+"Mean daily wind run (km) for years 1995 to 2025 ",544,524,482,416,385,391,404,422,473,507,515,535,466,27,1995,2025
+"Maximum wind gust speed (km/h) for years 1940 to 2025 ",158,122,104,109,109,109,104,115,128,130,113,117,158,83,1940,2025
+"Date of Maximum wind gust speed for years 1940 to 2025 ",12 Jan  1988,16 Feb  1943,12 Mar  1949,13 Apr  1985,21 May  1962,08 Jun  1969,09 Jul  2010,23 Aug  1955,23 Sep  1960,10 Oct  1948,19 Nov  1962,30 Dec  1954,12 Jan  1988,N/A,1940,2025
+"Mean daily sunshine (hours) for years 1951 to 2015 ",10.5,9.7,8.9,7.7,6.5,6.2,6.5,7.5,8.0,8.9,9.5,9.8,8.3,63,1951,2015
+"Mean daily solar exposure (MJ/(m*m)) for years 1990 to 2026 ",27.2,25.0,20.4,15.2,11.6,10.0,10.8,13.9,18.1,21.8,25.3,26.8,18.8,36,1990,2026
+"Mean number of clear days for years 1954 to 2010 ",12.9,11.1,13.1,9.8,7.9,7.7,8.1,9.4,9.6,9.8,8.7,9.7,117.8,56,1954,2010
+"Mean number of cloudy days for years 1954 to 2010 ",6.5,7.0,7.2,8.9,10.6,9.8,9.3,8.2,7.8,8.4,8.8,9.1,101.6,56,1954,2010
+"Mean daily evaporation (mm) for years 1968 to 2015 ",9.9,9.2,7.4,5.6,3.7,2.7,2.8,3.8,5.4,7.4,8.7,9.5,6.3,47,1968,2015
+"Mean 9am temperature (°C) for years 1954 to 2010 ",21.9,21.2,19.5,17.4,13.5,10.5,9.9,11.5,15.0,18.0,19.7,20.9,16.6,56,1954,2010
+"Mean 9am wet bulb temperature (°C) for years 1954 to 2010 ",16.2,16.3,15.1,13.4,11.0,8.8,8.1,9.1,11.1,12.6,13.8,15.2,12.6,56,1954,2010
+"Mean 9am dew point temperature (°C) for years 1954 to 2010 ",11.2,12.1,11.2,9.3,8.2,6.7,5.9,6.1,6.8,6.7,7.8,9.8,8.5,56,1954,2010
+"Mean 9am relative humidity (%) for years 1954 to 2010 ",56,61,64,64,74,79,79,73,63,53,52,54,64,56,1954,2010
+"Mean 9am cloud cover (okas) for years 1954 to 2010 ",3.7,3.7,3.6,4.0,4.3,4.2,4.1,3.7,3.9,4.1,4.4,4.3,4.0,56,1954,2010
+"Mean 9am wind speed (km/h) for years 1939 to 2010 ",18.0,17.0,15.7,14.2,12.6,12.8,14.0,15.4,19.0,21.1,20.0,18.7,16.5,71,1939,2010
+"Mean 3pm temperature (°C) for years 1954 to 2010 ",26.5,26.7,24.9,22.9,19.8,17.4,16.6,17.5,19.5,21.7,23.9,25.0,21.9,56,1954,2010
+"Mean 3pm wet bulb temperature (°C) for years 1954 to 2010 ",18.2,18.4,17.3,15.7,13.9,12.3,11.7,11.9,13.1,14.3,15.8,17.0,15.0,56,1954,2010
+"Mean 3pm dew point temperature (°C) for years 1954 to 2010 ",11.7,12.0,11.0,9.0,7.9,6.9,6.2,5.5,6.1,6.6,8.1,10.2,8.4,56,1954,2010
+"Mean 3pm relative humidity (%) for years 1954 to 2010 ",45,46,47,47,50,53,54,50,47,44,43,45,48,56,1954,2010
+"Mean 3pm cloud cover (oktas) for years 1954 to 2010 ",3.0,3.1,3.0,3.7,4.3,4.4,4.2,4.0,3.6,3.5,3.7,3.5,3.7,56,1954,2010
+"Mean 3pm wind speed (km/h) for years 1939 to 2010 ",27.1,26.7,24.6,21.3,19.0,18.7,19.9,21.9,24.6,26.4,26.8,26.7,23.6,70,1939,2010

@@ -1,0 +1,69 @@
+"Monthly Climate Statistics for 'CAPE NATURALISTE' [009519]"
+"Created on [ 18 Feb 2026 13:50:36 UTC]"
+
+"009519 CAPE NATURALISTE"
+"Commenced: 1903"
+"Last Record: 2026"
+"Latitude:   33.54 Degrees South"
+"Longitude:  115.02 Degrees East"
+"Elevation:     109 m"
+"State: WA"
+
+"Statistic Element","January","February","March","April","May","June","July","August","September","October","November","December","Annual","Number of Years","Start Year","End Year"
+"Mean maximum temperature (°C) for years 1904 to 2026 ",25.6,26.0,24.6,22.0,19.3,17.4,16.4,16.5,17.5,19.0,21.6,23.8,20.8,122,1904,2026
+"Highest temperature (°C) for years 1957 to 2026 ",40.6,39.4,37.4,34.1,27.8,24.3,22.9,23.6,27.5,31.7,36.7,38.5,40.6,69,1957,2026
+"Date of Highest temperature  °C  for years 1957 to 2026 ",10 Jan  1978,19 Feb  2024,06 Mar  2007,06 Apr  2024,15 May  2024,13 Jun  2017,08 Jul  2006,27 Aug  2017,27 Sep  2023,29 Oct  1967,23 Nov  2023,26 Dec  2021,10 Jan  1978,N/A,1957,2026
+"Lowest maximum temperature (°C) for years 1957 to 2026 ",16.2,18.2,13.2,14.5,12.4,11.0,11.3,10.0,11.4,12.8,13.2,14.9,10.0,69,1957,2026
+"Date of Lowest maximum temperature  °C  for years 1957 to 2026 ",25 Jan  1989,07 Feb  2021,31 Mar  2005,21 Apr  1980,31 May  1976,22 Jun  1981,29 Jul  1975,05 Aug  1973,12 Sep  1959,03 Oct  1962,19 Nov  1992,21 Dec  1968,05 Aug  1973,N/A,1957,2026
+"Decile 1 maximum temperature (°C) for years 1957 to 2025 ",22.0,22.4,21.2,19.1,17.1,15.2,14.4,14.5,15.3,16.7,18.5,20.5, ,68,1957,2025
+"Decile 9 maximum temperature (°C) for years 1957 to 2025 ",31.9,31.8,29.9,25.8,22.6,20.1,19.0,19.2,20.4,22.7,26.7,30.0, ,68,1957,2025
+"Mean number of days >= 30 °C for years 1957 to 2026 ",5.6,5.6,3.1,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.9,3.2,18.6,69,1957,2026
+"Mean number of days >= 35 °C for years 1957 to 2026 ",0.8,0.7,0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.4,2.3,69,1957,2026
+"Mean number of days >= 40 °C for years 1957 to 2026 ",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69,1957,2026
+"Mean minimum temperature (°C) for years 1904 to 2026 ",15.3,15.7,15.1,13.9,12.7,11.5,10.5,10.1,10.4,11.1,12.5,14.0,12.7,122,1904,2026
+"Lowest temperature (°C) for years 1957 to 2026 ",7.8,8.9,6.4,5.1,6.1,4.2,4.1,3.7,3.8,4.6,5.2,7.5,3.7,69,1957,2026
+"Date of Lowest temperature  °C  for years 1957 to 2026 ",13 Jan  1969,25 Feb  1968,26 Mar  1990,07 Apr  1972,30 May  1966,28 Jun  1992,06 Jul  2005,29 Aug  2004,10 Sep  2005,06 Oct  1965,16 Nov  1971,10 Dec  1986,29 Aug  2004,N/A,1957,2026
+"Highest minimum temperature (°C) for years 1957 to 2026 ",27.0,25.8,26.1,22.2,19.8,19.4,17.0,17.1,17.5,18.6,22.5,24.3,27.0,69,1957,2026
+"Date of Highest minimum temperature  °C  for years 1957 to 2026 ",21 Jan  1989,03 Feb  1970,03 Mar  1961,02 Apr  2022,20 May  1994,04 Jun  1984,07 Jul  1996,19 Aug  2007,24 Sep  2015,26 Oct  2009,23 Nov  2004,30 Dec  2012,21 Jan  1989,N/A,1957,2026
+"Decile 1 minimum temperature (°C) for years 1957 to 2025 ",12.2,12.4,11.8,10.7,9.9,8.4,7.6,7.4,7.5,8.2,9.5,11.0, ,68,1957,2025
+"Decile 9 minimum temperature (°C) for years 1957 to 2025 ",19.0,19.7,19.0,17.4,16.0,14.6,13.4,13.1,13.3,14.2,15.9,17.6, ,68,1957,2025
+"Mean number of days <= 2 °C for years 1957 to 2026 ",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69,1957,2026
+"Mean number of days <= 0 °C for years 1957 to 2026 ",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69,1957,2026
+"Mean daily ground minimum temperature °C for years null to null ", , , , , , , , , , , , , ,, , 
+"Lowest ground temperature °C for years null to null ", , , , , , , , , , , , , ,, , 
+"Date of Lowest ground temperature °C for years null to null ", , , , , , , , , , , , , ,N/A, , 
+"Mean number of days ground min. temp. <= -1 °C for years null to null ", , , , , , , , , , , , , ,, , 
+"Mean rainfall (mm) for years 1903 to 2026 ",10.6,11.6,23.0,43.8,112.6,160.2,160.0,113.0,74.7,48.5,25.3,12.9,794.2,122,1903,2026
+"Highest rainfall (mm) for years 1903 to 2026 ",62.2,107.9,154.0,187.6,240.0,311.2,338.0,222.1,197.1,143.2,100.2,73.7,1192.7,122,1903,2026
+"Date of Highest rainfall for years 1903 to 2026 ",2016,1921,1998,1961,1999,1964,1996,1955,1917,1965,1981,1925,1917,N/A,1903,2026
+"Lowest rainfall (mm) for years 1903 to 2026 ",0.0,0.0,0.2,0.2,23.2,53.2,49.8,30.8,10.2,4.6,0.0,0.0,459.0,122,1903,2026
+"Date of Lowest rainfall for years 1903 to 2026 ",2024,2024,2012,1982,2019,2006,2012,2008,1916,1969,1999,2024,2002,N/A,1903,2026
+"Decile 1 monthly rainfall (mm) for years 1800 to 3000 ",0.6,0.6,3.0,14.2,55.5,91.8,96.0,62.7,34.6,20.0,5.6,1.0, ,123,n/a,n/a
+"Decile 5 (median) monthly rainfall (mm) for years 1800 to 3000 ",5.2,5.2,13.6,35.9,108.2,159.0,153.0,108.4,69.2,43.5,21.9,7.2, ,123,n/a,n/a
+"Decile 5 (median) monthly rainfall (mm) for years 1800 to 3000 ",27.7,25.8,53.8,80.3,176.0,232.9,239.4,162.2,116.0,83.6,54.0,32.3, ,123,n/a,n/a
+"Highest daily rainfall (mm) for years 1907 to 2026 ",54.2,67.3,84.3,78.0,83.0,92.5,86.6,75.0,82.0,72.0,47.0,48.3,92.5,117,1907,2026
+"Date of Highest daily rainfall for years 1907 to 2026 ",07 Jan  1976,20 Feb  1921,26 Mar  1965,27 Apr  1949,27 May  1999,09 Jun  1934,11 Jul  1932,04 Aug  1997,18 Sep  1917,22 Oct  1996,03 Nov  1969,26 Dec  1925,09 Jun  1934,N/A,1907,2026
+"Mean number of days of rain for years 1903 to 2026 ",3.7,3.7,5.5,10.3,17.2,21.0,23.2,21.3,17.7,13.4,8.4,5.1,150.5,119,1903,2026
+"Mean number of days of rain >= 1 mm for years 1907 to 2026 ",1.9,1.9,3.2,6.6,12.9,16.7,18.8,16.4,12.6,8.9,4.9,2.6,107.4,117,1907,2026
+"Mean number of days of rain >= 10 mm for years 1907 to 2026 ",0.2,0.3,0.5,1.1,3.4,5.0,5.0,3.2,1.8,1.0,0.6,0.3,22.4,117,1907,2026
+"Mean number of days of rain >= 25 mm for years 1907 to 2026 ",0.1,0.1,0.2,0.2,0.8,1.1,0.9,0.4,0.2,0.2,0.0,0.0,4.2,117,1907,2026
+"Mean daily wind run (km) for years 2003 to 2025 ",600,586,548,506,514,609,616,584,595,547,571,580,571,19,2003,2025
+"Maximum wind gust speed (km/h) for years 1981 to 2025 ",104,87,87,100,113,146,124,124,117,102,109,93,146,22,1981,2025
+"Date of Maximum wind gust speed for years 1981 to 2025 ",23 Jan  2019,06 Feb  2022,14 Mar  2017,11 Apr  2003,24 May  2018,10 Jun  2012,27 Jul  2021,25 Aug  2004,22 Sep  2013,06 Oct  2004,29 Nov  2012,17 Dec  2017,10 Jun  2012,N/A,1981,2025
+"Mean daily sunshine (hours) for years null to null ", , , , , , , , , , , , , ,, , 
+"Mean daily solar exposure (MJ/(m*m)) for years 1990 to 2026 ",29.2,25.7,20.2,14.2,10.1,8.1,8.9,12.1,16.2,21.5,26.3,29.2,18.5,36,1990,2026
+"Mean number of clear days for years 1957 to 1995 ",12.8,11.4,9.6,5.5,2.4,1.8,1.5,2.5,3.6,4.9,6.4,10.2,72.6,39,1957,1995
+"Mean number of cloudy days for years 1957 to 1995 ",6.2,7.1,9.5,15.1,19.0,19.1,20.3,18.9,15.6,14.7,12.3,8.8,166.6,39,1957,1995
+"Mean daily evaporation (mm) for years null to null ", , , , , , , , , , , , , ,, , 
+"Mean 9am temperature (°C) for years 1904 to 2010 ",20.4,20.3,19.2,17.5,15.7,14.2,13.2,13.1,14.0,15.2,17.4,19.3,16.6,107,1904,2010
+"Mean 9am wet bulb temperature (°C) for years 1905 to 2010 ",16.3,16.4,15.8,14.8,13.5,12.2,11.2,11.1,11.7,12.6,14.0,15.3,13.7,100,1905,2010
+"Mean 9am dew point temperature (°C) for years 1957 to 2010 ",12.9,13.5,13.3,12.6,11.8,10.5,9.6,9.3,9.6,10.2,11.1,11.9,11.4,51,1957,2010
+"Mean 9am relative humidity (%) for years 1957 to 2010 ",62,65,68,73,77,79,79,78,75,71,67,63,72,51,1957,2010
+"Mean 9am cloud cover (okas) for years 1905 to 1996 ",3.6,3.7,4.1,4.8,5.5,5.8,5.7,5.6,5.2,5.2,4.7,4.1,4.8,91,1905,1996
+"Mean 9am wind speed (km/h) for years 1957 to 2010 ",27.2,28.2,26.6,25.0,27.3,31.4,31.3,28.3,27.3,26.2,27.1,25.4,27.6,53,1957,2010
+"Mean 3pm temperature (°C) for years 1905 to 2010 ",23.3,23.8,22.7,20.3,17.7,15.7,14.7,14.9,15.8,17.2,19.6,21.6,18.9,106,1905,2010
+"Mean 3pm wet bulb temperature (°C) for years 1905 to 2010 ",18.1,18.4,17.6,16.2,14.4,13.1,12.1,12.0,12.7,13.6,15.3,16.8,15.0,100,1905,2010
+"Mean 3pm dew point temperature (°C) for years 1957 to 2010 ",14.1,14.4,13.6,12.7,11.8,10.8,9.8,9.5,9.9,10.6,11.9,13.0,11.8,51,1957,2010
+"Mean 3pm relative humidity (%) for years 1937 to 2010 ",57,56,58,62,69,72,72,70,68,65,61,59,64,71,1937,2010
+"Mean 3pm cloud cover (oktas) for years 1905 to 1995 ",3.1,3.1,3.7,4.8,5.5,5.9,5.8,5.5,5.2,4.9,4.3,3.5,4.6,90,1905,1995
+"Mean 3pm wind speed (km/h) for years 1957 to 2010 ",32.8,30.5,27.0,24.8,27.0,31.8,31.9,29.6,28.6,28.9,30.7,32.4,29.7,53,1957,2010

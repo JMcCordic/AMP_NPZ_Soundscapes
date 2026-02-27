@@ -1,0 +1,69 @@
+"Monthly Climate Statistics for 'LEARMONTH AIRPORT' [005007]"
+"Created on [ 18 Feb 2026 14:33:32 UTC]"
+
+"005007 LEARMONTH AIRPORT"
+"Commenced: 1945"
+"Last Record: 2026"
+"Latitude:   22.24 Degrees South"
+"Longitude:  114.10 Degrees East"
+"Elevation:       5 m"
+"State: WA"
+
+"Statistic Element","January","February","March","April","May","June","July","August","September","October","November","December","Annual","Number of Years","Start Year","End Year"
+"Mean maximum temperature (°C) for years 1975 to 2026 ",38.1,37.6,36.6,33.4,28.7,24.9,24.4,26.6,29.7,33.0,34.6,37.1,32.1,51,1975,2026
+"Highest temperature (°C) for years 1975 to 2026 ",48.9,47.7,45.9,42.5,37.3,31.9,31.7,35.7,41.3,43.0,44.2,48.9,48.9,51,1975,2026
+"Date of Highest temperature  °C  for years 1975 to 2026 ",02 Jan  2010,10 Feb  1977,03 Mar  2025,04 Apr  2018,01 May  2010,04 Jun  1996,27 Jul  2017,28 Aug  2020,28 Sep  2010,22 Oct  2002,27 Nov  1990,23 Dec  2011,23 Dec  2011,N/A,1975,2026
+"Lowest maximum temperature (°C) for years 1975 to 2026 ",27.8,23.8,24.5,23.2,18.6,17.5,17.0,17.6,20.4,23.2,20.2,25.6,17.0,51,1975,2026
+"Date of Lowest maximum temperature  °C  for years 1975 to 2026 ",27 Jan  1990,05 Feb  1993,30 Mar  2015,18 Apr  2015,05 May  1995,24 Jun  2013,02 Jul  1997,03 Aug  1990,11 Sep  1986,14 Oct  1975,21 Nov  2008,11 Dec  1995,02 Jul  1997,N/A,1975,2026
+"Decile 1 maximum temperature (°C) for years 1975 to 2025 ",33.3,33.1,32.2,29.5,25.0,22.1,21.5,23.6,26.2,28.4,30.2,32.1, ,49,1975,2025
+"Decile 9 maximum temperature (°C) for years 1975 to 2025 ",42.8,42.1,40.9,37.3,32.6,27.5,27.2,30.1,33.3,37.1,39.0,41.9, ,49,1975,2025
+"Mean number of days >= 30 °C for years 1975 to 2026 ",30.5,26.9,29.8,26.0,9.5,0.1,0.2,3.3,12.8,24.4,27.3,30.5,221.3,51,1975,2026
+"Mean number of days >= 35 °C for years 1975 to 2026 ",24.4,21.3,21.1,9.3,0.8,0.0,0.0,0.0,1.6,8.9,13.8,22.3,123.5,51,1975,2026
+"Mean number of days >= 40 °C for years 1975 to 2026 ",9.6,7.4,5.1,0.3,0.0,0.0,0.0,0.0,0.1,0.9,2.0,7.2,32.6,51,1975,2026
+"Mean minimum temperature (°C) for years 1975 to 2026 ",23.1,24.1,23.1,20.4,16.0,13.1,11.4,12.2,13.9,16.5,18.5,21.0,17.8,51,1975,2026
+"Lowest temperature (°C) for years 1975 to 2026 ",16.1,17.4,15.0,11.2,7.6,4.9,3.5,4.2,5.6,7.9,12.0,14.2,3.5,51,1975,2026
+"Date of Lowest temperature  °C  for years 1975 to 2026 ",04 Jan  2007,02 Feb  2001,20 Mar  1993,22 Apr  2019,03 May  1986,30 Jun  2017,10 Jul  2017,05 Aug  1975,02 Sep  1993,08 Oct  1992,14 Nov  1991,11 Dec  2008,10 Jul  2017,N/A,1975,2026
+"Highest minimum temperature (°C) for years 1975 to 2026 ",30.6,30.5,30.8,27.7,24.8,23.2,23.5,20.8,23.1,24.1,26.2,29.2,30.8,51,1975,2026
+"Date of Highest minimum temperature  °C  for years 1975 to 2026 ",21 Jan  2003,28 Feb  2025,06 Mar  2025,04 Apr  2018,15 May  2003,05 Jun  2018,15 Jul  1996,14 Aug  2011,14 Sep  2024,08 Oct  2016,24 Nov  2006,24 Dec  2012,06 Mar  2025,N/A,1975,2026
+"Decile 1 minimum temperature (°C) for years 1975 to 2025 ",20.3,21.2,20.0,17.3,12.0,8.7,7.4,8.9,11.1,13.5,15.8,18.1, ,49,1975,2025
+"Decile 9 minimum temperature (°C) for years 1975 to 2025 ",25.9,26.6,26.0,23.6,20.2,18.0,15.7,15.7,16.6,19.4,21.4,24.3, ,49,1975,2025
+"Mean number of days <= 2 °C for years 1975 to 2026 ",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,51,1975,2026
+"Mean number of days <= 0 °C for years 1975 to 2026 ",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,51,1975,2026
+"Mean daily ground minimum temperature °C for years 1975 to 2010 ",21.4,22.6,21.4,18.6,14.0,10.9,9.0,9.6,11.4,14.3,16.5,19.1,15.7,35,1975,2010
+"Lowest ground temperature °C for years 1975 to 2016 ",14.1,14.4,11.9,9.2,3.0,0.8,-0.5,0.6,2.3,5.0,7.7,12.3,-0.5,41,1975,2016
+"Date of Lowest ground temperature °C for years 1975 to 2016 ",04 Jan  2007,21 Feb  1982,27 Mar  2001,23 Apr  1994,29 May  1977,29 Jun  1997,19 Jul  1986,14 Aug  1986,07 Sep  1977,09 Oct  1992,09 Nov  2000,11 Dec  2008,19 Jul  1986,N/A,1975,2016
+"Mean number of days ground min. temp. <= -1 °C for years 1975 to 2016 ",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,41,1975,2016
+"Mean rainfall (mm) for years 1945 to 2026 ",29.2,38.0,39.7,19.4,41.3,43.2,20.7,11.8,2.2,1.4,1.8,5.6,254.9,71,1945,2026
+"Highest rainfall (mm) for years 1945 to 2026 ",361.1,238.7,302.2,195.8,230.8,223.5,99.0,64.0,18.6,45.7,45.0,153.4,614.7,71,1945,2026
+"Date of Highest rainfall for years 1945 to 2026 ",1967,1961,2000,2014,1984,1968,2007,1965,2022,1966,2008,1995,1961,N/A,1945,2026
+"Lowest rainfall (mm) for years 1945 to 2026 ",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,37.2,71,1945,2026
+"Date of Lowest rainfall for years 1945 to 2026 ",2026,2020,2013,2025,2019,2004,2017,2013,2023,2025,2025,2025,2003,N/A,1945,2026
+"Decile 1 monthly rainfall (mm) for years 1800 to 3000 ",0.0,0.0,0.0,0.0,0.2,4.3,0.0,0.0,0.0,0.0,0.0,0.0, ,73,n/a,n/a
+"Decile 5 (median) monthly rainfall (mm) for years 1800 to 3000 ",2.2,15.4,11.0,2.6,26.0,29.4,9.2,3.4,0.1,0.0,0.0,0.0, ,73,n/a,n/a
+"Decile 5 (median) monthly rainfall (mm) for years 1800 to 3000 ",85.5,124.1,134.3,48.4,89.6,103.7,59.2,42.2,8.6,2.0,2.9,10.2, ,73,n/a,n/a
+"Highest daily rainfall (mm) for years 1945 to 2026 ",226.6,118.1,254.0,154.4,93.8,95.0,66.6,46.8,17.6,45.7,41.8,132.8,254.0,70,1945,2026
+"Date of Highest daily rainfall for years 1945 to 2026 ",26 Jan  1971,12 Feb  1961,23 Mar  1953,27 Apr  2014,08 May  2014,16 Jun  2010,05 Jul  1984,01 Aug  1998,03 Sep  2022,02 Oct  1966,22 Nov  2008,12 Dec  1995,23 Mar  1953,N/A,1945,2026
+"Mean number of days of rain for years 1945 to 2026 ",2.5,3.2,2.4,1.8,3.6,5.2,3.5,2.2,1.0,0.4,0.5,0.7,27.0,70,1945,2026
+"Mean number of days of rain >= 1 mm for years 1945 to 2026 ",1.5,2.1,1.6,1.1,2.4,3.2,2.2,1.2,0.4,0.2,0.2,0.4,16.5,70,1945,2026
+"Mean number of days of rain >= 10 mm for years 1945 to 2026 ",0.5,0.9,0.7,0.4,1.1,1.0,0.6,0.3,0.1,0.0,0.0,0.1,5.7,70,1945,2026
+"Mean number of days of rain >= 25 mm for years 1945 to 2026 ",0.3,0.4,0.4,0.1,0.5,0.5,0.1,0.1,0.0,0.0,0.0,0.0,2.4,70,1945,2026
+"Mean daily wind run (km) for years 1994 to 2025 ",528,470,431,360,310,313,319,351,425,489,514,532,420,27,1994,2025
+"Maximum wind gust speed (km/h) for years 1978 to 2025 ",150,118,267,87,120,80,78,81,78,82,91,111,267,45,1978,2025
+"Date of Maximum wind gust speed for years 1978 to 2025 ",24 Jan  1980,24 Feb  1982,22 Mar  1999,23 Apr  1989,01 May  2015,08 Jun  1998,01 Jul  1998,11 Aug  2003,28 Sep  1989,12 Oct  1988,28 Nov  1981,11 Dec  1995,22 Mar  1999,N/A,1978,2025
+"Mean daily sunshine (hours) for years null to null ", , , , , , , , , , , , , ,, , 
+"Mean daily solar exposure (MJ/(m*m)) for years 1990 to 2026 ",28.4,26.4,23.8,19.6,16.3,14.4,15.7,19.3,23.4,26.9,29.0,29.3,22.7,36,1990,2026
+"Mean number of clear days for years 1975 to 2010 ",17.9,14.4,16.6,14.6,16.1,15.5,19.6,21.4,23.0,24.5,23.3,22.9,229.8,36,1975,2010
+"Mean number of cloudy days for years 1975 to 2010 ",4.2,5.5,5.4,6.5,6.4,6.4,4.9,3.3,1.4,1.1,1.7,2.1,48.9,36,1975,2010
+"Mean daily evaporation (mm) for years 1975 to 2017 ",12.4,11.1,10.1,7.8,5.5,4.1,4.3,5.7,7.9,10.2,11.4,12.4,8.6,42,1975,2017
+"Mean 9am temperature (°C) for years 1975 to 2010 ",29.1,29.4,28.6,26.4,22.5,18.9,17.8,19.3,21.6,24.4,26.4,28.2,24.4,36,1975,2010
+"Mean 9am wet bulb temperature (°C) for years 1975 to 2010 ",21.8,23.0,22.1,20.2,17.4,15.2,13.9,14.4,15.3,16.7,18.4,20.1,18.2,36,1975,2010
+"Mean 9am dew point temperature (°C) for years 1975 to 2010 ",17.3,19.3,18.1,15.9,13.2,11.8,10.0,9.6,9.6,10.1,12.4,14.5,13.5,36,1975,2010
+"Mean 9am relative humidity (%) for years 1975 to 2010 ",51,57,55,55,58,66,63,56,48,43,44,45,53,36,1975,2010
+"Mean 9am cloud cover (okas) for years 1975 to 2010 ",2.5,3.1,2.9,3.1,2.9,3.0,2.3,1.8,1.4,1.3,1.6,1.8,2.3,36,1975,2010
+"Mean 9am wind speed (km/h) for years 1975 to 2010 ",20.5,18.2,17.6,14.4,12.3,11.1,11.6,13.9,18.8,21.0,21.5,21.3,16.8,36,1975,2010
+"Mean 3pm temperature (°C) for years 1975 to 2010 ",36.2,35.7,35.0,32.0,27.5,24.0,23.3,25.1,28.0,31.0,32.7,35.0,30.5,36,1975,2010
+"Mean 3pm wet bulb temperature (°C) for years 1975 to 2010 ",23.4,24.3,23.1,21.2,18.5,16.6,15.5,15.9,16.9,18.4,19.9,21.8,19.6,36,1975,2010
+"Mean 3pm dew point temperature (°C) for years 1975 to 2010 ",15.4,17.7,15.4,13.6,11.2,10.0,8.0,7.0,6.3,7.2,10.0,12.5,11.2,36,1975,2010
+"Mean 3pm relative humidity (%) for years 1975 to 2010 ",33,39,35,36,40,45,41,35,28,25,27,29,34,36,1975,2010
+"Mean 3pm cloud cover (oktas) for years 1975 to 2010 ",2.4,2.9,2.8,3.2,3.1,2.9,2.3,1.8,1.3,1.3,1.4,1.7,2.3,36,1975,2010
+"Mean 3pm wind speed (km/h) for years 1975 to 2010 ",24.2,21.3,18.9,16.6,16.1,15.9,16.7,17.9,20.1,23.6,24.7,24.3,20.0,36,1975,2010
