@@ -115,7 +115,7 @@ hr_tally <- all_selns_hr |>
 
 # pivot dolphin table to get tally
 hr_dol_tally <- dol_det |>
-  filter(Presence == 1) |>
+  filter(Presence > 0) |>
   group_by(category_calltype, Begin_Date, Begin_Hour) |>
   # count instances in each grouping
   count() |>

@@ -121,6 +121,7 @@ hp_new <- hp_data |>
     # bal_pres = rowSums(across(ends_with("baleen")), na.rm=TRUE),
     # bal_pres = ifelse(bal_uk > 0, 1, 0),
     # hbw_pres = ifelse(Humpback > 0, 1, 0),
+    # hbw_pres = rowSums(across(starts_with("Mn_")), na.rm=TRUE),
     hbw_pres = ifelse(mn_song > 0, 1, 0),
     # fish_c_pres = ifelse(Fish_chorus > 0, 1, 0),
     fish_c_pres = ifelse(fish_c > 0, 1, 0),

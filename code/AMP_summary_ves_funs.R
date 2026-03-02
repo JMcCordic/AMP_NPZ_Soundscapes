@@ -87,6 +87,7 @@ Compile_Raven_bio_selns <- function(site_id = character(),
                 "Begin_Clock" = "Begin.Clock.Time",
                 "End_Clock" = "End.Clock.Time", 
                 "Delta_Time_s" = "Delta.Time..s.",
+                "Bio_Category" = "Bio.Category",
                 "Call_type" = "Call.Type"))
   
   
