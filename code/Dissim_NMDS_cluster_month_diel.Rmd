@@ -167,9 +167,9 @@ dissim_dist_all = as.dist(dissim_all |>
 #                         select(-dep))
 ```
 
-### NMDS all weeks
+### NMDS 
 
-```{r NMDS all weeks}
+```{r NMDS}
 
 # set start point for reproducibility
 set.seed(2025) 
@@ -203,10 +203,10 @@ ggplot(data = nmdsScores_all,
                     color = npz_id),
                data = nmdsScores_all,
                size = 1,level = .95) + #95% CI ellipse (assumed multivariate normal)
-  # geom_text(aes(label = light_fac,
-  #               color = npz_id),
-  #           vjust = -1, 
-  #           hjust = 1.0)+
+  geom_text(aes(label = month_UTC,
+                color = npz_id),
+            vjust = -1,
+            hjust = 1.0)+
   labs(caption = paste0("stress = ", nmds_all$stress))
 # 
 # ggsave(paste0("figs/", "NMDS_week_diel_all_npz_color.png"), width=12, height=8,
@@ -436,13 +436,14 @@ ggplot(data = psd_monthdiel_cluster,
        aes(x = frequency, 
            y = qmed)) +
   geom_line(aes(group = interaction(cluster,dep),
-                color = cluster)) +
+                color = light_fac)) +
   scale_x_log10() +
   scale_color_viridis_d(begin = 0.1, end = 0.8)+
-  facet_grid(rows = vars(cluster))
+  facet_grid(rows = vars(cluster), cols = vars(npz_id.x))+ 
+  theme_bw()
 
-ggsave(paste0("figs/", "PSD_by_clusters_monthdiel_facet.png"), width=8, height=10,
-       units="in", dpi=300)
+# ggsave(paste0("figs/", "PSD_by_clusters_monthdiel_facet.png"), width=8, height=10,
+#        units="in", dpi=300)
 
 ```
 
@@ -451,7 +452,41 @@ ggsave(paste0("figs/", "PSD_by_clusters_monthdiel_facet.png"), width=8, height=1
 
 
 
+### PERMANOVA tests
 
+```{r permanova}
+
+# Test assumption that dispersion is similar among groups
+#  --> NS result means we can proceed with PERMANOVA
+disp_cluster <- betadisper(dissim_dist_all, 
+                           group = nmdsScores_all$cluster)
+
+plot(disp_cluster)
+
+anova(disp_cluster)
+
+# Response: Distances
+#           Df     Sum Sq    Mean Sq F value Pr(>F)
+# Groups     4 0.00012096 3.0239e-05  1.1266 0.3542
+# Residuals 52 0.00139579 2.6842e-05 
+
+#### PERMANOVA test for clusters
+
+perma_cluster <- adonis2(dissim_dist_all~as.factor(nmdsScores_all$npz_id), data = dissim_dist_all, permutations = 9999)
+
+perma_cluster
+
+# Permutation test for adonis under reduced model
+# Permutation: free
+# Number of permutations: 9999
+# 
+# adonis2(formula = dissim_dist_all ~ as.factor(nmdsScores_all$npz_id), data = dissim_dist_all, permutations = 9999)
+#          Df SumOfSqs      R2     F Pr(>F)    
+# Model     5 0.030540 0.88738 80.37  1e-04 ***
+# Residual 51 0.003876 0.11262                 
+# Total    56 0.034416 1.00000    
+
+```
 
 
 

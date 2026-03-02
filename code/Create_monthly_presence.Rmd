@@ -78,7 +78,7 @@ hp_month_prop <- hp_allcols |>
   group_by(Dep_ID, month_UTC) |>
   summarise(n_days = n_distinct(date_UTC),
             n_hours = n(),
-            # caculate total counts per source by week
+            # caculate total counts per source by month
             bal_count = sum(bal_pres),
             hbw_count = sum(hbw_pres), 
             fish_c_count = sum(fish_c_pres),
@@ -87,7 +87,7 @@ hp_month_prop <- hp_allcols |>
             mnk_count = sum(mnk_pres),
             spwh_count = sum(spwh_pres),
             shr_count = sum(shr_pres),
-            # calculate prop hours present per source per week
+            # calculate prop hours present per source per month
             bal_pres = sum(bal_pres)/n_hours,
             hbw_pres = sum(hbw_pres)/n_hours, 
             fish_c_pres = sum(fish_c_pres)/n_hours,
@@ -156,11 +156,11 @@ hp_allcols_light <- hp_allcols |>
   ) 
   
 hp_monthlight_prop <- hp_allcols_light |>
-  # group by week + light regime 
+  # group by month + light regime 
   group_by(Dep_ID, month_UTC, light_reg) |>
   summarise(n_days = n_distinct(date_UTC),
             n_hours = n(),
-            # caculate total counts per source by week
+            # caculate total counts per source
             bal_count = sum(bal_pres),
             hbw_count = sum(hbw_pres), 
             fish_c_count = sum(fish_c_pres),
@@ -169,7 +169,7 @@ hp_monthlight_prop <- hp_allcols_light |>
             mnk_count = sum(mnk_pres),
             spwh_count = sum(spwh_pres),
             shr_count = sum(shr_pres),
-            # calculate prop hours present per source per week
+            # calculate prop hours present per source
             bal_pres = sum(bal_pres)/n_hours,
             hbw_pres = sum(hbw_pres)/n_hours, 
             fish_c_pres = sum(fish_c_pres)/n_hours,
