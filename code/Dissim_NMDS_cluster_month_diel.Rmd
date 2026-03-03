@@ -86,31 +86,31 @@ dissim_all <- dissim_all |>
 dissim_dist_all = as.dist(dissim_all |>
                         select(-dep))
 
-# 
-# #'---------------------------------------------------------------
-# #' Temperate East
-# #'---------------------------------------------------------------
-# 
-# 
-# dissim_te <- dissim_all |>
-#   select(dep, contains("CGMP") | contains("SIMP")) |>
-#   filter(grepl("CGMP", dep) | grepl("SIMP", dep)) |>
-#   # join to get week info by deployment
-#   left_join(all_dep_labels, by="dep") |>
-#   # join with subset of weeks common to multiple deployments
-#   left_join(weeks_to_use) |>
-#   # filter out remaining weeks
-#   filter(!is.na(n_deps_wk)) 
-# # get values of deployments left
-# dep_wk_te <- dissim_te$dep
-# # select those columns to just get dissim values we care about
-# dissim_te <- dissim_te |>
-#   select(dep, all_of(dep_wk_te))
-# 
-# 
-# # get rid of deployment column to make square matrix, format as distance matrix
-# dissim_dist_te = as.dist(dissim_te |>
-#                         select(-dep))
+
+#'---------------------------------------------------------------
+#' Temperate East
+#'---------------------------------------------------------------
+
+
+dissim_te <- dissim_all |>
+  select(dep, contains("CGMP") | contains("SIMP")) |>
+  filter(grepl("CGMP", dep) | grepl("SIMP", dep)) |>
+  # join to get week info by deployment
+  left_join(all_dep_labels, by="dep") |>
+  # join with subset of weeks common to multiple deployments
+  left_join(months_to_use) |>
+  # filter out remaining weeks
+  filter(!is.na(n_deps_mo))
+# get values of deployments left
+dep_wk_te <- dissim_te$dep
+# select those columns to just get dissim values we care about
+dissim_te <- dissim_te |>
+  select(dep, all_of(dep_wk_te))
+
+
+# get rid of deployment column to make square matrix, format as distance matrix
+dissim_dist_te = as.dist(dissim_te |>
+                        select(-dep))
 # 
 # 
 # 
@@ -437,7 +437,7 @@ ggplot(data = psd_monthdiel_cluster,
                 color = light_fac)) +
   scale_x_log10() +
   scale_color_viridis_d(begin = 0.1, end = 0.8)+
-  facet_grid(rows = vars(cluster), cols = vars(npz_id.x))+ 
+  facet_grid(rows = vars(cluster))+ 
   theme_bw()
 
 # ggsave(paste0("figs/", "PSD_by_clusters_monthdiel_facet.png"), width=8, height=10,
@@ -468,21 +468,19 @@ anova(disp_cluster)
 # Groups     4 0.00012096 3.0239e-05  1.1266 0.3542
 # Residuals 52 0.00139579 2.6842e-05 
 
-#### PERMANOVA test for clusters
+#### PERMANOVA test for whether clusters are significantly different from one another
 
-perma_cluster <- adonis2(dissim_dist_all~as.factor(nmdsScores_all$npz_id), data = dissim_dist_all, permutations = 9999)
+perma_cluster <- adonis2(dissim_dist_all~as.factor(nmdsScores_all$cluster), data = dissim_dist_all, permutations = 9999)
 
 perma_cluster
 
-# Permutation test for adonis under reduced model
-# Permutation: free
-# Number of permutations: 9999
-# 
-# adonis2(formula = dissim_dist_all ~ as.factor(nmdsScores_all$npz_id), data = dissim_dist_all, permutations = 9999)
-#          Df SumOfSqs      R2     F Pr(>F)    
-# Model     5 0.030540 0.88738 80.37  1e-04 ***
-# Residual 51 0.003876 0.11262                 
-# Total    56 0.034416 1.00000    
+# adonis2(formula = dissim_dist_all ~ as.factor(nmdsScores_all$cluster), data = dissim_dist_all, permutations = 9999)
+#          Df SumOfSqs      R2      F Pr(>F)    
+# Model     4 0.029566 0.85908 79.252  1e-04 ***
+# Residual 52 0.004850 0.14092                  
+# Total    56 0.034416 1.00000                  
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 ```
 
@@ -496,7 +494,7 @@ perma_cluster
 
 
 
-### NMDS by network
+### NMDS for Temperate East network
 
 ```{r NMDS by network}
 
@@ -514,92 +512,98 @@ nmdsScores_te <- as.data.frame(scores(nmds_te)) |>
   rownames_to_column(var = "dep") |>
   # join to label info
   left_join(all_dep_labels) |>
-  mutate(week_fac = factor(isoweek_UTC))
+  mutate(month_fac = factor(month_UTC))
 
 
 # explore initial patterns in ordination
-# network 
-ggplot(aes(x = NMDS1, y = NMDS2, 
-           color = Dep_ID,
-           shape = npz_id), 
-       data = nmdsScores_te)+ 
+ 
+ggplot(aes(x = NMDS1, y = NMDS2,
+           color = npz_id,
+           shape = light_reg),
+       data = nmdsScores_te)+
   theme_bw()+
   geom_point(size = 3)+
-  geom_text(aes(label = week_fac), 
-            vjust = -1, 
-            hjust = 1.0)+
-  labs(caption = "stress = 0.064")
+  # geom_text(aes(label = week_fac),
+  #           vjust = -1,
+  #           hjust = 1.0)+
+  labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)))
 
 # ggsave(paste0("figs/", "NMDS_week_tempeast.png"), width=12, height=8,
 #        units="in", dpi=300)
 
 
+```
 
-#'-----------------------------------------------
-#' North-west NMDS
-#' ---------------------------------------------
+### Clustering Temp East
 
-# calculate nmds ordination from vegan package
-nmds_nw <- metaMDS(dissim_dist_nw, k=2, trymax = 20, autotransform = FALSE, plot = TRUE)
+```{r cluster Temp East}
+sdf_agnes_te = agnes(dissim_dist_te, diss = T, method = "ward")
+plot(sdf_agnes_te)
+summary(sdf_agnes_te)
 
-# get nmds scores as data frame
-nmdsScores_nw <- as.data.frame(scores(nmds_nw)) |>
-  # add deployment-months (rownames) as separate column
-  rownames_to_column(var = "dep") |>
-  # join to label info
-  left_join(all_dep_labels) |>
-  mutate(week_fac = factor(isoweek_UTC))
+sdf_agnes_te_cut <- cutree(sdf_agnes_te, k = 4)
+nmdsScores_te$cluster = factor(sdf_agnes_te_cut)
+
+# plot clusters
+library(ggdendro)
+
+# format cluster model for ggplot
+dendr_te <- dendro_data(sdf_agnes_te)
+dendr_te[["labels"]] <- merge(dendr_te[["labels"]], nmdsScores_te, by.x="label", by.y = "dep")
 
 
-# explore initial patterns in ordination
-# network 
-ggplot(aes(x = NMDS1, y = NMDS2, 
-           color = Dep_ID,
-           shape = npz_id), 
-       data = nmdsScores_nw)+ 
+ggplot() + 
+  geom_segment(data=segment(dendr_te), 
+               aes(x=x, 
+                   y=y, 
+                   xend=xend,
+                   yend=yend)) + 
+  geom_text(data=ggdendro::label(dendr_te), 
+            aes(x, y, label=label, hjust=0.5, color=cluster),
+            angle = 90, size = 3)
+
+
+
+# plot NMDS w/clusters
+
+ggplot(data = nmdsScores_te,
+       aes(x = NMDS1, y = NMDS2)
+       )+ 
   theme_bw()+
-  geom_point(size = 3)+
-  geom_text(aes(label = week_fac), 
-            vjust = -1, 
-            hjust = 1.0) +
-  labs(caption = "stress = 0.217 (may have insufficient data)")
+  geom_point(data = nmdsScores_te, aes(color = cluster,
+           shape = light_reg), 
+           size = 4,
+       alpha = 0.5) +
+  # geom_text(data = nmdsScores_te, aes(label = npz_id),
+  #           vjust = -1, 
+  #           hjust = 1.0)+
+  # geom_segment(data =envScores,
+  #              aes(x=0,
+  #                  xend=NMDS1,
+  #                  y=0,
+  #                  yend=NMDS2),
+  #              arrow = arrow(length = unit(0.5, "cm")),
+  #              colour="black")+
+  # add npz centroids from envfit
+  # geom_point(data = envCent_npz,
+  #            aes(x = NMDS1, y = NMDS2),
+  #            size = 3)+
+  # geom_text(data=envCent_npz,
+  #           aes(x=NMDS1,
+  #               y=NMDS2,
+  #               label=cent_label),
+  #           size=4)+
+  # add cluster ellipses
+  stat_ellipse(data = nmdsScores_te,
+               aes(color = cluster),
+               # linetype = "dotted",
+               size = 1,
+               level = 0.95)+
+  # scale_color_viridis_d(begin = 0.1, end = 0.8)+
+    labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)))
 
-# ggsave(paste0("figs/", "NMDS_week_northwest.png"), width=12, height=8,
-#        units="in", dpi=300)
 
 
-
-#'-----------------------------------------------
-#' South-west NMDS
-#' ---------------------------------------------
-
-# calculate nmds ordination from vegan package
-nmds_sw <- metaMDS(dissim_dist_sw, k=2, trymax = 20, autotransform = FALSE, plot = FALSE)
-
-# get nmds scores as data frame
-nmdsScores_sw <- as.data.frame(scores(nmds_sw)) |>
-  # add deployment-months (rownames) as separate column
-  rownames_to_column(var = "dep") |>
-  # join to label info
-  left_join(all_dep_labels) |>
-  mutate(week_fac = factor(isoweek_UTC))
-
-
-# explore initial patterns in ordination
-# network 
-ggplot(aes(x = NMDS1, y = NMDS2, 
-           color = Dep_ID,
-           shape = npz_id), 
-       data = nmdsScores_sw)+ 
-  theme_bw()+
-  geom_point(size = 3)+
-  geom_text(aes(label = week_fac), 
-            vjust = -1, 
-            hjust = 1.0) +
-  labs(caption = "stress = 0.0024")
-
-# ggsave(paste0("figs/", "NMDS_week_southwest.png"), width=12, height=8,
-#        units="in", dpi=300)
 
 
 ```
