@@ -574,8 +574,8 @@ ggplot(data = nmdsScores_te,
            shape = light_reg), 
            size = 4,
        alpha = 0.5) +
-  # geom_text(data = nmdsScores_te, aes(label = npz_id),
-  #           vjust = -1, 
+  # geom_text(data = nmdsScores_te, aes(label = Dep_ID),
+  #           vjust = -1,
   #           hjust = 1.0)+
   # geom_segment(data =envScores,
   #              aes(x=0,
@@ -607,3 +607,42 @@ ggplot(data = nmdsScores_te,
 
 
 ```
+
+
+### PERMANOVA tests Temp East
+
+```{r permanova temp east}
+
+# Test assumption that dispersion is similar among groups
+#  --> NS result means we can proceed with PERMANOVA
+disp_cluster_te <- betadisper(dissim_dist_te, 
+                           group = nmdsScores_te$cluster)
+
+plot(disp_cluster_te)
+
+anova(disp_cluster_te)
+
+# Response: Distances
+#           Df     Sum Sq    Mean Sq F value Pr(>F)
+# Groups     4 0.00012096 3.0239e-05  1.1266 0.3542
+# Residuals 52 0.00139579 2.6842e-05 
+
+#### PERMANOVA test for whether clusters are significantly different from one another
+
+perma_cluster_te <- adonis2(dissim_dist_te~as.factor(nmdsScores_te$cluster), data = dissim_dist_te, permutations = 9999)
+
+perma_cluster_te
+
+# adonis2(formula = dissim_dist_te ~ as.factor(nmdsScores_te$cluster), data = dissim_dist_te, permutations = 9999)
+#          Df  SumOfSqs      R2      F Pr(>F)    
+# Model     2 0.0024830 0.61425 21.497  1e-04 ***
+# Residual 27 0.0015593 0.38575                  
+# Total    29 0.0040423 1.00000     
+
+```
+
+
+
+
+
+
