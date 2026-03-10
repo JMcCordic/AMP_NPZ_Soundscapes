@@ -1,0 +1,95 @@
+---
+title: "Reshape_weather"
+author: "Jessica McCordic"
+date: "2026-03-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r load lib}
+
+library(tidyverse)
+library(tcltk2)
+library(svDialogs)
+
+```
+
+
+### Run separately for each deployment
+Want to end up with table that can be merged with HMD
+- requires hourly Datetime column named "UTC" (e.g., "2019-04-17T00:00:00Z")
+- requires deployment ID column named "Dep" (e.g., "CGMP_201807_CG")
+
+Columns for weather:
+- rainfall
+- windspeed
+- tidal magnitude
+
+
+
+
+```{r load data}
+
+# get deployment
+deployment_id <- dlgInput("Deployment ID")$res
+start_month <- dlgInput("Start month (number)")$res
+end_month <-  dlgInput("End month (number)")$res
+
+
+# get rain & wind CSV
+rain_wind <- read_csv(tk_choose.files(caption = "Select rain & wind CSV"), skip = 11)
+
+# get tides CSV
+tides <- read_csv(tk_choose.files(caption = "Select tide data CSV"))
+
+```
+
+```{r reshape tables}
+
+# rain and wind data (monthly avg)
+rain_wind_pvt <- rain_wind |>
+  # pivot to get month as a column
+  pivot_longer(cols = -c(`Statistic Element`), names_to = "month_name") |>
+  # select only measurements I want to keep
+  filter(`Statistic Element` == "Mean rainfall (mm) for years 1903 to 2026" |
+           `Statistic Element` == "Mean 9am wind speed (km/h) for years 1957 to 2010" |
+           `Statistic Element` == "Mean 3pm wind speed (km/h) for years 1957 to 2010",
+         # only keep monthly data
+         month_name %in% month.name) |>
+  pivot_wider(names_from = `Statistic Element`) |>
+  rename(rain_month_avg_mm = "Mean rainfall (mm) for years 1903 to 2026",
+         wind_am_month_avg_kmh = "Mean 9am wind speed (km/h) for years 1957 to 2010",
+         wind_pm_month_avg_kmh = "Mean 3pm wind speed (km/h) for years 1957 to 2010") |>
+  # add deployment ID
+  mutate(Dep = str_replace(deployment_id, "PARKSAUSTRALIA_", ""),
+         # get month numbers by finding the match to the built-in month.name vector
+         month_UTC = match(month_name, month.name))
+
+
+station <- last(colnames(tides))
+tide_data <- tides |>
+  rename(UTC = "Date & UTC Time",
+         height_m = "Sea Level",
+         water_temp_C = "Water Temperature",
+         wind_km_h = "Wind Speed") |>
+  select(UTC, height_m, water_temp_C, wind_km_h)|>
+  mutate(station_name = station,
+         Dep = str_replace(deployment_id, "PARKSAUSTRALIA_", ""), 
+         UTC = as_datetime(UTC, format = "%d-%m-%Y %H:%M"),
+         month_UTC = month(UTC))
+
+rain_wind_tide <- tide_data |>
+  left_join(rain_wind_pvt, by = c("Dep", "month_UTC"))
+  
+```
+
+```{r export}
+
+write_csv(rain_wind_tide, paste0("output/", deployment_id, "_weather_for_HMD.csv"))
+
+```
+

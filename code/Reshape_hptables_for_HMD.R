@@ -79,7 +79,10 @@ hp_ves_all <- read_csv(choose.files(caption = "Select compiled vessel hourly pre
   # ) |>
 
 
+names(bio_hp_og)
+
 bio_hp_data <- bio_hp_og |> 
+  # mutate(Start.date = as_date(Start.date, format = "%m/%d/%Y")) |>
   # rename(Begin_Date = Start.date,
   #        Begin_Hour = Start.hour,
   #        Humpback = HumpbackPresent,
@@ -120,15 +123,18 @@ hp_new <- hp_data |>
     # summarize presence
     # bal_pres = rowSums(across(ends_with("baleen")), na.rm=TRUE),
     # bal_pres = ifelse(bal_uk > 0, 1, 0),
+    # bal_pres = ifelse(baleen_uk > 0, 1, 0),
     # hbw_pres = ifelse(Humpback > 0, 1, 0),
-    # hbw_pres = rowSums(across(starts_with("Mn_")), na.rm=TRUE),
-    hbw_pres = ifelse(mn_song > 0, 1, 0),
-    # fish_c_pres = ifelse(Fish_chorus > 0, 1, 0),
+    hbw_pres = rowSums(across(starts_with("mn_")), na.rm=TRUE),
+    # hbw_pres = ifelse(mn_song > 0, 1, 0),
+    # fish_c_pres = ifelse(fish_chorus > 0, 1, 0),
     fish_c_pres = ifelse(fish_c > 0, 1, 0),
     # dol_pres = ifelse(Dolphin > 0, 1, 0),
-    dol_pres = ifelse(dol_w > 0, 1, 0),
+    dol_pres = ifelse(dol_w.x > 0, 1, 0),
     # mnk_pres = ifelse(Mid_baleen > 0, 1, 0),
     # mnk_pres = ifelse(minke_sw > 0, 1, 0),
+    mnk_pres = rowSums(across(starts_with("minke_")), na.rm=TRUE),
+    
     # spwh_pres = rowSums(across(pm_:Spermwhale_), na.rm = TRUE),
     # spwh_pres = ifelse(pm_frg > 0, 1, 0),
     # Total_Vessels = rowSums(across(c(CPA, CPA_M,TA,TA_M,TB, TRANSIT, M)), na.rm=TRUE),

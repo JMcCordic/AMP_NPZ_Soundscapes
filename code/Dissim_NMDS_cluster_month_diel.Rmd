@@ -224,7 +224,8 @@ hp_month_prop <- read_csv("data/All_sites_tables/allsources_by_month_diel.csv")
 # add weekly pres to NMDS scores
 monthly_pres_data <- nmdsScores_all |>
   # left join with nmds to subset to common weeks and force same order
-  left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg"))
+  left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg")) |>
+  mutate(month_fac = as_factor(month_UTC))
   
 
   ## Evaluate correlation between ordination and environmental data
@@ -239,6 +240,10 @@ env_test
 
 env_pvals_vec <- env_test$vectors$pvals |>
   enframe()
+
+env_pvals_fac <- env_test$factors$pvals |>
+  enframe()
+
 
 envScores <- as_tibble(scores(env_test, "vectors"), rownames = "name") |>
   left_join(env_pvals_vec) |>
@@ -534,6 +539,34 @@ ggplot(aes(x = NMDS1, y = NMDS2,
 
 ```
 
+
+### Adding presence for Temp East
+```{r temp east presence}
+
+# add weekly pres to NMDS scores
+monthly_pres_te <- nmdsScores_te |>
+  # left join with nmds to subset to common weeks and force same order
+  left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg")) |>
+  mutate(month_fac = as_factor(month_UTC)) |>
+  select(-c(spwh_pres))
+  
+
+  ## Evaluate correlation between ordination and environmental data
+  env_test_te <- envfit(nmds_te, 
+                     monthly_pres_te|>
+                       # only keep grouping columns and presence columns
+                       select(npz_id, month_UTC, light_reg, all_of(ends_with("_pres"))),
+                     permutations = 999, 
+                     na.rm = TRUE)
+env_test_te
+
+
+
+
+```
+
+
+
 ### Clustering Temp East
 
 ```{r cluster Temp East}
@@ -541,7 +574,7 @@ sdf_agnes_te = agnes(dissim_dist_te, diss = T, method = "ward")
 plot(sdf_agnes_te)
 summary(sdf_agnes_te)
 
-sdf_agnes_te_cut <- cutree(sdf_agnes_te, k = 4)
+sdf_agnes_te_cut <- cutree(sdf_agnes_te, k = 3)
 nmdsScores_te$cluster = factor(sdf_agnes_te_cut)
 
 # plot clusters
@@ -641,8 +674,6 @@ perma_cluster_te
 
 ```
 
-
-### Presence dissimilarity
 
 
 
