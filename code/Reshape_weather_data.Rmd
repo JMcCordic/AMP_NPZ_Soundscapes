@@ -36,8 +36,8 @@ Columns for weather:
 
 # get deployment
 deployment_id <- dlgInput("Deployment ID")$res
-start_month <- dlgInput("Start month (number)")$res
-end_month <-  dlgInput("End month (number)")$res
+# start_month <- dlgInput("Start month (number)")$res
+# end_month <-  dlgInput("End month (number)")$res
 
 
 # get rain & wind CSV
@@ -45,6 +45,7 @@ rain_wind <- read_csv(tk_choose.files(caption = "Select rain & wind CSV"), skip 
 
 # get tides CSV
 tides <- read_csv(tk_choose.files(caption = "Select tide data CSV"))
+
 
 ```
 
@@ -55,35 +56,75 @@ rain_wind_pvt <- rain_wind |>
   # pivot to get month as a column
   pivot_longer(cols = -c(`Statistic Element`), names_to = "month_name") |>
   # select only measurements I want to keep
-  filter(`Statistic Element` == "Mean rainfall (mm) for years 1903 to 2026" |
-           `Statistic Element` == "Mean 9am wind speed (km/h) for years 1957 to 2010" |
-           `Statistic Element` == "Mean 3pm wind speed (km/h) for years 1957 to 2010",
+  filter(grepl("Mean rainfall (mm)*", `Statistic Element`) |
+           grepl("Mean 9am wind speed (km/h)*", `Statistic Element`) |
+           grepl("Mean 3pm wind speed (km/h)*", `Statistic Element`),
          # only keep monthly data
          month_name %in% month.name) |>
+  # 
+  # filter(`Statistic Element` == "Mean rainfall (mm) for years 1903 to 2026" |
+  #          `Statistic Element` == "Mean 9am wind speed (km/h) for years 1957 to 2010" |
+  #          `Statistic Element` == "Mean 3pm wind speed (km/h) for years 1957 to 2010",
+  #        # only keep monthly data
+  #        month_name %in% month.name) |>
   pivot_wider(names_from = `Statistic Element`) |>
-  rename(rain_month_avg_mm = "Mean rainfall (mm) for years 1903 to 2026",
-         wind_am_month_avg_kmh = "Mean 9am wind speed (km/h) for years 1957 to 2010",
-         wind_pm_month_avg_kmh = "Mean 3pm wind speed (km/h) for years 1957 to 2010") |>
+  rename(rain_month_avg_mm = starts_with("Mean rainfall (mm)"),
+         wind_am_month_avg_kmh = starts_with("Mean 9am wind speed (km/h)"),
+         wind_pm_month_avg_kmh = starts_with("Mean 3pm wind speed (km/h)")) |>
   # add deployment ID
   mutate(Dep = str_replace(deployment_id, "PARKSAUSTRALIA_", ""),
          # get month numbers by finding the match to the built-in month.name vector
          month_UTC = match(month_name, month.name))
 
-
+# For bom.gov.au tide data
 station <- last(colnames(tides))
 tide_data <- tides |>
   rename(UTC = "Date & UTC Time",
          height_m = "Sea Level",
          water_temp_C = "Water Temperature",
-         wind_km_h = "Wind Speed") |>
-  select(UTC, height_m, water_temp_C, wind_km_h)|>
-  mutate(station_name = station,
+         wind_m_sec = "Wind Speed") |>
+  select(UTC, height_m, water_temp_C, wind_m_sec)|>
+  mutate(tide_station = station,
+         wind_km_h = wind_m_sec*3.6,
          Dep = str_replace(deployment_id, "PARKSAUSTRALIA_", ""), 
          UTC = as_datetime(UTC, format = "%d-%m-%Y %H:%M"),
          month_UTC = month(UTC))
 
+# For transport.wa.gov.au tide data (Ningaloo)
+# tide_metadata <- tides |> 
+#   filter(grepl("#", `#DEPARTMENT OF TRANSPORT- FREMANTLE`))
+#   
+# station <- tide_metadata$`#DEPARTMENT OF TRANSPORT- FREMANTLE`[grep("#LOCATION:", tide_metadata$`#DEPARTMENT OF TRANSPORT- FREMANTLE`)]|>
+#   str_replace("#LOCATION: ", "")
+# 
+# tide_data <- tides |>
+#     rename(height_cm = `#DEPARTMENT OF TRANSPORT- FREMANTLE`,
+#            date = `...2`,
+#            hhmm = `...3`) |>
+#   filter(!grepl("#", height_cm),
+#          height_cm != "H(cm)",
+#          height_cm != -9999,
+#          grepl("00/",hhmm)) |>
+#   select(-c(`...4`)) |> 
+#   mutate(hhmm = str_replace(hhmm, "/", ""),
+#          datetime_loc = paste0(date, hhmm),
+#          datetime_loc = as_datetime(datetime_loc, format = "%Y%m%d%H%M"),
+#          datetime_loc_tz = force_tz(datetime_loc, tzone = "Etc/GMT-8"),
+#          UTC = with_tz(datetime_loc_tz, tzone = "Etc/UTC"),
+#          height_m = as.numeric(height_cm)/100,
+#          tide_station = station, 
+#          wind_km_h = -9999,
+#          water_temp_C = -9999,
+#          wind_m_sec = -9999,
+#          Dep = str_replace(deployment_id, "PARKSAUSTRALIA_", ""),
+#          month_UTC = month(UTC)) |>
+#   select(-c(height_cm, hhmm, starts_with("date")))
+
+
+
 rain_wind_tide <- tide_data |>
-  left_join(rain_wind_pvt, by = c("Dep", "month_UTC"))
+  left_join(rain_wind_pvt, by = c("Dep", "month_UTC")) 
+  
   
 ```
 
