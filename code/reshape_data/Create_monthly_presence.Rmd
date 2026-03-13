@@ -44,6 +44,16 @@ hp_og <- dep_info |>
   # in this case, we want the name of the list element, designated as ".y"
   imap(~mutate(., Dep_ID = .y))
 
+
+dir_weather <- tk_choose.dir(caption = "Select folder with selection tables (.txt)")
+weather_og <- dir_weather |>
+    # list all files with .txt extension
+    list.files(pattern = ".csv") |>
+    map_chr(~paste0(dir_weather,"\\",  .)) |>
+    # use map to iterate read.delim() function over each file in the directory
+    map(~read_csv(.)) 
+
+
 # load in hourly shrimp presence based on 10kHz TOL band
 tol_shrimp <- read_csv("data/All_sites_tables/TOL10khz_shrimp.csv") 
 
@@ -65,11 +75,22 @@ hp_allcols <- hp_og |>
 
 ```
 
+```{r reshape and merge weather}
 
+weather_data <- weather_og |>
+  bind_rows() |>
+  rename(Dep_ID = "Dep") |>
+  # replace missing values coded as -9999 with NA
+  mutate(across(-c(UTC, Dep_ID, month_name, tide_station), ~ifelse(. < 0, NA, .)))
+
+hp_env <- hp_allcols |>
+  left_join(weather_data, by = c("Dep_ID","UTC"))
+
+```
 
 ```{r monthly presence}
 
-hp_month_prop <- hp_allcols |>
+hp_month_prop <- hp_env |>
   mutate(month_UTC = month(UTC),
          date_UTC = date(UTC),
          # replace all NA's with 0's in presence cols
@@ -95,7 +116,15 @@ hp_month_prop <- hp_allcols |>
             ves_pres = sum(ves_pres)/n_hours,
             mnk_pres = sum(mnk_pres)/n_hours,
             spwh_pres = sum(spwh_pres)/n_hours,
-            shr_pres = sum(shr_pres)/n_hours
+            shr_pres = sum(shr_pres)/n_hours,
+            tidal_mag_m = max(height_m, na.rm = TRUE) - min(height_m, na.rm = TRUE),
+            mean_water_temp_C = mean(water_temp_C, na.rm = TRUE),
+            mean_wind_m_sec = mean(wind_m_sec, na.rm = TRUE),
+            mean_wind_km_h = mean(wind_km_h, na.rm = TRUE),
+            rain_month_avg_mm = mean(rain_month_avg_mm, na.rm = TRUE),
+            wind_am_month_avg_kmh = mean(wind_am_month_avg_kmh, na.rm = TRUE),
+            wind_pm_month_avg_kmh = mean(wind_pm_month_avg_kmh, na.rm = TRUE)
+            
     ) |>
   filter(n_days >= 15) # only keep months with 15+ days
 
@@ -106,7 +135,7 @@ hp_month_prop <- hp_allcols |>
 
 
 
-hp_allcols_light <- hp_allcols |>
+hp_allcols_light <- hp_env |>
   # add columns for grouping
   mutate(month_UTC = month(UTC),
          date_UTC = date(UTC),
@@ -177,7 +206,14 @@ hp_monthlight_prop <- hp_allcols_light |>
             ves_pres = sum(ves_pres)/n_hours,
             mnk_pres = sum(mnk_pres)/n_hours,
             spwh_pres = sum(spwh_pres)/n_hours,
-            shr_pres = sum(shr_pres)/n_hours
+            shr_pres = sum(shr_pres)/n_hours,
+            tidal_mag_m = max(height_m, na.rm = TRUE) - min(height_m, na.rm = TRUE),
+            mean_water_temp_C = mean(water_temp_C, na.rm = TRUE),
+            mean_wind_m_sec = mean(wind_m_sec, na.rm = TRUE),
+            mean_wind_km_h = mean(wind_km_h, na.rm = TRUE),
+            rain_month_avg_mm = mean(rain_month_avg_mm, na.rm = TRUE),
+            wind_am_month_avg_kmh = mean(wind_am_month_avg_kmh, na.rm = TRUE),
+            wind_pm_month_avg_kmh = mean(wind_pm_month_avg_kmh, na.rm = TRUE)
     ) |>
   filter(n_days >= 15) # only keep months with 15+ days
 
@@ -192,9 +228,9 @@ hp_monthlight_prop <- hp_allcols_light |>
 ```{r export table}
 
 write_csv(hp_month_prop,
-          "output/allsources_by_month.csv")
+          "output/allsources_by_month_weather.csv")
 
 write_csv(hp_monthlight_prop, 
-          "output/allsources_by_month_diel.csv")
+          "output/allsources_by_month_diel_weather.csv")
 
 ```
