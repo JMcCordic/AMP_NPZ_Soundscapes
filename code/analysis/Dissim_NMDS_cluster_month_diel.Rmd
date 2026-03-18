@@ -18,7 +18,9 @@ library(vegan)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(ggdendro)
 library(cluster)
+library(fpc)
 library(RColorBrewer)
 library(here)
 library(PAMscapes)
@@ -351,20 +353,44 @@ ggplot(data = nmdsScores_all,
 
 ```{r cluster}
 sdf_agnes = agnes(dissim_dist_all, diss = T, method = "ward")
-plot(sdf_agnes)
+
+# Visually assess the tree
+plot(sdf_agnes,which.plots = 2)
 summary(sdf_agnes)
+
+# k = 5 seems reasonable based on looking at dendrogram
+# use clusterboot() from fpc package to test stability of clusters if k=5
+
+agnes_boot <- clusterboot(dissim_dist_all, 
+            clustermethod = hclustCBI, 
+            method = "ward.D2",
+            k = 5,
+            seed = 32165)
+
+# From "Practical Data Science With R" book, Ch 8:
+# "As a rule of thumb, clusters with a
+# stability value less than 0.6 should be considered unstable. Values between 0.6 and 0.75
+# indicate that the cluster is measuring a pattern in the data, but there isn’t high certainty about which points should be clustered together. Clusters with stability values
+# above about 0.85 can be considered highly stable (they’re likely to be real clusters)."
+agnes_boot$bootmean
+# [1] 0.7291170 0.6791824 0.9870130 0.9371382 0.7320519
+agnes_boot$bootbrd
+# [1] 20 34  1  2 30
+
+# Suggests cluster 1 (CGMP), 2 (DMP), and 5 (SIMP) are less stable than 3 (MMP) and 4 (SWCMP/NMP)
+# -- all are still above 'rule of thumb' 0.6 cutoff
+
+
 
 sdf_agnes_cut <- cutree(sdf_agnes, k = 5)
 nmdsScores_all$cluster = factor(sdf_agnes_cut)
-
-# plot clusters
-library(ggdendro)
 
 # format cluster model for ggplot
 dendr <- dendro_data(sdf_agnes)
 dendr[["labels"]] <- merge(dendr[["labels"]], nmdsScores_all, by.x="label", by.y = "dep")
 
 
+# plot clusters
 ggplot() + 
   geom_segment(data=segment(dendr), 
                aes(x=x, 
@@ -474,36 +500,52 @@ ggplot(data = psd_clust_light,
   geom_ribbon(aes(ymin = min_psd,
                   ymax = max_psd, 
                   group = interaction(cluster,light_fac),
-                  fill = cluster),
+                  fill = light_fac),
               alpha = 0.5)+
   # geom_line(aes(group = cluster,
   #               color = cluster)) +
   scale_x_log10() +
   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
-  facet_grid(rows = vars(light_fac))+ 
+  facet_grid(rows = vars(cluster))+ 
   theme_bw()
 
 
 # plot summary PSDs by cluster
 ggplot(data = psd_clust, 
-       aes(x = frequency, 
-           y = med_psd)) +
+       aes(x = frequency)) +
   geom_ribbon(aes(ymin = min_psd,
-                  ymax = max_psd, 
+                  ymax = max_psd,
                   group = cluster,
                   fill = cluster),
               alpha = 0.5)+
-  geom_line(aes(group = cluster,
+  geom_line(aes(y = med_psd,
+                group = cluster,
                 color = cluster),
             linewidth = 1) +
+    geom_line(aes(y = min_psd,
+                group = cluster,
+                color = cluster),
+              alpha = 0.5,
+            linewidth = 0.25) +
+    geom_line(aes(y = max_psd,
+                group = cluster,
+                color = cluster),
+              alpha = 0.5,
+            linewidth = 0.25) +
+  labs(x = "Frequency", 
+       y = expression(paste("dB re 1", mu, "Pa"^"2", "Hz"^"-1")),
+       color = "Cluster",
+       fill = "Cluster")+
   scale_x_log10() +
   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
   scale_color_viridis_d(begin = 0.1, end = 0.8)+
-  facet_grid(rows = vars(cluster))+ 
-  theme_bw()
+  facet_grid(rows = vars(cluster))+
+  theme_bw(base_size = 14) +
+  theme(strip.text.y = element_text(face = "bold", angle = 0),
+        strip.background.y = element_rect(fill = NA))
 
-# 
-# 
+
+
 # ggsave(paste0("figs/", "PSD_by_clusters_shading.png"), width=8, height=10,
 #        units="in", dpi=300)
 
