@@ -435,6 +435,25 @@ psd_monthdiel_cluster <- all_dep_psd |>
             keep = FALSE) |>
   filter(!is.na(cluster))
 
+# make summarized df for plotting by cluster & light regime
+psd_clust_light <- psd_monthdiel_cluster |>
+  group_by(cluster, light_fac, frequency) |>
+   summarize(
+    min_psd = min(qmed),
+    med_psd = median(qmed),
+    max_psd = max(qmed)
+  )
+
+# make summarized df for plotting by cluster only
+psd_clust <- psd_monthdiel_cluster |>
+  group_by(cluster, frequency) |>
+   summarize(
+    min_psd = min(qmed),
+    med_psd = median(qmed),
+    max_psd = max(qmed)
+  )
+
+# plot each median line to think deep thoughts about it
 ggplot(data = psd_monthdiel_cluster, 
        aes(x = frequency, 
            y = qmed)) +
@@ -446,6 +465,46 @@ ggplot(data = psd_monthdiel_cluster,
   theme_bw()
 
 # ggsave(paste0("figs/", "PSD_by_clusters_monthdiel_facet.png"), width=8, height=10,
+#        units="in", dpi=300)
+
+# plot summary PSDs by cluster & light regime
+ggplot(data = psd_clust_light, 
+       aes(x = frequency, 
+           y = med_psd)) +
+  geom_ribbon(aes(ymin = min_psd,
+                  ymax = max_psd, 
+                  group = interaction(cluster,light_fac),
+                  fill = cluster),
+              alpha = 0.5)+
+  # geom_line(aes(group = cluster,
+  #               color = cluster)) +
+  scale_x_log10() +
+  scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+  facet_grid(rows = vars(light_fac))+ 
+  theme_bw()
+
+
+# plot summary PSDs by cluster
+ggplot(data = psd_clust, 
+       aes(x = frequency, 
+           y = med_psd)) +
+  geom_ribbon(aes(ymin = min_psd,
+                  ymax = max_psd, 
+                  group = cluster,
+                  fill = cluster),
+              alpha = 0.5)+
+  geom_line(aes(group = cluster,
+                color = cluster),
+            linewidth = 1) +
+  scale_x_log10() +
+  scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+  scale_color_viridis_d(begin = 0.1, end = 0.8)+
+  facet_grid(rows = vars(cluster))+ 
+  theme_bw()
+
+# 
+# 
+# ggsave(paste0("figs/", "PSD_by_clusters_shading.png"), width=8, height=10,
 #        units="in", dpi=300)
 
 ```
