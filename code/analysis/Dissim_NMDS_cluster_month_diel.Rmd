@@ -343,8 +343,8 @@ ggplot(data = nmdsScores_all,
                size = 1,level = .95) +
   labs(caption = paste0("stress = ", nmds_stress, "\n sig. vectors (p<0.05) in bold"))
 # 
-
-# ggsave(paste0("figs/", "NMDS_month_all_presence_vectors.png"), width=12, height=8,
+# 
+# ggsave(paste0("figs/", "NMDS_month_diel_all_presence_vectors.png"), width=12, height=8,
 #        units="in", dpi=300)
 
 ```
@@ -475,12 +475,27 @@ psd_clust_light <- psd_monthdiel_cluster |>
 
 # make summarized df for plotting by cluster only
 psd_clust <- psd_monthdiel_cluster |>
+  group_by(dep) |>
+  mutate(norm_qmed = qmed/sum(qmed))|>
+  ungroup() |>
   group_by(cluster, frequency) |>
    summarize(
     min_psd = min(qmed),
     med_psd = median(qmed),
-    max_psd = max(qmed)
-  )
+    max_psd = max(qmed),
+    norm_min_psd = min(norm_qmed),
+    norm_med_psd = median(norm_qmed),
+    norm_max_psd = max(norm_qmed)
+    
+  ) |>
+  # add labeling column
+  mutate(clust_label = case_when(
+    cluster == 1 ~ "Cod Grounds",
+    cluster == 2 ~ "Dampier",
+    cluster == 3 ~ "Murat",
+    cluster == 4 ~ "Ningaloo & \nSouth-west Corner",
+    cluster == 5 ~ "Solitary Islands"
+  ))
 
 # plot each median line to think deep thoughts about it
 ggplot(data = psd_monthdiel_cluster, 
@@ -551,6 +566,45 @@ ggplot(data = psd_clust,
 
 # ggsave(paste0("figs/", "PSD_by_clusters_shading.png"), width=8, height=10,
 #        units="in", dpi=300)
+
+
+psd_clust_labels <- psd_clust |> 
+  filter(frequency == 23961) |>
+  mutate(med_psd_labels = case_when(
+    clust_label == "Cod Grounds" ~ med_psd - 0.5,
+    clust_label == "Dampier" ~ med_psd + 0.5,
+    TRUE ~ med_psd
+  ))
+
+
+
+# plot normalized summary PSDs by cluster in single plot
+ggplot(data = psd_clust, 
+       aes(x = frequency)) +
+  geom_line(aes(y = norm_med_psd,
+                group = cluster,
+                color = cluster),
+            linewidth = 1) +
+  # geom_label(data = psd_clust_labels,
+  #           aes(y = med_psd_labels, 
+  #               label = clust_label,
+  #               hjust = -0.05,
+  #           color = cluster))+
+  labs(x = "Frequency", 
+       y = expression(paste("dB re 1", mu, "Pa"^"2", "Hz"^"-1")),
+       color = "Cluster",
+       fill = "Cluster")+
+  scale_x_log10() +
+  expand_limits(x = c(10, 50000))+
+  scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+  scale_color_viridis_d(begin = 0.1, end = 0.8)+
+  theme_bw(base_size = 14) +
+  theme(strip.text.y = element_text(face = "bold", angle = 0),
+        strip.background.y = element_rect(fill = NA))
+
+# ggsave(paste0("figs/", "norm_PSD_by_clusters_medlines.png"), width=14, height=8,
+#        units="in", dpi=300)
+
 
 ```
 
