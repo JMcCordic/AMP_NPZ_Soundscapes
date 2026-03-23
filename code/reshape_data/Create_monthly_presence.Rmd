@@ -45,7 +45,7 @@ hp_og <- dep_info |>
   imap(~mutate(., Dep_ID = .y))
 
 
-dir_weather <- tk_choose.dir(caption = "Select folder with selection tables (.txt)")
+dir_weather <- tk_choose.dir(caption = "Select folder with weather tables (csv)")
 weather_og <- dir_weather |>
     # list all files with .txt extension
     list.files(pattern = ".csv") |>
@@ -131,7 +131,7 @@ hp_month_prop <- hp_env |>
 ```
 
 
-```{r light regime by week and light regime}
+```{r light regime by month and light regime}
 
 
 
