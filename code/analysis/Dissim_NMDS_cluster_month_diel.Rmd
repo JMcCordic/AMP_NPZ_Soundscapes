@@ -221,20 +221,24 @@ ggplot(data = nmdsScores_all,
 
 ```{r adding presence}
 
-hp_month_prop <- read_csv("data/All_sites_tables/allsources_by_month_diel.csv") 
+hp_month_prop <- read_csv("data/All_sites_tables/allsources_by_month_diel_weather.csv") 
 
 # add weekly pres to NMDS scores
 monthly_pres_data <- nmdsScores_all |>
   # left join with nmds to subset to common weeks and force same order
   left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg")) |>
-  mutate(month_fac = as_factor(month_UTC))
+  mutate(month_fac = as_factor(month_UTC)) |>
+  rowwise() |>
+  mutate(wind_ampm_avg_month = mean(wind_am_month_avg_kmh:wind_pm_month_avg_kmh))
   
 
   ## Evaluate correlation between ordination and environmental data
   env_test <- envfit(nmds_all, 
                      monthly_pres_data |>
-                       # only keep grouping columns and presence columns
-                       select(npz_id, network, month_UTC, light_reg, all_of(ends_with("_pres"))), 
+                       # keep grouping columns, weather, and presence columns
+                       select(npz_id, network, month_UTC, light_reg, 
+                              tidal_mag_m, rain_month_avg_mm, wind_ampm_avg_month,
+                              all_of(ends_with("_pres"))), 
                      permutations = 999, 
                      na.rm = TRUE)
 env_test
@@ -291,56 +295,46 @@ ggplot(data = nmdsScores_all,
        )+ 
   theme_bw()+
   geom_point(aes(color = npz_id,
-           shape = light_reg), 
+           shape = network), 
            size = 4,
        alpha = 0.5)+
-  geom_segment(data =scaled_env_scores,
-               aes(x=0,
-                   xend=NMDS1,
-                   y=0,
-                   yend=NMDS2),
-               arrow = arrow(length = unit(0.5, "cm")),
-               colour="black",
-               alpha = 0.5)+
-  geom_text(data = scaled_env_scores,
-            aes(x = NMDS1,
-                y = NMDS2,
-                label = Variable),
-            alpha = 0.5)+
    geom_segment(data =sig_scaled_scores,
                aes(x=0,
                    xend=NMDS1,
                    y=0,
                    yend=NMDS2),
                arrow = arrow(length = unit(0.5, "cm")),
-               colour="black",
-               size = 1.5)+
+               colour="grey50",
+               size = 1)+
   geom_text(data = sig_scaled_scores,
             aes(x = NMDS1,
                 y = NMDS2,
                 label = Variable))+
   # add network centroids from envfit
-  geom_point(data = envCent_network,
-             aes(x = NMDS1, y = NMDS2),
-             size = 3)+
-  geom_text(data=envCent_network,
-            aes(x=NMDS1,
-                y=NMDS2,
-                label=cent_label),
-  size=4)+
-  geom_text(data=envCent_npz,
-            aes(x=NMDS1,
-                y=NMDS2,
-                label=cent_label),
-  size=4)+
+  # geom_point(data = envCent_network,
+  #            aes(x = NMDS1, y = NMDS2),
+  #            size = 3)+
+  # geom_text(data=envCent_network,
+  #           aes(x=NMDS1,
+  #               y=NMDS2,
+  #               label=cent_label),
+  # size=4)+
+  # geom_point(data = envCent_npz,
+  #            aes(x = NMDS1, y = NMDS2),
+  #            size = 3)+
+  # geom_text(data=envCent_npz,
+  #           aes(x=NMDS1,
+  #               y=NMDS2,
+  #               label=cent_label),
+  # size=4)+
   # add network ellipses from NMDS
-  stat_ellipse(aes(group = network),
-               data = nmdsScores_all,
-               size = 1,level = .95) + #95% CI ellipse (assumed multivariate normal)
-   stat_ellipse(aes(group = npz_id),
-               data = nmdsScores_all,
-               linetype = "dotted",
-               size = 1,level = .95) +
+  # stat_ellipse(aes(group = network),
+  #              data = nmdsScores_all,
+  #              size = 1,level = .95) + #95% CI ellipse (assumed multivariate normal)
+  #  stat_ellipse(aes(group = npz_id),
+  #              data = nmdsScores_all,
+  #              linetype = "dotted",
+  #              size = 1,level = .95) +
   labs(caption = paste0("stress = ", nmds_stress, "\n sig. vectors (p<0.05) in bold"))
 # 
 # 
