@@ -22,10 +22,13 @@ psd_og <- read_csv("data/Df_analysis/All_deps_monthly_diel_PSD.csv")
 
 # pivot wider to create new df with one column per deployment-category combination
 psd_wide <- psd_og |>
-  # only keep data from months with >= 15 days
-  filter(effort_days >=15 )|>
-  # change to simpler deployment names
-  mutate(Dep_ID = str_replace(Dep_ID, "PARKSAUSTRALIA_", "")) |>
+    # change to simpler deployment names
+  mutate(Dep_ID = str_replace(Dep_ID, "PARKSAUSTRALIA_", ""),
+         month_totdays = days_in_month(month_UTC)) |>
+  
+  # only keep data from months with >= half the month
+  filter(effort_days >= 0.5*month_totdays)|>
+
   # drop quantiles not using
   select(Dep_ID, month_UTC, light_reg, frequency, qmed)|>
   # new col names = Deployment_month_diel
@@ -123,8 +126,8 @@ dissim_calc <- function(
 
 # test function in a pipe
 psd_wide |>
-  summarize(dissim = dissim_calc(spec1 = CGMP_201807_CG_30, 
-              spec2 = SWC_202201_SWS_4, 
+  summarize(dissim = dissim_calc(spec1 = CGMP_201807_CG_7_day, 
+              spec2 = SWC_202201_SWS_2_day, 
               freqs = frequency))
 
 # ------------------------------------------------------
@@ -232,7 +235,7 @@ ggplot(data = dissim_vals) +
   theme(axis.text.x = element_text(angle = 90))
 # woohoo!
 # 
-# ggsave("figs/dissim_matrix_dep_week_all.jpg", device = "jpeg",
+# ggsave("figs/dissim_matrix_dep_monthdiel_all.jpg", device = "jpeg",
 #        width=12, height=12, units="in", dpi=600)
 
 ```

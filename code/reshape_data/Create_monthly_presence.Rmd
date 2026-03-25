@@ -94,7 +94,9 @@ hp_month_prop <- hp_env |>
   mutate(month_UTC = month(UTC),
          date_UTC = date(UTC),
          # replace all NA's with 0's in presence cols
-         across(ends_with("_pres"), ~replace_na(., 0))) |>
+         across(ends_with("_pres"), ~replace_na(., 0)),
+         # code presence absence as 1/0
+         across(ends_with("_pres"), ~if_else(. > 0, 1, 0))) |>
   # group to month level
   group_by(Dep_ID, month_UTC) |>
   summarise(n_days = n_distinct(date_UTC),
@@ -126,7 +128,7 @@ hp_month_prop <- hp_env |>
             wind_pm_month_avg_kmh = mean(wind_pm_month_avg_kmh, na.rm = TRUE)
             
     ) |>
-  filter(n_days >= 15) # only keep months with 15+ days
+  filter(n_days >= 0.5*days_in_month(month_UTC)) # only keep months with 15+ days
 
 ```
 
@@ -140,7 +142,9 @@ hp_allcols_light <- hp_env |>
   mutate(month_UTC = month(UTC),
          date_UTC = date(UTC),
          # replace all NA's with 0's in presence cols
-         across(ends_with("_pres"), ~replace_na(., 0))) |>
+         across(ends_with("_pres"), ~replace_na(., 0)),
+         # code presence absence as 1/0
+         across(ends_with("_pres"), ~if_else(. > 0, 1, 0))) |>
   
   # get light regime labels
   # get sun elevation by lat/lon
@@ -215,7 +219,7 @@ hp_monthlight_prop <- hp_allcols_light |>
             wind_am_month_avg_kmh = mean(wind_am_month_avg_kmh, na.rm = TRUE),
             wind_pm_month_avg_kmh = mean(wind_pm_month_avg_kmh, na.rm = TRUE)
     ) |>
-  filter(n_days >= 15) # only keep months with 15+ days
+  filter(n_days >= 0.5*days_in_month(month_UTC)) # only keep months with 15+ days
 
 ```
 

@@ -50,35 +50,25 @@ all_dep_labels <- all_dep_psd |>
   mutate(dep = paste(Dep_ID, month_UTC, light_reg, sep = "_"))
 
 
-months_to_use <- all_dep_labels |>
-  group_by(network, month_UTC) |>
-  summarise(n_deps_mo = n()) |> 
-  filter(n_deps_mo >= 1)
-
-
 
 dissim_all <- dissim_og |>
   left_join(all_dep_labels, by = "dep") |>
-  filter(!is.na(Dep_ID)) |>
-  # join with subset of months common to multiple deployments
-  left_join(months_to_use) |>
-  # filter out remaining weeks
-  filter(!is.na(n_deps_mo)) 
+  filter(!is.na(Dep_ID))
 
 
 ```
 
 
 
-### Filter to separate network matrices
+### Format dissimilarity matrix
 ```{r filter data}
 
 
 #' --------------------------------------------------------------
-#' All weeks with multiple NPZs
+#' All NPZs
 #' --------------------------------------------------------------
 
-# get values of deployments left
+# get values of deployments to use
 dep_light_all <- dissim_all$dep
 # select those columns to just get dissim values we care about
 dissim_all <- dissim_all |>
@@ -97,12 +87,12 @@ dissim_dist_all = as.dist(dissim_all |>
 dissim_te <- dissim_all |>
   select(dep, contains("CGMP") | contains("SIMP")) |>
   filter(grepl("CGMP", dep) | grepl("SIMP", dep)) |>
-  # join to get week info by deployment
-  left_join(all_dep_labels, by="dep") |>
+  # join to get info by deployment
+  left_join(all_dep_labels, by="dep")
   # join with subset of weeks common to multiple deployments
-  left_join(months_to_use) |>
-  # filter out remaining weeks
-  filter(!is.na(n_deps_mo))
+  # left_join(months_to_use) |>
+  # # filter out remaining weeks
+  # filter(!is.na(n_deps_mo))
 # get values of deployments left
 dep_wk_te <- dissim_te$dep
 # select those columns to just get dissim values we care about
@@ -113,60 +103,7 @@ dissim_te <- dissim_te |>
 # get rid of deployment column to make square matrix, format as distance matrix
 dissim_dist_te = as.dist(dissim_te |>
                         select(-dep))
-# 
-# 
-# 
-# 
-# #'---------------------------------------------------------------
-# #' North-west
-# #'---------------------------------------------------------------
-# 
-# dissim_nw <- dissim_all |>
-#   select(dep, contains("NINGALOO") | contains("DAMPIER")) |>
-#   filter(grepl("NINGALOO", dep) | grepl("DAMPIER", dep)) |>
-#   # join to get week info by deployment
-#   left_join(all_dep_labels, by="dep") |>
-#   # join with subset of weeks common to multiple deployments
-#   left_join(weeks_to_use) |>
-#   # filter out remaining weeks
-#   filter(!is.na(n_deps_wk)) 
-# # get values of deployments left
-# dep_wk_nw <- all_of(dissim_nw$dep)
-# # select those columns to just get dissim values we care about
-# dissim_nw <- dissim_nw |>
-#   select(dep, all_of(dep_wk_nw))
-# 
-# 
-# # get rid of deployment column to make square matrix, format as distance matrix
-# dissim_dist_nw = as.dist(dissim_nw |>
-#                         select(-dep))
-# 
-# 
-# 
-# 
-# #'---------------------------------------------------------------
-# #' South-west
-# #'---------------------------------------------------------------
-# 
-# dissim_sw <- dissim_all |>
-#   select(dep, contains("SWC") | contains("MURAT")) |>
-#   filter(grepl("SWC", dep) | grepl("MURAT", dep))|>
-#   # join to get week info by deployment
-#   left_join(all_dep_labels, by="dep") |>
-#   # join with subset of weeks common to multiple deployments
-#   left_join(weeks_to_use) |>
-#   # filter out remaining weeks
-#   filter(!is.na(n_deps_wk)) 
-# # get values of deployments left
-# dep_wk_sw <- all_of(dissim_sw$dep)
-# # select those columns to just get dissim values we care about
-# dissim_sw <- dissim_sw |>
-#   select(dep, all_of(dep_wk_sw))
-# 
-# 
-# # get rid of deployment column to make square matrix, format as distance matrix
-# dissim_dist_sw = as.dist(dissim_sw |>
-#                         select(-dep))
+
 ```
 
 ### NMDS 
