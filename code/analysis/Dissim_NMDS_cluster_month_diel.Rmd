@@ -157,7 +157,7 @@ ggplot(data = nmdsScores_all,
 
 ### Look into presence data
 
-```{r adding presence}
+```{r envfit}
 
 hp_month_prop <- read_csv("data/All_sites_tables/allsources_by_month_diel_weather.csv") 
 
@@ -337,8 +337,52 @@ nmdsScores_all$cluster = factor(sdf_agnes_cut)
 dendr <- dendro_data(sdf_agnes)
 dendr[["labels"]] <- merge(dendr[["labels"]], nmdsScores_all, by.x="label", by.y = "dep")
 
+```
 
-# plot clusters
+### PERMANOVA tests
+
+```{r permanova}
+
+# Test assumption that dispersion is similar among groups
+#  --> NS result means we can proceed with PERMANOVA
+disp_cluster <- betadisper(dissim_dist_all, 
+                           group = nmdsScores_all$cluster)
+
+plot(disp_cluster)
+
+anova(disp_cluster)
+
+# Response: Distances
+#           Df     Sum Sq    Mean Sq F value Pr(>F)
+# Groups     4 0.00012096 3.0239e-05  1.1266 0.3542
+# Residuals 52 0.00139579 2.6842e-05 
+
+#### PERMANOVA test for whether clusters are significantly different from one another
+
+perma_cluster <- adonis2(dissim_dist_all~as.factor(nmdsScores_all$cluster), data = dissim_dist_all, permutations = 9999)
+
+perma_cluster
+
+# adonis2(formula = dissim_dist_all ~ as.factor(nmdsScores_all$cluster), data = dissim_dist_all, permutations = 9999)
+#          Df SumOfSqs      R2      F Pr(>F)    
+# Model     4 0.029566 0.85908 79.252  1e-04 ***
+# Residual 52 0.004850 0.14092                  
+# Total    56 0.034416 1.00000                  
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+```
+
+
+
+
+
+
+### Plots for all NPZs
+
+
+```{r plot dendrogram}
+# plot dendrogram
 ggplot() + 
   geom_segment(data=segment(dendr), 
                aes(x=x, 
@@ -352,7 +396,10 @@ ggplot() +
   scale_color_viridis_d(begin = 0.1, end = 0.8)
 # ggsave(paste0("figs/", "AGNES_all_month_diel_clusters_k5.png"), width=12, height=12,
 #        units="in", dpi=300)
+```
 
+
+``` {r plot NMDS clusters}
 # plot NMDS with clusters
 
 
@@ -380,8 +427,10 @@ ggplot(data = nmdsScores_all,
                    xend=NMDS1,
                    y=0,
                    yend=NMDS2),
-               arrow = arrow(length = unit(0.5, "cm")),
-               colour="grey50",
+               arrow = arrow(angle = 30, 
+                             length = unit(0.25, "cm"),
+                             type = "open"),
+               colour = "black",
                size = 1)+
   geom_text(data = sig_scaled_scores,
             aes(x = NMDS1,
@@ -416,17 +465,17 @@ ggplot(data = nmdsScores_all,
   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
     labs(caption = paste0("stress = ", round(nmds_all$stress, digits =4)),
          fill = "Cluster", shape = "Network")+
-  guides(color = "none")
+  guides(color = "none")+
   theme_bw(base_size = 14)
 
-# ggsave(paste0("figs/", "NMDS_month_diel_all_dissim_clusters.png"), width=12, height=8,
+# ggsave(paste0("figs/", "NMDS_month_diel_all_clust_vec.png"), width=8, height=6,
 #        units="in", dpi=300)
-# 
+
 
 
 ```
 
-```{r psd plots by cluster}
+```{r plot PSDs by cluster}
 
 # join cluster ID to weekly PSDs
 
@@ -471,38 +520,7 @@ psd_clust <- psd_monthdiel_cluster |>
     cluster == 5 ~ "Solitary Islands"
   ))
 
-# plot each median line to think deep thoughts about it
-ggplot(data = psd_monthdiel_cluster, 
-       aes(x = frequency, 
-           y = qmed)) +
-  geom_line(aes(group = interaction(cluster,dep),
-                color = light_fac)) +
-  scale_x_log10() +
-  scale_color_viridis_d(begin = 0.1, end = 0.8)+
-  facet_grid(rows = vars(cluster))+ 
-  theme_bw()
-
-# ggsave(paste0("figs/", "PSD_by_clusters_monthdiel_facet.png"), width=8, height=10,
-#        units="in", dpi=300)
-
-# plot summary PSDs by cluster & light regime
-ggplot(data = psd_clust_light, 
-       aes(x = frequency, 
-           y = med_psd)) +
-  geom_ribbon(aes(ymin = min_psd,
-                  ymax = max_psd, 
-                  group = interaction(cluster,light_fac),
-                  fill = light_fac),
-              alpha = 0.5)+
-  # geom_line(aes(group = cluster,
-  #               color = cluster)) +
-  scale_x_log10() +
-  scale_fill_viridis_d(begin = 0.1, end = 0.8)+
-  facet_grid(rows = vars(cluster))+ 
-  theme_bw()
-
-
-# plot summary PSDs by cluster
+# plot median PSDs for each month x light, facet by cluster
 ggplot(data = psd_clust, 
        aes(x = frequency)) +
   geom_ribbon(aes(ymin = min_psd,
@@ -544,8 +562,8 @@ ggplot(data = psd_clust,
         strip.background.y = element_rect(fill = NA))
 
 
-# 
-# ggsave(paste0("figs/", "PSD_by_clusters_shading_lines.png"), width=8, height=10,
+
+# ggsave(paste0("figs/", "PSD_by_clusters_shading_lines.png"), width=7, height=12,
 #        units="in", dpi=300)
 
 
@@ -592,39 +610,6 @@ ggplot(data = psd_clust,
 
 ```
 
-### PERMANOVA tests
-
-```{r permanova}
-
-# Test assumption that dispersion is similar among groups
-#  --> NS result means we can proceed with PERMANOVA
-disp_cluster <- betadisper(dissim_dist_all, 
-                           group = nmdsScores_all$cluster)
-
-plot(disp_cluster)
-
-anova(disp_cluster)
-
-# Response: Distances
-#           Df     Sum Sq    Mean Sq F value Pr(>F)
-# Groups     4 0.00012096 3.0239e-05  1.1266 0.3542
-# Residuals 52 0.00139579 2.6842e-05 
-
-#### PERMANOVA test for whether clusters are significantly different from one another
-
-perma_cluster <- adonis2(dissim_dist_all~as.factor(nmdsScores_all$cluster), data = dissim_dist_all, permutations = 9999)
-
-perma_cluster
-
-# adonis2(formula = dissim_dist_all ~ as.factor(nmdsScores_all$cluster), data = dissim_dist_all, permutations = 9999)
-#          Df SumOfSqs      R2      F Pr(>F)    
-# Model     4 0.029566 0.85908 79.252  1e-04 ***
-# Residual 52 0.004850 0.14092                  
-# Total    56 0.034416 1.00000                  
-# ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-```
 
 
 ## Temperate East only
@@ -673,11 +658,12 @@ ggplot(aes(x = NMDS1, y = NMDS2,
 ### Adding presence for Temp East
 ```{r temp east presence}
 
-# add weekly pres to NMDS scores
+# add monthly pres to NMDS scores
 monthly_pres_te <- nmdsScores_te |>
   # left join with nmds to subset to common weeks and force same order
   left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg")) |>
-  mutate(month_fac = as_factor(month_UTC)) |>
+  mutate(month_fac = as_factor(month_UTC),
+         light_reg = as_factor(light_reg)) |>
   select(-c(spwh_pres)) |>
   rowwise() |>
   mutate(wind_ampm_avg_month = mean(wind_am_month_avg_kmh:wind_pm_month_avg_kmh))
@@ -687,8 +673,8 @@ monthly_pres_te <- nmdsScores_te |>
   env_test_te <- envfit(nmds_te, 
                      monthly_pres_te|>
                        # only keep grouping columns and presence columns
-                         select(npz_id, network, month_UTC, light_reg, 
-                              tidal_mag_m, rain_month_avg_mm, wind_ampm_avg_month,
+                         select(npz_id, light_reg, month_fac,  
+                              rain_month_avg_mm,
                               all_of(ends_with("_pres"))),
                      permutations = 999, 
                      na.rm = TRUE)
@@ -743,40 +729,6 @@ ggplot() +
 
 
 
-# plot NMDS w/clusters
-
-
-# get convex hull polygon for each cluster
-
-hull_te <- nmdsScores_te |>
-  group_by(cluster) |>
-  slice(chull(NMDS1, NMDS2))
-
-
-ggplot(data = nmdsScores_te,
-       aes(x = NMDS1, y = NMDS2)
-)+ 
-  theme_bw()+
-  geom_polygon(data = hull_te,
-               aes(x = NMDS1, y = NMDS2,
-                   fill = cluster,
-                   color = cluster),
-               linewidth = 0.25,
-               
-               alpha = 0.2)+
-  geom_point(data = nmdsScores_te, 
-             aes(color = cluster,
-                 shape = npz_id), 
-             size = 4,
-             alpha = 0.7) +
- 
-  scale_color_viridis_d(begin = 0.1, end = 0.8)+
-      scale_fill_viridis_d(begin = 0.1, end = 0.8)+
-    labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)))
-
-
-
-
 
 ```
 
@@ -814,6 +766,115 @@ perma_cluster_te
 ```
 
 
+### Plots for Temp East
+
+```{r TE NMDS plots}
+
+
+# plot NMDS w/clusters
+
+
+env_pvals_vec_te <- env_test_te$vectors$pvals |>
+  enframe()
+
+env_pvals_fac_te <- env_test_te$factors$pvals |>
+  enframe()
+
+
+envScores_te <- as_tibble(scores(env_test_te, "vectors"), rownames = "name") |>
+  left_join(env_pvals_vec_te) |>
+  rename("Variable" = "name", 
+         "pval" = "value")
+
+
+# scale vector lengths to NMDS scores rather than "unit" length
+# have to use base plots to get scaling to work
+plot(nmds_te)
+plot(env_test_te)
+
+scaled_env_scores_te <- as.data.frame(scores(env_test_te, 
+                                          display = "vectors",
+                                          arrow.mul = ordiArrowMul(env_test_te))) |>
+  as_tibble(rownames = "name") |>
+  left_join(env_pvals_vec_te) |>
+  rename("Variable" = "name", 
+         "pval" = "value")
+
+# pull out sig scores only
+sig_scaled_scores_te <- scaled_env_scores_te |>
+  filter(pval <= 0.05)
+
+envCent_npz_te = as.data.frame(scores(env_test_te,
+                                       display = "factors",
+                            arrow.mul = ordiArrowMul(env_test_te))) |>
+  rownames_to_column(var = "cent_label") |>
+  filter(grepl("npz_id",cent_label)) |>
+  mutate(cent_label = str_replace(cent_label, "npz_id", ""))
+
+
+
+
+
+
+# get convex hull polygon for each cluster
+
+hull_te <- nmdsScores_te |>
+  group_by(cluster) |>
+  slice(chull(NMDS1, NMDS2))
+
+
+ggplot(data = nmdsScores_te,
+       aes(x = NMDS1, y = NMDS2)
+)+ 
+  theme_bw()+
+  geom_polygon(data = hull_te,
+               aes(x = NMDS1, y = NMDS2,
+                   fill = cluster,
+                   color = cluster),
+               linewidth = 0.25,
+               
+               alpha = 0.2)+
+  geom_point(data = nmdsScores_te, 
+             aes(color = cluster,
+                 shape = npz_id), 
+             size = 4,
+             alpha = 0.7) +
+  geom_segment(data =sig_scaled_scores_te,
+               aes(x=0,
+                   xend=NMDS1,
+                   y=0,
+                   yend=NMDS2),
+               arrow = arrow(angle = 30, 
+                             length = unit(0.25, "cm"),
+                             type = "open"),
+               colour = "black",
+               size = 1)+
+  geom_text(data = sig_scaled_scores_te,
+            aes(x = NMDS1,
+                y = NMDS2,
+                label = Variable))+
+  scale_color_viridis_d(begin = 0.1, end = 0.8)+
+      scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+    labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)), 
+         fill = "Cluster", 
+         shape = "NPZ") +
+  guides(color = "none")+
+  theme_bw(base_size = 14)
+
+# ggsave(paste0("figs/", "NMDS_month_diel_tempeast_clust_vec.png"), width=8, height=6,
+#        units="in", dpi=300)
+
+
+
+
+
+```
+
+
+```{r TE PSD plots}
+
+
+```
 
 
 
