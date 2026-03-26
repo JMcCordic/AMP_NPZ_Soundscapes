@@ -106,6 +106,7 @@ dissim_dist_te = as.dist(dissim_te |>
 
 ```
 
+## All NPZs
 ### NMDS 
 
 ```{r NMDS}
@@ -160,7 +161,7 @@ ggplot(data = nmdsScores_all,
 
 hp_month_prop <- read_csv("data/All_sites_tables/allsources_by_month_diel_weather.csv") 
 
-# add weekly pres to NMDS scores
+# add month-diel pres to NMDS scores
 monthly_pres_data <- nmdsScores_all |>
   # left join with nmds to subset to common weeks and force same order
   left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg")) |>
@@ -248,17 +249,18 @@ ggplot(data = nmdsScores_all,
                 y = NMDS2,
                 label = Variable))+
   # add network centroids from envfit
-  # geom_point(data = envCent_network,
-  #            aes(x = NMDS1, y = NMDS2),
-  #            size = 3)+
+  geom_point(data = envCent_network,
+             aes(x = NMDS1, y = NMDS2),
+             size = 3)+
   # geom_text(data=envCent_network,
   #           aes(x=NMDS1,
   #               y=NMDS2,
   #               label=cent_label),
   # size=4)+
-  # geom_point(data = envCent_npz,
-  #            aes(x = NMDS1, y = NMDS2),
-  #            size = 3)+
+  geom_point(data = envCent_npz,
+             aes(x = NMDS1, y = NMDS2),
+             color = "grey80",
+             size = 3)+
   # geom_text(data=envCent_npz,
   #           aes(x=NMDS1,
   #               y=NMDS2,
@@ -272,10 +274,10 @@ ggplot(data = nmdsScores_all,
   #              data = nmdsScores_all,
   #              linetype = "dotted",
   #              size = 1,level = .95) +
-  labs(caption = paste0("stress = ", nmds_stress, "\n sig. vectors (p<0.05) in bold"))
+  labs(caption = paste0("Stress = ", round(nmds_stress, digits = 4), "\n Arrows indicate sig. vectors (p<0.05)"))
 # 
 # 
-# ggsave(paste0("figs/", "NMDS_month_diel_all_presence_vectors.png"), width=12, height=8,
+# ggsave(paste0("figs/", "NMDS_month_diel_sig_vectors.png"), width=12, height=8,
 #        units="in", dpi=300)
 
 ```
@@ -343,9 +345,9 @@ ggplot(data = nmdsScores_all,
        )+ 
   theme_bw()+
   geom_point(data = nmdsScores_all, aes(color = cluster,
-           shape = light_fac), 
-           size = 4,
-       alpha = 0.5) +
+           shape = network), 
+           alpha = 0.7,
+           size = 3) +
   # geom_text(data = nmdsScores_all, aes(label = npz_id),
   #           vjust = -1, 
   #           hjust = 1.0)+
@@ -373,7 +375,7 @@ ggplot(data = nmdsScores_all,
                level = 0.95)+
   scale_color_viridis_d(begin = 0.1, end = 0.8)+
     labs(caption = paste0("stress = ", round(nmds_all$stress, digits =4)),
-         color = "Cluster", shape = "Light regime")+
+         color = "Cluster", shape = "Network")+
   theme_bw(base_size = 14)
 
 # ggsave(paste0("figs/", "NMDS_month_diel_all_dissim_clusters.png"), width=12, height=8,
@@ -466,11 +468,11 @@ ggplot(data = psd_clust,
                   ymax = max_psd,
                   group = cluster,
                   fill = cluster),
-              alpha = 0.5)+
+              alpha = 0.2)+
   geom_line(aes(y = med_psd,
                 group = cluster,
                 color = cluster),
-            linewidth = 1) +
+            linewidth = 0.7) +
     geom_line(aes(y = min_psd,
                 group = cluster,
                 color = cluster),
@@ -481,6 +483,13 @@ ggplot(data = psd_clust,
                 color = cluster),
               alpha = 0.5,
             linewidth = 0.25) +
+  geom_line(data = psd_monthdiel_cluster,
+            aes(x = frequency,
+                y = qmed,
+                group = interaction(cluster,dep),
+                color = cluster),
+            alpha = 0.4,
+            linewidth = 0.5)+
   labs(x = "Frequency", 
        y = expression(paste("dB re 1", mu, "Pa"^"2", "Hz"^"-1")),
        color = "Cluster",
@@ -494,8 +503,8 @@ ggplot(data = psd_clust,
         strip.background.y = element_rect(fill = NA))
 
 
-
-# ggsave(paste0("figs/", "PSD_by_clusters_shading.png"), width=8, height=10,
+# 
+# ggsave(paste0("figs/", "PSD_by_clusters_shading_lines.png"), width=8, height=10,
 #        units="in", dpi=300)
 
 
@@ -505,8 +514,11 @@ psd_clust_labels <- psd_clust |>
     clust_label == "Cod Grounds" ~ med_psd - 0.5,
     clust_label == "Dampier" ~ med_psd + 0.5,
     TRUE ~ med_psd
-  ))
-
+  ),
+  norm_med_psd_labels = case_when(
+    clust_label == "Cod Grounds" ~ norm_med_psd - 0.000005,
+    clust_label == "Dampier" ~ norm_med_psd + 0.000005,
+    TRUE ~ norm_med_psd))
 
 
 # plot normalized summary PSDs by cluster in single plot
@@ -516,13 +528,13 @@ ggplot(data = psd_clust,
                 group = cluster,
                 color = cluster),
             linewidth = 1) +
-  # geom_label(data = psd_clust_labels,
-  #           aes(y = med_psd_labels, 
-  #               label = clust_label,
-  #               hjust = -0.05,
-  #           color = cluster))+
+  geom_label(data = psd_clust_labels,
+            aes(y = norm_med_psd_labels,
+                label = clust_label,
+                hjust = -0.05,
+            color = cluster))+
   labs(x = "Frequency", 
-       y = expression(paste("dB re 1", mu, "Pa"^"2", "Hz"^"-1")),
+       y = "Normalized PSD",
        color = "Cluster",
        fill = "Cluster")+
   scale_x_log10() +
@@ -538,11 +550,6 @@ ggplot(data = psd_clust,
 
 
 ```
-
-
-
-
-
 
 ### PERMANOVA tests
 
@@ -579,18 +586,11 @@ perma_cluster
 ```
 
 
+## Temperate East only
 
+### NMDS Temp East
 
-
-
-
-
-
-
-
-### NMDS for Temperate East network
-
-```{r NMDS by network}
+```{r NMDS TE}
 
 
 #'-----------------------------------------------
@@ -622,7 +622,7 @@ ggplot(aes(x = NMDS1, y = NMDS2,
   #           hjust = 1.0)+
   labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)))
 
-# ggsave(paste0("figs/", "NMDS_week_tempeast.png"), width=12, height=8,
+# ggsave(paste0("figs/", "NMDS_month_diel_tempeast.png"), width=12, height=8,
 #        units="in", dpi=300)
 
 
@@ -637,14 +637,18 @@ monthly_pres_te <- nmdsScores_te |>
   # left join with nmds to subset to common weeks and force same order
   left_join(hp_month_prop, by = c("Dep_ID", "month_UTC", "light_reg")) |>
   mutate(month_fac = as_factor(month_UTC)) |>
-  select(-c(spwh_pres))
+  select(-c(spwh_pres)) |>
+  rowwise() |>
+  mutate(wind_ampm_avg_month = mean(wind_am_month_avg_kmh:wind_pm_month_avg_kmh))
   
 
   ## Evaluate correlation between ordination and environmental data
   env_test_te <- envfit(nmds_te, 
                      monthly_pres_te|>
                        # only keep grouping columns and presence columns
-                       select(npz_id, month_UTC, light_reg, all_of(ends_with("_pres"))),
+                         select(npz_id, network, month_UTC, light_reg, 
+                              tidal_mag_m, rain_month_avg_mm, wind_ampm_avg_month,
+                              all_of(ends_with("_pres"))),
                      permutations = 999, 
                      na.rm = TRUE)
 env_test_te
@@ -660,10 +664,22 @@ env_test_te
 
 ```{r cluster Temp East}
 sdf_agnes_te = agnes(dissim_dist_te, diss = T, method = "ward")
-plot(sdf_agnes_te)
+plot(sdf_agnes_te, which.plots = 2)
 summary(sdf_agnes_te)
 
-sdf_agnes_te_cut <- cutree(sdf_agnes_te, k = 3)
+
+# use clusterboot() from fpc package to test stability of clusters if k=5
+
+agnes_boot_te <- clusterboot(dissim_dist_te, 
+            clustermethod = hclustCBI, 
+            method = "ward.D2",
+            k = 4,
+            seed = 32165)
+
+agnes_boot_te$bootmean
+agnes_boot_te$bootbrd
+
+sdf_agnes_te_cut <- cutree(sdf_agnes_te, k = 4)
 nmdsScores_te$cluster = factor(sdf_agnes_te_cut)
 
 # plot clusters
@@ -688,40 +704,33 @@ ggplot() +
 
 # plot NMDS w/clusters
 
+
+# get convex hull polygon for each cluster
+
+hull_te <- nmdsScores_te |>
+  group_by(cluster) |>
+  slice(chull(NMDS1, NMDS2))
+
+
 ggplot(data = nmdsScores_te,
        aes(x = NMDS1, y = NMDS2)
-       )+ 
+)+ 
   theme_bw()+
-  geom_point(data = nmdsScores_te, aes(color = cluster,
-           shape = light_reg), 
-           size = 4,
-       alpha = 0.5) +
-  # geom_text(data = nmdsScores_te, aes(label = Dep_ID),
-  #           vjust = -1,
-  #           hjust = 1.0)+
-  # geom_segment(data =envScores,
-  #              aes(x=0,
-  #                  xend=NMDS1,
-  #                  y=0,
-  #                  yend=NMDS2),
-  #              arrow = arrow(length = unit(0.5, "cm")),
-  #              colour="black")+
-  # add npz centroids from envfit
-  # geom_point(data = envCent_npz,
-  #            aes(x = NMDS1, y = NMDS2),
-  #            size = 3)+
-  # geom_text(data=envCent_npz,
-  #           aes(x=NMDS1,
-  #               y=NMDS2,
-  #               label=cent_label),
-  #           size=4)+
-  # add cluster ellipses
-  stat_ellipse(data = nmdsScores_te,
-               aes(color = cluster),
-               # linetype = "dotted",
-               size = 1,
-               level = 0.95)+
-  # scale_color_viridis_d(begin = 0.1, end = 0.8)+
+  geom_polygon(data = hull_te,
+               aes(x = NMDS1, y = NMDS2,
+                   fill = cluster,
+                   color = cluster),
+               linewidth = 0.25,
+               
+               alpha = 0.2)+
+  geom_point(data = nmdsScores_te, 
+             aes(color = cluster,
+                 shape = npz_id), 
+             size = 4,
+             alpha = 0.7) +
+ 
+  scale_color_viridis_d(begin = 0.1, end = 0.8)+
+      scale_fill_viridis_d(begin = 0.1, end = 0.8)+
     labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)))
 
 
@@ -743,11 +752,11 @@ disp_cluster_te <- betadisper(dissim_dist_te,
 plot(disp_cluster_te)
 
 anova(disp_cluster_te)
-
+ 
 # Response: Distances
 #           Df     Sum Sq    Mean Sq F value Pr(>F)
-# Groups     4 0.00012096 3.0239e-05  1.1266 0.3542
-# Residuals 52 0.00139579 2.6842e-05 
+# Groups     3 3.1362e-05 1.0454e-05  0.8886 0.4601
+# Residuals 26 3.0589e-04 1.1765e-05   
 
 #### PERMANOVA test for whether clusters are significantly different from one another
 
@@ -757,9 +766,9 @@ perma_cluster_te
 
 # adonis2(formula = dissim_dist_te ~ as.factor(nmdsScores_te$cluster), data = dissim_dist_te, permutations = 9999)
 #          Df  SumOfSqs      R2      F Pr(>F)    
-# Model     2 0.0024830 0.61425 21.497  1e-04 ***
-# Residual 27 0.0015593 0.38575                  
-# Total    29 0.0040423 1.00000     
+# Model     3 0.0029639 0.73322 23.819  1e-04 ***
+# Residual 26 0.0010784 0.26678                  
+# Total    29 0.0040423 1.00000   
 
 ```
 
