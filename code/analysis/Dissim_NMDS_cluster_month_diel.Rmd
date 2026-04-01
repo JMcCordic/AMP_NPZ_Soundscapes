@@ -157,7 +157,7 @@ ggplot(data = nmdsScores_all,
 
 ### Look into presence data
 
-```{r envfit}
+```{r load and summarize presence}
 
 hp_month_prop <- read_csv("data/All_sites_tables/allsources_by_month_diel_weather.csv") 
 
@@ -165,7 +165,7 @@ hp_month_prop <- read_csv("data/All_sites_tables/allsources_by_month_diel_weathe
 
 minmax_norm <- function(x, NAbehav = TRUE){
     
-  scaled_val <- (x - min(x, na.rm = NAbehav))/(max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
+  scaled_val <- (x - min(x, na.rm = NAbehav))/(max(x, na.rm = NAbehav) - min(x, na.rm = NAbehav))
   return(scaled_val)
 }
 
@@ -183,7 +183,22 @@ monthly_pres_data <- nmdsScores_all |>
   rowwise() |>
   mutate(wind_ampm_avg_sc = mean(c(wind_am_sc, wind_pm_sc))
   )
-  
+
+
+ggplot(data = monthly_pres_data, 
+       aes(x = npz_id, 
+           y = fish_c_pres,
+           fill = light_fac)) +
+  geom_boxplot()
+
+
+
+
+
+```
+
+
+```{r Presence correlation with NMDS}
 
   ## Evaluate correlation between ordination and environmental data
   env_test <- envfit(nmds_all, 
