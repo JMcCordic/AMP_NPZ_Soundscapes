@@ -214,9 +214,27 @@ env_test
 
 env_pvals_vec <- env_test$vectors$pvals |>
   enframe()
+env_output_vec <- env_test$vectors$r |>
+  enframe()|>
+  rename("r2" = "value")|>
+  left_join(env_pvals_vec) |>
+  arrange(desc(r2))
+
+
 
 env_pvals_fac <- env_test$factors$pvals |>
   enframe()
+env_output_fac <- env_test$factors$r |>
+  enframe() |>
+  rename("r2" = "value")|>
+  left_join(env_pvals_fac)|>
+  arrange(desc(r2))
+
+env_output_all <- env_output_fac |>
+  rbind(env_output_vec)
+
+write_csv(env_output_all, "output/envfit_output.csv")
+
 
 
 envScores <- as_tibble(scores(env_test, "vectors"), rownames = "name") |>
@@ -688,7 +706,7 @@ monthly_pres_te <- nmdsScores_te |>
   env_test_te <- envfit(nmds_te, 
                      monthly_pres_te|>
                        # only keep grouping columns and presence columns
-                         select(npz_id, light_reg, month_fac,  
+                         select(npz_id, light_reg, month_UTC,  
                               rain_month_avg_mm,
                               all_of(ends_with("_pres"))),
                      permutations = 999, 
@@ -868,8 +886,8 @@ ggplot(data = nmdsScores_te,
             aes(x = NMDS1,
                 y = NMDS2,
                 label = Variable))+
-  scale_color_viridis_d(begin = 0.1, end = 0.8)+
-      scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+  scale_color_viridis_d(begin = 0.3, end = 0.8, option = "plasma")+
+      scale_fill_viridis_d(begin = 0.3, end = 0.8, option = "plasma")+
     labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)), 
          fill = "Cluster", 
          shape = "NPZ") +

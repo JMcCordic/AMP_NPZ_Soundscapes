@@ -1,0 +1,15 @@
+,Variable,R2,p-value
+,NPZ,0.933,0.001
+,Network,0.590,0.001
+,Light regime,0.004,NS
+,Wind speed,0.617,0.001
+,Rainfall,0.506,0.001
+,Tidal magnitude,0.421,0.001
+,Sperm whale,0.231,0.003
+,Pygmy blue whale,0.168,0.007
+,Dolphin whistles,0.124,0.025
+,Minke whale,0.092,NS
+,Humpback whale,0.090,NS
+,Vessels,0.042,NS
+,Fish chorus,0.026,NS
+,Snapping shrimp,0.020,NS
