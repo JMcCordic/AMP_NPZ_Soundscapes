@@ -89,10 +89,7 @@ dissim_te <- dissim_all |>
   filter(grepl("CGMP", dep) | grepl("SIMP", dep)) |>
   # join to get info by deployment
   left_join(all_dep_labels, by="dep")
-  # join with subset of weeks common to multiple deployments
-  # left_join(months_to_use) |>
-  # # filter out remaining weeks
-  # filter(!is.na(n_deps_mo))
+ 
 # get values of deployments left
 dep_wk_te <- dissim_te$dep
 # select those columns to just get dissim values we care about
@@ -125,7 +122,7 @@ nmdsScores_all <- as.data.frame(scores(nmds_all)) |>
   rownames_to_column(var = "dep") |>
   # join to label info
   left_join(all_dep_labels) |>
-  mutate(week_fac = factor(month_UTC),
+  mutate(month_fac = factor(month_UTC),
          light_fac = factor(light_reg))
 
 
@@ -240,7 +237,21 @@ write_csv(env_output_all, "output/envfit_output.csv")
 envScores <- as_tibble(scores(env_test, "vectors"), rownames = "name") |>
   left_join(env_pvals_vec) |>
   rename("Variable" = "name", 
-         "pval" = "value")
+         "pval" = "value")|>
+  mutate(var_label = case_when(
+   Variable == "month_UTC" ~ "Month",
+   Variable == "rain_sc" ~ "Rainfall",
+   Variable == "tide_sc" ~ "Tidal magnitude",
+   Variable == "wind_ampm_avg_sc" ~ "Wind speed",
+   Variable == "bal_pres" ~ "Pygmy blue whale",
+   Variable == "hbw_pres" ~ "Humpback",
+   Variable == "fish_c_pres" ~ "Fish chorus",
+   Variable == "dol_pres" ~ "Dolphin",
+   Variable == "ves_pres" ~ "Vessel",
+   Variable == "spwh_pres" ~ "Sperm whale",
+   Variable == "mnk_pres" ~ "Minke",
+   Variable == "shr_pres" ~ "Snapping shrimp"
+  ))
 
 
 # scale vector lengths to NMDS scores rather than "unit" length
@@ -254,7 +265,21 @@ scaled_env_scores <- as.data.frame(scores(env_test,
   as_tibble(rownames = "name") |>
   left_join(env_pvals_vec) |>
   rename("Variable" = "name", 
-         "pval" = "value")
+         "pval" = "value")|>
+  mutate(var_label = case_when(
+   Variable == "month_UTC" ~ "Month",
+   Variable == "rain_sc" ~ "Rainfall",
+   Variable == "tide_sc" ~ "Tidal magnitude",
+   Variable == "wind_ampm_avg_sc" ~ "Wind speed",
+   Variable == "bal_pres" ~ "Pygmy blue whale",
+   Variable == "hbw_pres" ~ "Humpback",
+   Variable == "fish_c_pres" ~ "Fish chorus",
+   Variable == "dol_pres" ~ "Dolphin",
+   Variable == "ves_pres" ~ "Vessel",
+   Variable == "spwh_pres" ~ "Sperm whale",
+   Variable == "mnk_pres" ~ "Minke",
+   Variable == "shr_pres" ~ "Snapping shrimp"
+  ))
 
 # pull out sig scores only
 sig_scaled_scores <- scaled_env_scores |>
@@ -445,17 +470,15 @@ ggplot(data = nmdsScores_all,
        aes(x = NMDS1, y = NMDS2)
        )+ 
   theme_bw()+
-  geom_point(data = nmdsScores_all, aes(color = cluster,
-           shape = network), 
-           alpha = 0.7,
-           size = 3) +
-  geom_polygon(data = hull_clust,
-               aes(x = NMDS1, y = NMDS2,
-                   fill = cluster,
-                   color = cluster),
-               linewidth = 0.25,
+   # add cluster ellipses
+  stat_ellipse(data = nmdsScores_all,
+               aes(color = cluster,
+                   fill = cluster),
+               geom = "polygon",
+               size = 1,
                alpha = 0.2)+
-   geom_segment(data =sig_scaled_scores,
+  # add vectors for sig continuous variables
+  geom_segment(data =sig_scaled_scores,
                aes(x=0,
                    xend=NMDS1,
                    y=0,
@@ -463,37 +486,37 @@ ggplot(data = nmdsScores_all,
                arrow = arrow(angle = 30, 
                              length = unit(0.25, "cm"),
                              type = "open"),
-               colour = "black",
+               colour = "grey45",
                size = 1)+
+  geom_point(data = nmdsScores_all, 
+             aes(color = cluster,
+           shape = network), 
+           # alpha = 0.7,
+           size = 3) +
+  # geom_polygon(data = hull_clust,
+  #              aes(x = NMDS1, y = NMDS2,
+  #                  fill = cluster,
+  #                  color = cluster),
+  #              linewidth = 0.25,
+  #              alpha = 0.2)+
+  
   geom_text(data = sig_scaled_scores,
             aes(x = NMDS1,
                 y = NMDS2,
-                label = Variable))+
-  # geom_text(data = nmdsScores_all, aes(label = npz_id),
-  #           vjust = -1, 
-  #           hjust = 1.0)+
-  # geom_segment(data =envScores,
-  #              aes(x=0,
-  #                  xend=NMDS1,
-  #                  y=0,
-  #                  yend=NMDS2),
-  #              arrow = arrow(length = unit(0.5, "cm")),
-  #              colour="black")+
-  # add npz centroids from envfit
+                label = var_label),
+            color = "grey45",
+            fontface = "bold",
+            vjust = -0.5, hjust = 0.5)+
+ # add npz centroids from envfit
   # geom_point(data = envCent_npz,
   #            aes(x = NMDS1, y = NMDS2),
+  #            shape = 21,
   #            size = 3)+
   # geom_text(data=envCent_npz,
   #           aes(x=NMDS1,
   #               y=NMDS2,
   #               label=cent_label),
   #           size=4)+
-  # add cluster ellipses
-  # stat_ellipse(data = nmdsScores_all,
-  #              aes(color = cluster),
-  #              # linetype = "dotted",
-  #              size = 1,
-  #              level = 0.95)+
   scale_color_viridis_d(begin = 0.1, end = 0.8)+
   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
     labs(caption = paste0("stress = ", round(nmds_all$stress, digits =4)),
@@ -501,7 +524,7 @@ ggplot(data = nmdsScores_all,
   guides(color = "none")+
   theme_bw(base_size = 14)
 
-# ggsave(paste0("figs/", "NMDS_month_diel_all_clust_vec.png"), width=8, height=6,
+# ggsave(paste0("figs/", "NMDS_month_diel_all_clust_ellipse.png"), width=8, height=6,
 #        units="in", dpi=300)
 
 
@@ -665,7 +688,8 @@ nmdsScores_te <- as.data.frame(scores(nmds_te)) |>
   rownames_to_column(var = "dep") |>
   # join to label info
   left_join(all_dep_labels) |>
-  mutate(month_fac = factor(month_UTC))
+  mutate(month_fac = factor(month_UTC),
+         light_fac = factor(light_reg))
 
 
 # explore initial patterns in ordination
@@ -760,7 +784,8 @@ ggplot() +
             aes(x, y, label=label, hjust=0.5, color=cluster),
             angle = 90, size = 3)
 
-
+ggsave(paste0("figs/", "AGNES_tempeast_month_diel_clusters_k4.png"), width=12, height=12,
+       units="in", dpi=300)
 
 
 ```
@@ -817,7 +842,18 @@ env_pvals_fac_te <- env_test_te$factors$pvals |>
 envScores_te <- as_tibble(scores(env_test_te, "vectors"), rownames = "name") |>
   left_join(env_pvals_vec_te) |>
   rename("Variable" = "name", 
-         "pval" = "value")
+         "pval" = "value") |>
+  mutate(var_label = case_when(
+   Variable == "month_UTC" ~ "Month",
+   Variable == "rain_month_avg_mm" ~ "Rainfall",
+   Variable == "bal_pres" ~ "Pygmy blue whale",
+   Variable == "hbw_pres" ~ "Humpback",
+   Variable == "fish_c_pres" ~ "Fish chorus",
+   Variable == "dol_pres" ~ "Dolphin",
+   Variable == "ves_pres" ~ "Vessel",
+   Variable == "mnk_pres" ~ "Minke",
+   Variable == "shr_pres" ~ "Snapping shrimp"
+  ))
 
 
 # scale vector lengths to NMDS scores rather than "unit" length
@@ -831,7 +867,18 @@ scaled_env_scores_te <- as.data.frame(scores(env_test_te,
   as_tibble(rownames = "name") |>
   left_join(env_pvals_vec_te) |>
   rename("Variable" = "name", 
-         "pval" = "value")
+         "pval" = "value")|>
+  mutate(var_label = case_when(
+   Variable == "month_UTC" ~ "Month",
+   Variable == "rain_month_avg_mm" ~ "Rainfall",
+   Variable == "bal_pres" ~ "Pygmy blue whale",
+   Variable == "hbw_pres" ~ "Humpback",
+   Variable == "fish_c_pres" ~ "Fish chorus",
+   Variable == "dol_pres" ~ "Dolphin",
+   Variable == "ves_pres" ~ "Vessel",
+   Variable == "mnk_pres" ~ "Minke",
+   Variable == "shr_pres" ~ "Snapping shrimp"
+  ))
 
 # pull out sig scores only
 sig_scaled_scores_te <- scaled_env_scores_te |>
@@ -860,18 +907,21 @@ ggplot(data = nmdsScores_te,
        aes(x = NMDS1, y = NMDS2)
 )+ 
   theme_bw()+
-  geom_polygon(data = hull_te,
+  stat_ellipse(aes(fill = cluster,
+                   color = cluster),
+               geom = "polygon",
+               alpha = 0.2)+
+  # use convex hull for cluster 4 since you need >3 points for an ellipse
+  geom_polygon(data = hull_te |> filter(cluster == 4),
                aes(x = NMDS1, y = NMDS2,
                    fill = cluster,
                    color = cluster),
                linewidth = 0.25,
-               
                alpha = 0.2)+
   geom_point(data = nmdsScores_te, 
              aes(color = cluster,
                  shape = npz_id), 
-             size = 4,
-             alpha = 0.7) +
+             size = 4) +
   geom_segment(data =sig_scaled_scores_te,
                aes(x=0,
                    xend=NMDS1,
@@ -880,12 +930,14 @@ ggplot(data = nmdsScores_te,
                arrow = arrow(angle = 30, 
                              length = unit(0.25, "cm"),
                              type = "open"),
-               colour = "black",
+               colour = "grey45",
                size = 1)+
   geom_text(data = sig_scaled_scores_te,
             aes(x = NMDS1,
                 y = NMDS2,
-                label = Variable))+
+                label = var_label),
+            color = "grey45",
+            fontface = "bold")+
   scale_color_viridis_d(begin = 0.3, end = 0.8, option = "plasma")+
       scale_fill_viridis_d(begin = 0.3, end = 0.8, option = "plasma")+
     labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)), 
@@ -905,6 +957,133 @@ ggplot(data = nmdsScores_te,
 
 
 ```{r TE PSD plots}
+
+
+# join cluster ID to weekly PSDs
+
+psd_monthdiel_cluster_te <- all_dep_psd |>
+  mutate(dep = paste0(Dep_ID, "_", month_UTC,"_",light_reg),
+         dep = str_replace(dep, "PARKSAUSTRALIA_","")) |>
+  left_join(nmdsScores_te, 
+            by = c("dep"),
+            keep = FALSE) |>
+  filter(!is.na(cluster))
+
+# make summarized df for plotting by cluster & light regime
+psd_clust_light_te <- psd_monthdiel_cluster_te |>
+  group_by(cluster, light_fac, frequency) |>
+   summarize(
+    min_psd = min(qmed),
+    med_psd = median(qmed),
+    max_psd = max(qmed)
+  )
+
+# make summarized df for plotting by cluster only
+psd_clust_te <- psd_monthdiel_cluster_te |>
+  group_by(dep) |>
+  mutate(norm_qmed = qmed/sum(qmed))|>
+  ungroup() |>
+  group_by(cluster, frequency) |>
+   summarize(
+    min_psd = min(qmed),
+    med_psd = median(qmed),
+    max_psd = max(qmed),
+    norm_min_psd = min(norm_qmed),
+    norm_med_psd = median(norm_qmed),
+    norm_max_psd = max(norm_qmed)
+    
+  ) |>
+  # add labeling column
+  mutate(clust_label = case_when(
+    cluster == 1 ~ "Cod Grounds \nall others",
+    cluster == 2 ~ "Cod Grounds \nJune+July(night)",
+    cluster == 3 ~ "Solitary Islands \nJun - Aug",
+    cluster == 4 ~ "Solitary Islands \nDec"
+  ))
+
+# plot median PSDs for each month x light, facet by cluster
+ggplot(data = psd_clust_te, 
+       aes(x = frequency)) +
+  geom_ribbon(aes(ymin = min_psd,
+                  ymax = max_psd,
+                  group = cluster,
+                  fill = cluster),
+              alpha = 0.2)+
+  geom_line(aes(y = med_psd,
+                group = cluster,
+                color = cluster),
+            linewidth = 0.7) +
+    geom_line(aes(y = min_psd,
+                group = cluster,
+                color = cluster),
+              alpha = 0.5,
+            linewidth = 0.25) +
+    geom_line(aes(y = max_psd,
+                group = cluster,
+                color = cluster),
+              alpha = 0.5,
+            linewidth = 0.25) +
+  geom_line(data = psd_monthdiel_cluster_te,
+            aes(x = frequency,
+                y = qmed,
+                group = interaction(cluster,dep),
+                color = cluster),
+            alpha = 0.4,
+            linewidth = 0.5)+
+  labs(x = "Frequency", 
+       y = expression(paste("dB re 1", mu, "Pa"^"2", "Hz"^"-1")),
+       color = "Cluster",
+       fill = "Cluster")+
+  scale_x_log10() +
+  scale_fill_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
+  scale_color_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
+  facet_grid(rows = vars(cluster))+
+  theme_bw(base_size = 14) +
+  theme(strip.text.y = element_text(face = "bold", angle = 0),
+        strip.background.y = element_rect(fill = NA))
+
+
+# 
+# ggsave(paste0("figs/", "PSD_by_clusters_shading_lines_tempeast.png"), width=7, height=12,
+#        units="in", dpi=300)
+
+
+psd_clust_labels_te <- psd_clust_te |> 
+  filter(frequency == 23961) |>
+  mutate(
+  norm_med_psd_labels = case_when(
+   cluster == 1 ~ norm_med_psd + 0.0000075,
+   cluster == 2 ~ norm_med_psd - 0.000010,
+   cluster == 3 ~ norm_med_psd - 0.000005,
+   cluster == 4 ~ norm_med_psd + 0.000010))
+
+
+# plot normalized summary PSDs by cluster in single plot
+ggplot(data = psd_clust_te, 
+       aes(x = frequency)) +
+  geom_line(aes(y = norm_med_psd,
+                group = cluster,
+                color = cluster),
+            linewidth = 1) +
+  geom_label(data = psd_clust_labels_te,
+            aes(y = norm_med_psd_labels,
+                label = clust_label,
+                hjust = -0.05,
+            color = cluster))+
+  labs(x = "Frequency", 
+       y = "Normalized PSD",
+       color = "Cluster",
+       fill = "Cluster")+
+  scale_x_log10() +
+  expand_limits(x = c(10, 50000))+
+  scale_fill_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
+  scale_color_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
+  theme_bw(base_size = 14) +
+  theme(strip.text.y = element_text(face = "bold", angle = 0),
+        strip.background.y = element_rect(fill = NA))
+
+# ggsave(paste0("figs/", "norm_PSD_by_clusters_medlines_tempeast.png"), width=14, height=8,
+#        units="in", dpi=300)
 
 
 ```
