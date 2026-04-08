@@ -33,10 +33,11 @@ library(PAMscapes)
 ```{r load data}
 
 # read in full distance matrix and metadata
-dissim_og <- read_csv("data/Df_analysis/Dissim_tables/dissim_matrix_dep_month_diel.csv")
+dissim_og <- read_csv("data/Df_analysis/Dissim_tables/dissim_matrix_dep_month_diel_20Hz.csv")
 
 # load HMD weekly data -- has deployment ID and ISO week info
-all_dep_psd <- read_csv("data/Df_analysis/All_deps_monthly_diel_PSD.csv")
+all_dep_psd <- read_csv("data/Df_analysis/All_deps_monthly_diel_PSD.csv") |>
+  filter(frequency >= 20)
 
 # get grouping info from original PSD data
 all_dep_labels <- all_dep_psd |>
@@ -653,7 +654,7 @@ ggplot(data = psd_clust,
        color = "Cluster",
        fill = "Cluster")+
   scale_x_log10() +
-  expand_limits(x = c(10, 50000))+
+  expand_limits(x = c(20, 50000))+
   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
   scale_color_viridis_d(begin = 0.1, end = 0.8)+
   theme_bw(base_size = 14) +

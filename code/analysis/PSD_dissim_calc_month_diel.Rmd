@@ -27,7 +27,9 @@ psd_wide <- psd_og |>
          month_totdays = days_in_month(month_UTC)) |>
   
   # only keep data from months with >= half the month
-  filter(effort_days >= 0.5*month_totdays)|>
+  # only keep freqs > 20Hz (flat freq response of STs)
+  filter(effort_days >= 0.5*month_totdays,
+         frequency >= 20)|>
 
   # drop quantiles not using
   select(Dep_ID, month_UTC, light_reg, frequency, qmed)|>
@@ -253,7 +255,7 @@ dissim_matrix <- dissim_vals |>
 
 # Save dissimilarity matrix
 write_csv(dissim_matrix,
-          "output/dissim_matrix_dep_month_diel.csv")
+          "output/dissim_matrix_dep_month_diel_20Hz.csv")
 
 
 
