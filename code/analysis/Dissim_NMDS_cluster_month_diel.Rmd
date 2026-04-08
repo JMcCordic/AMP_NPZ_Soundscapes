@@ -1076,7 +1076,7 @@ ggplot(data = psd_clust_te,
        color = "Cluster",
        fill = "Cluster")+
   scale_x_log10() +
-  expand_limits(x = c(10, 50000))+
+  expand_limits(x = c(20, 50000))+
   scale_fill_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
   scale_color_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
   theme_bw(base_size = 14) +
