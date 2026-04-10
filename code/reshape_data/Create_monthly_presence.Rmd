@@ -22,13 +22,23 @@ library(svDialogs)
 ```{r load data}
 
 # Assign user-defined inputs ----------------------------------------------
+# 
+# # Since server folders are in a standard structure, use parent folder to get list of all deployments
+# dep_names <- list.dirs(tk_choose.dir(caption = "Select parent dir for all deployment folders"), recursive = FALSE, full.names = FALSE)
+# 
+# # select the deployment(s) to summarize
+# dep_list <- dlg_list(title = "Select deployments to plot", choices = dep_names, multiple = TRUE)$res |>
+#   str_sub(start = 16)
 
-# Since server folders are in a standard structure, use parent folder to get list of all deployments
-dep_names <- list.dirs(tk_choose.dir(caption = "Select parent dir for all deployment folders"), recursive = FALSE, full.names = FALSE)
 
-# select the deployment(s) to summarize
-dep_list <- dlg_list(title = "Select deployments to plot", choices = dep_names, multiple = TRUE)$res |>
-  str_sub(start = 16)
+# Manually list deployment names
+dep_list <- as.list(c("PARKSAUSTRALIA_CGMP_201807_CG", "PARKSAUSTRALIA_CGMP_201812_CG", "PARKSAUSTRALIA_CGMP_201904_CG",
+              "PARKSAUSTRALIA_DAMPIER_202009_DNE", 
+              "PARKSAUSTRALIA_MURAT_202002_MRE",
+              "PARKSAUSTRALIA_NINGALOO_201909_NGN",
+              "PARKSAUSTRALIA_SIMP_201808_WP", "PARKSAUSTRALIA_SIMP_201812_WP", "PARKSAUSTRALIA_SIMP_201906_WP", 
+              "PARKSAUSTRALIA_SWC_202201_SWS")|>
+  str_sub(start = 16))
 
 # set deployment names
 dep_info <- dep_list |>
@@ -87,6 +97,35 @@ hp_env <- hp_allcols |>
   left_join(weather_data, by = c("Dep_ID","UTC"))
 
 ```
+
+```{r summary figures}
+
+library(PAMscapes)
+
+hp_scene <- hp_env |>
+  pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
+  filter(presence > 0)
+
+hp_scene_day <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1day", fill = TRUE, alpha = 0.4)
+
+hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1hour", fill = TRUE)
+
+hp_scene_hour +
+  theme_bw(base_size = 14) +
+  theme(strip.text.y = element_text(face = "bold", angle = 0),
+        strip.background.y = element_rect(fill = NA))
+  
+ggsave(paste0("figs/", "HP_summary_plot.png"), width=8, height=6,
+        units="in", dpi=300)
+
+```
+
+
+
+
+
+
+
 
 ```{r monthly presence}
 
