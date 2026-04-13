@@ -106,17 +106,36 @@ hp_scene <- hp_env |>
   pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
   filter(presence > 0)
 
-hp_scene_day <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1day", fill = TRUE, alpha = 0.4)
+hp_scene_day <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1day", fill = TRUE, alpha = 0.4, returnData = TRUE)
 
-hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1hour", fill = TRUE)
+hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1hour", fill = TRUE, alpha = 0.7, returnData = TRUE)
 
-hp_scene_hour +
+ggplot() +
+   # geom_rect(data = hp_scene_day,
+   #           aes(xmin = UTC, xmax = end,
+   #              ymin = freqMin, ymax = freqMax,
+   #              fill = bio_type),
+   #          alpha = 0.3) +
+  geom_rect(data = hp_scene_hour,
+            aes(xmin = UTC, xmax = end,
+                ymin = freqMin, ymax = freqMax,
+                fill = bio_type)) +
+  scale_x_datetime(date_breaks = "month", date_labels = "%b")+
+  facet_grid(rows = vars(npz_id))+
   theme_bw(base_size = 14) +
-  theme(strip.text.y = element_text(face = "bold", angle = 0),
+  theme(axis.text.y = element_blank(), strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
-  
-ggsave(paste0("figs/", "HP_summary_plot.png"), width=8, height=6,
-        units="in", dpi=300)
+
+
+
+
+# hp_scene_hour +
+#   theme_bw(base_size = 14) +
+#   theme(strip.text.y = element_text(face = "bold", angle = 0),
+#         strip.background.y = element_rect(fill = NA))
+# # 
+# ggsave(paste0("figs/", "HP_summary_plot.png"), width=16, height=12,
+#         units="in", dpi=300)
 
 ```
 
