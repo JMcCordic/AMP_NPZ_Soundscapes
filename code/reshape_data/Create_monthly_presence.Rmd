@@ -104,11 +104,18 @@ library(PAMscapes)
 
 hp_scene <- hp_env |>
   pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
-  filter(presence > 0)
+  filter(presence > 0) |>
+   mutate(hour_start = hour(UTC),
+         day_start = date(UTC),
+         )
 
 hp_scene_day <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1day", fill = TRUE, alpha = 0.4, returnData = TRUE)
 
-hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1hour", fill = TRUE, alpha = 0.7, returnData = TRUE)
+hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1hour", fill = TRUE, alpha = 0.7, returnData = TRUE) |>
+  mutate(hour_start = hour(UTC),
+         hour_end = hour(end),
+         day_start = date(UTC),
+         day_end = date(end))
 
 ggplot() +
    # geom_rect(data = hp_scene_day,
@@ -126,7 +133,35 @@ ggplot() +
   theme(axis.text.y = element_blank(), strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
 
+# ggsave(paste0("figs/", "HP_summary_plot.png"), width=16, height=12,
+#         units="in", dpi=300)
 
+
+
+# try adding diel...?
+
+
+ggplot() +
+   # geom_rect(data = hp_scene_day,
+   #           aes(xmin = UTC, xmax = end,
+   #              ymin = freqMin, ymax = freqMax,
+   #              fill = bio_type),
+   #          alpha = 0.3) +
+  geom_tile(data = hp_scene_hour,
+            aes(x = day_start,
+                y = hour_start,
+                fill = bio_type),
+            alpha = 0.7) +
+  scale_x_date(date_breaks = "3 months", date_labels = "%b")+
+  facet_grid(rows = vars(bio_type),
+             cols = vars(npz_id))+
+  theme_bw(base_size = 14) +
+  theme(strip.text.y = element_text(face = "bold", angle = 0),
+        strip.background.y = element_rect(fill = NA))
+
+
+# ggsave(paste0("figs/", "HP_summary_plot_diel.png"), width=20, height=12,
+#         units="in", dpi=300)
 
 
 # hp_scene_hour +

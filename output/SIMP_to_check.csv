@@ -1,20 +1,20 @@
-bio_type,npz_id,freqMin,freqMax,UTC,end
-bal_pres,Cod Grounds,1.6,2.4,2019-12-16T04:00:00Z,2019-12-16T05:00:00Z
-bal_pres,Cod Grounds,1.6,2.4,2019-12-16T19:00:00Z,2019-12-16T20:00:00Z
-bal_pres,Cod Grounds,1.6,2.4,2019-01-21T11:00:00Z,2019-01-21T12:00:00Z
-bal_pres,Cod Grounds,1.6,2.4,2019-02-01T17:00:00Z,2019-02-01T18:00:00Z
-bal_pres,Cod Grounds,1.6,2.4,2019-02-02T11:00:00Z,2019-02-02T12:00:00Z
-bal_pres,Cod Grounds,1.6,2.4,2019-02-06T19:00:00Z,2019-02-06T21:00:00Z
-bal_pres,Cod Grounds,1.6,2.4,2019-02-19T09:00:00Z,2019-02-19T10:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-08-12T22:00:00Z,2019-08-12T23:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-08-14T08:00:00Z,2019-08-14T09:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-08-14T20:00:00Z,2019-08-14T21:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-08-17T01:00:00Z,2019-08-17T02:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-08-24T12:00:00Z,2019-08-24T13:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-08-24T17:00:00Z,2019-08-24T18:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-08-25T06:00:00Z,2019-08-25T07:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-08-26T18:00:00Z,2019-08-26T19:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-09-04T17:00:00Z,2019-09-04T18:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-09-05T10:00:00Z,2019-09-05T11:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-09-06T12:00:00Z,2019-09-06T13:00:00Z
-bal_pres,Solitary Islands,1.6,2.4,2019-09-10T03:00:00Z,2019-09-10T04:00:00Z
+bio_type,npz_id,freqMin,freqMax,UTC,end,Start.date,Start.hour,,Bal present?,
+bal_pres,Cod Grounds,1.6,2.4,2019-12-16T04:00:00Z,2019-12-16T05:00:00Z,12/16/2018,15,,0,
+bal_pres,Cod Grounds,1.6,2.4,2019-12-16T19:00:00Z,2019-12-16T20:00:00Z,12/17/2018,6,,0,
+bal_pres,Cod Grounds,1.6,2.4,2019-01-21T11:00:00Z,2019-01-21T12:00:00Z,1/21/2019,22,weird call 22:04:24 *** ask Gen!  Downsweep 22:27:09,0,
+bal_pres,Cod Grounds,1.6,2.4,2019-02-01T17:00:00Z,2019-02-01T18:00:00Z,2/2/2019,4,unk baleen call 04:17:55 **ask Gen,1,unk
+bal_pres,Cod Grounds,1.6,2.4,2019-02-02T11:00:00Z,2019-02-02T12:00:00Z,2/2/2019,22,unk whale 22:27:13 (27 - 56 Hz) **ask Gen,1,unk
+bal_pres,Cod Grounds,1.6,2.4,2019-02-06T19:00:00Z,2019-02-06T21:00:00Z,2/7/2019,6,"unknown baleen calls starting 06:20:00, pulses ~135Hz *ask Gen",1,unk
+bal_pres,Cod Grounds,1.6,2.4,2019-02-19T09:00:00Z,2019-02-19T10:00:00Z,2/7/2019,7,"unknown baleen calls 07:10:57, same as 06:20:00",1,unk
+bal_pres,Solitary Islands,1.6,2.4,2019-08-12T22:00:00Z,2019-08-12T23:00:00Z,2/19/2019,20,possible blue whale 20:24:04 ** ask Gen,1,unk
+bal_pres,Solitary Islands,1.6,2.4,2019-08-14T08:00:00Z,2019-08-14T09:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-08-14T20:00:00Z,2019-08-14T21:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-08-17T01:00:00Z,2019-08-17T02:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-08-24T12:00:00Z,2019-08-24T13:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-08-24T17:00:00Z,2019-08-24T18:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-08-25T06:00:00Z,2019-08-25T07:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-08-26T18:00:00Z,2019-08-26T19:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-09-04T17:00:00Z,2019-09-04T18:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-09-05T10:00:00Z,2019-09-05T11:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-09-06T12:00:00Z,2019-09-06T13:00:00Z,,,,,
+bal_pres,Solitary Islands,1.6,2.4,2019-09-10T03:00:00Z,2019-09-10T04:00:00Z,,,,,
