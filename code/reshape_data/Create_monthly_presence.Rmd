@@ -98,88 +98,6 @@ hp_env <- hp_allcols |>
 
 ```
 
-```{r summary figures}
-
-library(PAMscapes)
-
-hp_scene <- hp_env |>
-  pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
-  filter(presence > 0) |>
-   mutate(hour_start = hour(UTC),
-         day_start = date(UTC),
-         )
-
-hp_scene_day <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1day", fill = TRUE, alpha = 0.4, returnData = TRUE)
-
-hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1hour", fill = TRUE, alpha = 0.7, returnData = TRUE) |>
-  mutate(hour_start = hour(UTC),
-         hour_end = hour(end),
-         day_start = date(UTC),
-         day_end = date(end))
-
-ggplot() +
-   # geom_rect(data = hp_scene_day,
-   #           aes(xmin = UTC, xmax = end,
-   #              ymin = freqMin, ymax = freqMax,
-   #              fill = bio_type),
-   #          alpha = 0.3) +
-  geom_rect(data = hp_scene_hour,
-            aes(xmin = UTC, xmax = end,
-                ymin = freqMin, ymax = freqMax,
-                fill = bio_type)) +
-  scale_x_datetime(date_breaks = "month", date_labels = "%b")+
-  facet_grid(rows = vars(npz_id))+
-  theme_bw(base_size = 14) +
-  theme(axis.text.y = element_blank(), strip.text.y = element_text(face = "bold", angle = 0),
-        strip.background.y = element_rect(fill = NA))
-
-# ggsave(paste0("figs/", "HP_summary_plot.png"), width=16, height=12,
-#         units="in", dpi=300)
-
-
-
-# try adding diel...?
-
-
-ggplot() +
-   # geom_rect(data = hp_scene_day,
-   #           aes(xmin = UTC, xmax = end,
-   #              ymin = freqMin, ymax = freqMax,
-   #              fill = bio_type),
-   #          alpha = 0.3) +
-  geom_tile(data = hp_scene_hour,
-            aes(x = day_start,
-                y = hour_start,
-                fill = npz_id),
-            alpha = 0.5) +
-  scale_x_date(date_breaks = "1 month", date_labels = "%b")+
-   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
-  # facet_grid(rows = vars(npz_id))+
-  theme_bw(base_size = 14) +
-  theme(strip.text.y = element_text(face = "bold", angle = 0),
-        strip.background.y = element_rect(fill = NA))
-
-
-# ggsave(paste0("figs/", "HP_summary_plot_diel.png"), width=20, height=12,
-#         units="in", dpi=300)
-
-
-# hp_scene_hour +
-#   theme_bw(base_size = 14) +
-#   theme(strip.text.y = element_text(face = "bold", angle = 0),
-#         strip.background.y = element_rect(fill = NA))
-# # 
-# ggsave(paste0("figs/", "HP_summary_plot.png"), width=16, height=12,
-#         units="in", dpi=300)
-
-```
-
-
-
-
-
-
-
 
 ```{r monthly presence}
 
@@ -226,7 +144,7 @@ hp_month_prop <- hp_env |>
 ```
 
 
-```{r light regime by month and light regime}
+```{r presence by month and light regime}
 
 
 
@@ -316,8 +234,112 @@ hp_monthlight_prop <- hp_allcols_light |>
 
 ```
 
+```{r daily presence plot}
 
-```{r presence plots}
+library(PAMscapes)
+
+#reshape to long format for plotting
+hp_scene <- hp_env |>
+  pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
+  # only include presence so that absence = blank in plot
+  filter(presence > 0) |>
+  # add columns for individual components for easier plotting
+   mutate(hour_start = hour(UTC),
+         day_start = date(UTC),
+         )
+
+# get df from plotAcousticScene() to put into more flexible ggplot
+hp_scene_day <- plotAcousticScene(hp_scene, 
+                                  typeCol = "bio_type", 
+                                  combineYears = TRUE, 
+                                  by = "npz_id", 
+                                  bin = "1day", 
+                                  fill = TRUE, 
+                                  returnData = TRUE) |>
+  mutate(month_start = month(UTC),
+         month_end = month(end))
+
+hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1hour", fill = TRUE, alpha = 0.7, returnData = TRUE) |>
+  mutate(hour_start = hour(UTC),
+         hour_end = hour(end),
+         day_start = date(UTC),
+         day_end = date(end))
+
+
+# create table of data gaps within nominal year (2019)
+
+gaps <- data.frame("Gap_start" = c(as.POSIXct("2019-02-20",format="%Y-%m-%d"), #CGMP gap 1 start
+                                   as.POSIXct("2019-08-04",format="%Y-%m-%d"), #CGMP gap 2 start
+                                   as.POSIXct("2019-06-24",format="%Y-%m-%d"), #CGMP gap 3 start
+                                   as.POSIXct("2019-01-15",format="%Y-%m-%d"), #SIMP gap 1 start
+                                   as.POSIXct("2019-09-12",format="%Y-%m-%d"), #SIMP gap 2 start
+                                   as.POSIXct("2019-08-09",format="%Y-%m-%d"), #SIMP gap 3 start
+                                   as.POSIXct("2019-01-01",format="%Y-%m-%d"), #DMP gap 1 start
+                                   as.POSIXct("2019-11-04",format="%Y-%m-%d"), #DMP gap 2 start
+                                   as.POSIXct("2019-01-01",format="%Y-%m-%d"), #NMP gap 1 start
+                                   as.POSIXct("2019-11-18",format="%Y-%m-%d"), #NMP gap 2 start
+                                   as.POSIXct("2019-01-01",format="%Y-%m-%d"), #MMP gap 1 start
+                                   as.POSIXct("2019-05-03",format="%Y-%m-%d"), #MMP gap 2 start
+                                   as.POSIXct("2019-01-01",format="%Y-%m-%d"), #SWCMP gap 1 start
+                                   as.POSIXct("2019-04-11",format="%Y-%m-%d") #SWCMP gap 2 end
+                                   ),
+                                    
+                   "Gap_end" = c(as.POSIXct("2019-04-11",format="%Y-%m-%d"), #CGMP gap 1 end
+                                   as.POSIXct("2019-12-12",format="%Y-%m-%d"), #CGMP gap 2 end
+                                 as.POSIXct("2019-07-01",format="%Y-%m-%d"), #CGMP gap 3 end
+                                   as.POSIXct("2019-06-10",format="%Y-%m-%d"), #SIMP gap 1 end
+                                   as.POSIXct("2019-12-12",format="%Y-%m-%d"), #SIMP gap 2 end
+                                 as.POSIXct("2019-08-10",format="%Y-%m-%d"), #SIMP gap 3 end
+                                   as.POSIXct("2019-09-09",format="%Y-%m-%d"), #DMP gap 1 end
+                                   as.POSIXct("2019-12-31",format="%Y-%m-%d"), #DMP gap 2 end
+                                   as.POSIXct("2019-09-25",format="%Y-%m-%d"), #NMP gap 1 end
+                                   as.POSIXct("2019-12-31",format="%Y-%m-%d"), #NMP gap 2 end
+                                   as.POSIXct("2019-02-08",format="%Y-%m-%d"), #MMP gap 1 end
+                                   as.POSIXct("2019-12-31",format="%Y-%m-%d"), #MMP gap 2 end
+                                   as.POSIXct("2019-01-18",format="%Y-%m-%d"), #SWCMP gap 1 end
+                                   as.POSIXct("2019-12-31",format="%Y-%m-%d") #SWCMP gap 2 end
+                                 ),
+                   
+                   "npz_id" = c("Cod Grounds",
+                              "Cod Grounds",
+                              "Cod Grounds",
+                              "Solitary Islands",
+                              "Solitary Islands",
+                              "Solitary Islands",
+                              "Dampier",
+                              "Dampier",
+                              "Ningaloo",
+                              "Ningaloo",
+                              "Murat",
+                              "Murat",
+                              "South-west Corner",
+                              "South-west Corner"))
+
+# plot daily presence
+ggplot() +
+  geom_rect(data = gaps,
+            aes(xmin = Gap_start, xmax = Gap_end,
+                ymin = min(hp_scene_day$freqMin),
+                ymax = max(hp_scene_day$freqMax)),
+            fill = "gray85")+
+  geom_rect(data = hp_scene_day,
+            aes(xmin = UTC, xmax = end,
+                ymin = freqMin, ymax = freqMax,
+                fill = bio_type)) +
+  scale_x_datetime(date_breaks = "month", date_labels = "%b")+
+  facet_grid(rows = vars(npz_id)) +
+  theme_bw(base_size = 14) +
+  theme(axis.text.y = element_blank(), strip.text.y = element_text(face = "bold", angle = 0),
+        strip.background.y = element_rect(fill = NA))
+
+# ggsave(paste0("figs/", "HP_summary_plot_daily.png"), width=16, height=12,
+#         units="in", dpi=300)
+
+
+```
+
+
+```{r diel plot}
 
 
 hp_scene_month <- hp_monthlight_prop |>
