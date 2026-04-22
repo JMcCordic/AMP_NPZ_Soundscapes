@@ -150,11 +150,11 @@ ggplot() +
   geom_tile(data = hp_scene_hour,
             aes(x = day_start,
                 y = hour_start,
-                fill = bio_type),
-            alpha = 0.7) +
-  scale_x_date(date_breaks = "3 months", date_labels = "%b")+
-  facet_grid(rows = vars(bio_type),
-             cols = vars(npz_id))+
+                fill = npz_id),
+            alpha = 0.5) +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b")+
+   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+  # facet_grid(rows = vars(npz_id))+
   theme_bw(base_size = 14) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
@@ -317,8 +317,47 @@ hp_monthlight_prop <- hp_allcols_light |>
 ```
 
 
+```{r presence plots}
 
 
+hp_scene_month <- hp_monthlight_prop |>
+  pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
+  filter(presence > 0) |>
+  mutate(var_label = case_when(
+   bio_type == "bal_pres" ~ "Pygmy blue whale",
+   bio_type == "hbw_pres" ~ "Humpback",
+   bio_type == "fish_c_pres" ~ "Fish chorus",
+   bio_type == "dol_pres" ~ "Dolphin",
+   bio_type == "ves_pres" ~ "Vessel",
+   bio_type == "spwh_pres" ~ "Sperm whale",
+   bio_type == "mnk_pres" ~ "Minke",
+   bio_type == "shr_pres" ~ "Snapping shrimp"
+  ))
+
+
+ggplot() +
+   # geom_rect(data = hp_scene_day,
+   #           aes(xmin = UTC, xmax = end,
+   #              ymin = freqMin, ymax = freqMax,
+   #              fill = bio_type),
+   #          alpha = 0.3) +
+  geom_boxplot(data = hp_scene_month,
+            aes(x = light_reg,
+                y = presence, 
+                fill = light_reg)) +
+  # scale_x_date(date_breaks = "1 month", date_labels = "%b")+
+   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+  facet_grid(cols = vars(var_label))+
+  theme_bw(base_size = 14) +
+  theme(strip.text.y = element_text(face = "bold", angle = 0),
+        strip.background.y = element_rect(fill = NA))
+
+
+# ggsave(paste0("figs/", "HP_boxplot_diel.png"), width=16, height=12,
+#         units="in", dpi=300)
+
+
+```
 
 
 
