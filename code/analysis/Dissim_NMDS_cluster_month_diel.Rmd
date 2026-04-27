@@ -839,6 +839,25 @@ env_pvals_vec_te <- env_test_te$vectors$pvals |>
 env_pvals_fac_te <- env_test_te$factors$pvals |>
   enframe()
 
+env_output_vec_te <- env_test_te$vectors$r |>
+  enframe()|>
+  rename("r2" = "value")|>
+  left_join(env_pvals_vec_te) |>
+  arrange(desc(r2))
+
+env_output_fac_te <- env_test_te$factors$r |>
+  enframe() |>
+  rename("r2" = "value")|>
+  left_join(env_pvals_fac_te)|>
+  arrange(desc(r2))
+
+env_output_all_te <- env_output_fac_te |>
+  rbind(env_output_vec_te)
+
+write_csv(env_output_all_te, "output/envfit_output_te.csv")
+
+
+
 
 envScores_te <- as_tibble(scores(env_test_te, "vectors"), rownames = "name") |>
   left_join(env_pvals_vec_te) |>
