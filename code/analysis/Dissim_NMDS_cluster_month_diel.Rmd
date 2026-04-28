@@ -185,8 +185,7 @@ monthly_pres_data <- nmdsScores_all |>
 
 ggplot(data = monthly_pres_data, 
        aes(x = npz_id, 
-           y = fish_c_pres,
-           fill = light_fac)) +
+           y = rain_month_avg_mm)) +
   geom_boxplot()
 
 

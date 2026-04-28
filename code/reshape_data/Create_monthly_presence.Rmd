@@ -238,9 +238,19 @@ hp_monthlight_prop <- hp_allcols_light |>
 
 library(PAMscapes)
 
+months_to_use <- hp_allcols_light |>
+  group_by(Dep_ID, month_UTC) |>
+  summarize(n_days = n_distinct(date_UTC)) |>
+  filter(n_days >= 0.5*days_in_month(month_UTC)) |>
+  ungroup()
+
 #reshape to long format for plotting
-hp_scene <- hp_env |>
+hp_scene <- hp_allcols_light |>
   pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
+  # join with months_to_use
+  left_join(months_to_use) |>
+  # remove NA's from n_days column (i.e., not found in months_to_use)
+  filter(!is.na(n_days))|>
   # only include presence so that absence = blank in plot
   filter(presence > 0) |>
   # add columns for individual components for easier plotting
@@ -269,34 +279,44 @@ hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears 
 # create table of data gaps within nominal year (2019)
 
 gaps <- data.frame("Gap_start" = c(as.POSIXct("2019-02-20",format="%Y-%m-%d"), #CGMP gap 1 start
-                                   as.POSIXct("2019-08-04",format="%Y-%m-%d"), #CGMP gap 2 start
+                                   as.POSIXct("2019-08-01",format="%Y-%m-%d"), #CGMP gap 2 start
                                    as.POSIXct("2019-06-24",format="%Y-%m-%d"), #CGMP gap 3 start
-                                   as.POSIXct("2019-01-15",format="%Y-%m-%d"), #SIMP gap 1 start
-                                   as.POSIXct("2019-09-12",format="%Y-%m-%d"), #SIMP gap 2 start
-                                   as.POSIXct("2019-08-09",format="%Y-%m-%d"), #SIMP gap 3 start
+                                   
+                                   as.POSIXct("2019-01-01",format="%Y-%m-%d"), #SIMP gap 1 start
+                                   as.POSIXct("2019-09-01",format="%Y-%m-%d"), #SIMP gap 2 start
+                                   as.POSIXct("2019-08-01",format="%Y-%m-%d"), #SIMP gap 3 start
+                                   
                                    as.POSIXct("2019-01-01",format="%Y-%m-%d"), #DMP gap 1 start
-                                   as.POSIXct("2019-11-04",format="%Y-%m-%d"), #DMP gap 2 start
+                                   as.POSIXct("2019-11-01",format="%Y-%m-%d"), #DMP gap 2 start
+                                   
                                    as.POSIXct("2019-01-01",format="%Y-%m-%d"), #NMP gap 1 start
                                    as.POSIXct("2019-11-18",format="%Y-%m-%d"), #NMP gap 2 start
+                                   
                                    as.POSIXct("2019-01-01",format="%Y-%m-%d"), #MMP gap 1 start
-                                   as.POSIXct("2019-05-03",format="%Y-%m-%d"), #MMP gap 2 start
+                                   as.POSIXct("2019-05-01",format="%Y-%m-%d"), #MMP gap 2 start
+                                   
                                    as.POSIXct("2019-01-01",format="%Y-%m-%d"), #SWCMP gap 1 start
-                                   as.POSIXct("2019-04-11",format="%Y-%m-%d") #SWCMP gap 2 end
+                                   as.POSIXct("2019-03-31",format="%Y-%m-%d") #SWCMP gap 2 start
                                    ),
                                     
-                   "Gap_end" = c(as.POSIXct("2019-04-11",format="%Y-%m-%d"), #CGMP gap 1 end
+                   "Gap_end" = c(as.POSIXct("2019-04-17",format="%Y-%m-%d"), #CGMP gap 1 end
                                    as.POSIXct("2019-12-12",format="%Y-%m-%d"), #CGMP gap 2 end
                                  as.POSIXct("2019-07-01",format="%Y-%m-%d"), #CGMP gap 3 end
-                                   as.POSIXct("2019-06-10",format="%Y-%m-%d"), #SIMP gap 1 end
+                                 
+                                   as.POSIXct("2019-06-11",format="%Y-%m-%d"), #SIMP gap 1 end
                                    as.POSIXct("2019-12-12",format="%Y-%m-%d"), #SIMP gap 2 end
                                  as.POSIXct("2019-08-10",format="%Y-%m-%d"), #SIMP gap 3 end
+                                 
                                    as.POSIXct("2019-09-09",format="%Y-%m-%d"), #DMP gap 1 end
                                    as.POSIXct("2019-12-31",format="%Y-%m-%d"), #DMP gap 2 end
-                                   as.POSIXct("2019-09-25",format="%Y-%m-%d"), #NMP gap 1 end
+                                 
+                                   as.POSIXct("2019-10-01",format="%Y-%m-%d"), #NMP gap 1 end
                                    as.POSIXct("2019-12-31",format="%Y-%m-%d"), #NMP gap 2 end
+                                 
                                    as.POSIXct("2019-02-08",format="%Y-%m-%d"), #MMP gap 1 end
                                    as.POSIXct("2019-12-31",format="%Y-%m-%d"), #MMP gap 2 end
-                                   as.POSIXct("2019-01-18",format="%Y-%m-%d"), #SWCMP gap 1 end
+                                 
+                                   as.POSIXct("2019-02-01",format="%Y-%m-%d"), #SWCMP gap 1 end
                                    as.POSIXct("2019-12-31",format="%Y-%m-%d") #SWCMP gap 2 end
                                  ),
                    
