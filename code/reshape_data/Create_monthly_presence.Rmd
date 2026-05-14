@@ -356,13 +356,17 @@ ggplot() +
 #         units="in", dpi=300)
 
 
+# plot weather
+ggplot(data = hp_monthlight_prop) +
+  geom_boxplot(aes(x = Dep_ID, y = tidal_mag_m))
+
 ```
 
 
 ```{r diel plot}
 
 
-hp_scene_month <- hp_monthlight_prop |>
+hp_monthlight_long <- hp_monthlight_prop |>
   pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
   filter(presence > 0) |>
   mutate(var_label = case_when(
@@ -383,7 +387,7 @@ ggplot() +
    #              ymin = freqMin, ymax = freqMax,
    #              fill = bio_type),
    #          alpha = 0.3) +
-  geom_boxplot(data = hp_scene_month,
+  geom_boxplot(data = hp_monthlight_long,
             aes(x = light_reg,
                 y = presence, 
                 fill = light_reg)) +
