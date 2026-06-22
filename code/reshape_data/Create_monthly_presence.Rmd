@@ -293,7 +293,7 @@ gaps <- data.frame("Gap_start" = c(as.POSIXct("2019-02-20",format="%Y-%m-%d"), #
                                    as.POSIXct("2019-11-18",format="%Y-%m-%d"), #NMP gap 2 start
                                    
                                    as.POSIXct("2019-01-01",format="%Y-%m-%d"), #MMP gap 1 start
-                                   as.POSIXct("2019-05-01",format="%Y-%m-%d"), #MMP gap 2 start
+                                   as.POSIXct("2019-04-16",format="%Y-%m-%d"), #MMP gap 2 start
                                    
                                    as.POSIXct("2019-01-01",format="%Y-%m-%d"), #SWCMP gap 1 start
                                    as.POSIXct("2019-03-31",format="%Y-%m-%d") #SWCMP gap 2 start
@@ -337,15 +337,15 @@ gaps <- data.frame("Gap_start" = c(as.POSIXct("2019-02-20",format="%Y-%m-%d"), #
 
 # plot daily presence
 ggplot() +
+  geom_rect(data = hp_scene_day,
+            aes(xmin = UTC, xmax = end,
+                ymin = freqMin, ymax = freqMax,
+                fill = bio_type)) +
   geom_rect(data = gaps,
             aes(xmin = Gap_start, xmax = Gap_end,
                 ymin = min(hp_scene_day$freqMin),
                 ymax = max(hp_scene_day$freqMax)),
             fill = "gray85")+
-  geom_rect(data = hp_scene_day,
-            aes(xmin = UTC, xmax = end,
-                ymin = freqMin, ymax = freqMax,
-                fill = bio_type)) +
   scale_x_datetime(date_breaks = "month", date_labels = "%b")+
   facet_grid(rows = vars(npz_id)) +
   theme_bw(base_size = 14) +
@@ -392,8 +392,10 @@ ggplot() +
                 y = presence, 
                 fill = light_reg)) +
   # scale_x_date(date_breaks = "1 month", date_labels = "%b")+
-   scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+   scale_fill_viridis_d(begin = 0.1, end = 0.9, 
+                        option = "plasma", direction = -1)+
   facet_grid(cols = vars(var_label))+
+  labs(fill = "Light Regime", x = "", y = "Percent Hours Present")+
   theme_bw(base_size = 14) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
