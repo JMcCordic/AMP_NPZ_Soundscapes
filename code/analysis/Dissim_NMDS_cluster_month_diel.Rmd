@@ -441,6 +441,30 @@ perma_cluster
 
 ```{r plot dendrogram}
 # plot dendrogram
+
+library(factoextra)
+
+clust_colors <- c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF")
+
+# try factoextra::fviz_dend()
+fviz_dend(sdf_agnes, 
+          k = 5,
+          color_labels_by_k = TRUE,
+          k_colors = viridis::viridis(n = 5, begin = 0, end = 0.8),
+          labels_font = "bold",
+          
+          # match_coord_colors = FALSE,
+          rect = TRUE,
+          rect_fill = TRUE,
+          rect_border = clust_colors,
+          # rect_border = c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF"),
+          
+          lwd=1,
+          horiz = TRUE,
+          ggtheme = theme_bw())
+
+
+
 ggplot() + 
   geom_segment(data=segment(dendr), 
                aes(x=x, 
