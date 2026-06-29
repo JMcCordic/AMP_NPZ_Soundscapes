@@ -456,13 +456,14 @@ fviz_dend(sdf_agnes,
           # match_coord_colors = FALSE,
           rect = TRUE,
           rect_fill = TRUE,
-          rect_border = clust_colors,
+          # rect_border = clust_colors,
           # rect_border = c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF"),
           
           lwd=1,
           horiz = TRUE,
           ggtheme = theme_bw())
-
+# ggsave(paste0("figs/", "AGNES_all_clusters_k5.png"), width=12, height=12,
+#        units="in", dpi=300)
 
 
 ggplot() + 
@@ -808,9 +809,33 @@ ggplot() +
             aes(x, y, label=label, hjust=0.5, color=cluster),
             angle = 90, size = 3)
 
-ggsave(paste0("figs/", "AGNES_tempeast_month_diel_clusters_k4.png"), width=12, height=12,
-       units="in", dpi=300)
+# ggsave(paste0("figs/", "AGNES_tempeast_month_diel_clusters_k4.png"), width=12, height=12,
+#        units="in", dpi=300)
 
+
+
+clust_colors_te <- c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF")
+
+
+# try factoextra::fviz_dend()
+fviz_dend(sdf_agnes_te, 
+          k = 4,
+          color_labels_by_k = TRUE,
+          k_colors = viridis::viridis(n = 4, begin = 0, end = 0.8, option = "plasma"),
+          labels_font = "bold",
+          
+          # match_coord_colors = FALSE,
+          rect = TRUE,
+          rect_fill = TRUE,
+          # rect_border = clust_colors,
+          # rect_border = c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF"),
+          
+          lwd=1,
+          horiz = TRUE,
+          ggtheme = theme_bw())
+
+# ggsave(paste0("figs/", "AGNES_all_clusters_te_k4.png"), width=12, height=12,
+#        units="in", dpi=300)
 
 ```
 
