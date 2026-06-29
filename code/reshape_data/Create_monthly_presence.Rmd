@@ -391,6 +391,11 @@ ggplot() +
             aes(x = light_reg,
                 y = presence, 
                 fill = light_reg)) +
+    geom_point(data = hp_monthlight_long,
+            aes(x = light_reg,
+                y = presence, 
+                color = Dep_ID),
+                position = position_jitterdodge())+
   # scale_x_date(date_breaks = "1 month", date_labels = "%b")+
    scale_fill_viridis_d(begin = 0.1, end = 0.9, 
                         option = "plasma", direction = -1)+
