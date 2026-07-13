@@ -387,9 +387,16 @@ agnes_boot$bootbrd
 # -- all are still above 'rule of thumb' 0.6 cutoff
 
 
-
-sdf_agnes_cut <- cutree(sdf_agnes, k = 5)
-nmdsScores_all$cluster = factor(sdf_agnes_cut)
+library(dendextend)
+sdf_agnes_cut <- dendextend::cutree(sdf_agnes, k = 5, 
+                                    order_clusters_as_data = FALSE)
+cluster_ordered <- as.data.frame(sdf_agnes_cut) |>
+  rownames_to_column(var = "dep") |>
+  rename("cluster" = "sdf_agnes_cut")
+  
+nmdsScores_all <- left_join(nmdsScores_all, 
+                            cluster_ordered, by = "dep") |>
+  mutate(cluster = as_factor(cluster))
 
 # format cluster model for ggplot
 dendr <- dendro_data(sdf_agnes)
@@ -444,13 +451,11 @@ perma_cluster
 
 library(factoextra)
 
-clust_colors <- c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF")
-
 # try factoextra::fviz_dend()
 fviz_dend(sdf_agnes, 
           k = 5,
           color_labels_by_k = TRUE,
-          k_colors = viridis::viridis(n = 5, begin = 0, end = 0.8),
+          k_colors = viridis::viridis(n = 5, begin = 0.05, end = 0.75, option = "turbo"),
           labels_font = "bold",
           
           # match_coord_colors = FALSE,
@@ -542,8 +547,8 @@ ggplot(data = nmdsScores_all,
   #               y=NMDS2,
   #               label=cent_label),
   #           size=4)+
-  scale_color_viridis_d(begin = 0.1, end = 0.8)+
-  scale_fill_viridis_d(begin = 0.1, end = 0.8)+
+ scale_fill_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
+  scale_color_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
     labs(caption = paste0("stress = ", round(nmds_all$stress, digits =4)),
          fill = "Cluster", shape = "Network")+
   guides(color = "none")+
@@ -596,9 +601,9 @@ psd_clust <- psd_monthdiel_cluster |>
   mutate(clust_label = case_when(
     cluster == 1 ~ "Cod Grounds",
     cluster == 2 ~ "Dampier",
-    cluster == 3 ~ "Murat",
-    cluster == 4 ~ "Ningaloo & \nSouth-west Corner",
-    cluster == 5 ~ "Solitary Islands"
+    cluster == 3 ~ "Solitary Islands",
+    cluster == 4 ~ "Murat",
+    cluster == 5 ~ "Ningaloo & \nSouth-west Corner"
   ))
 
 # plot median PSDs for each month x light, facet by cluster
@@ -609,10 +614,10 @@ ggplot(data = psd_clust,
                   group = cluster,
                   fill = cluster),
               alpha = 0.2)+
-  geom_line(aes(y = med_psd,
-                group = cluster,
-                color = cluster),
-            linewidth = 0.7) +
+  # geom_line(aes(y = med_psd,
+  #               group = cluster,
+  #               color = cluster),
+  #           linewidth = 0.7) +
     geom_line(aes(y = min_psd,
                 group = cluster,
                 color = cluster),
@@ -635,8 +640,8 @@ ggplot(data = psd_clust,
        color = "Cluster",
        fill = "Cluster")+
   scale_x_log10() +
-  scale_fill_viridis_d(begin = 0.1, end = 0.8)+
-  scale_color_viridis_d(begin = 0.1, end = 0.8)+
+scale_fill_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
+  scale_color_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
   facet_grid(rows = vars(cluster))+
   theme_bw(base_size = 14) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
@@ -679,8 +684,8 @@ ggplot(data = psd_clust,
        fill = "Cluster")+
   scale_x_log10() +
   expand_limits(x = c(20, 50000))+
-  scale_fill_viridis_d(begin = 0.1, end = 0.8)+
-  scale_color_viridis_d(begin = 0.1, end = 0.8)+
+  scale_fill_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
+  scale_color_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
   theme_bw(base_size = 14) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
@@ -788,8 +793,16 @@ agnes_boot_te <- clusterboot(dissim_dist_te,
 agnes_boot_te$bootmean
 agnes_boot_te$bootbrd
 
-sdf_agnes_te_cut <- cutree(sdf_agnes_te, k = 4)
-nmdsScores_te$cluster = factor(sdf_agnes_te_cut)
+sdf_agnes_te_cut <- dendextend::cutree(sdf_agnes_te, k = 4, 
+                                    order_clusters_as_data = FALSE)
+
+cluster_ordered_te <- as.data.frame(sdf_agnes_te_cut) |>
+  rownames_to_column(var = "dep") |>
+  rename("cluster" = "sdf_agnes_te_cut")
+  
+nmdsScores_te <- left_join(nmdsScores_te, 
+                            cluster_ordered, by = "dep") |>
+  mutate(cluster = as_factor(cluster))
 
 # plot clusters
 library(ggdendro)
@@ -814,14 +827,14 @@ ggplot() +
 
 
 
-clust_colors_te <- c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF")
+clust_colors_te <- c(  "#362160FF", "#4454C3FF","#19E3B9FF", "#46F884FF")
 
 
 # try factoextra::fviz_dend()
 fviz_dend(sdf_agnes_te, 
           k = 4,
           color_labels_by_k = TRUE,
-          k_colors = viridis::viridis(n = 4, begin = 0, end = 0.8, option = "plasma"),
+          k_colors = clust_colors_te,
           labels_font = "bold",
           
           # match_coord_colors = FALSE,
