@@ -801,7 +801,7 @@ cluster_ordered_te <- as.data.frame(sdf_agnes_te_cut) |>
   rename("cluster" = "sdf_agnes_te_cut")
   
 nmdsScores_te <- left_join(nmdsScores_te, 
-                            cluster_ordered, by = "dep") |>
+                            cluster_ordered_te, by = "dep") |>
   mutate(cluster = as_factor(cluster))
 
 # plot clusters
@@ -1019,8 +1019,8 @@ ggplot(data = nmdsScores_te,
                 label = var_label),
             color = "grey45",
             fontface = "bold")+
-  scale_color_viridis_d(begin = 0.3, end = 0.8, option = "plasma")+
-      scale_fill_viridis_d(begin = 0.3, end = 0.8, option = "plasma")+
+  scale_color_manual(values = clust_colors_te)+
+      scale_fill_manual(values = clust_colors_te)+
     labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)), 
          fill = "Cluster", 
          shape = "NPZ") +
@@ -1090,10 +1090,10 @@ ggplot(data = psd_clust_te,
                   group = cluster,
                   fill = cluster),
               alpha = 0.2)+
-  geom_line(aes(y = med_psd,
-                group = cluster,
-                color = cluster),
-            linewidth = 0.7) +
+  # geom_line(aes(y = med_psd,
+  #               group = cluster,
+  #               color = cluster),
+  #           linewidth = 0.7) +
     geom_line(aes(y = min_psd,
                 group = cluster,
                 color = cluster),
@@ -1116,8 +1116,8 @@ ggplot(data = psd_clust_te,
        color = "Cluster",
        fill = "Cluster")+
   scale_x_log10() +
-  scale_fill_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
-  scale_color_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
+  scale_fill_manual(values = clust_colors_te)+
+  scale_color_manual(values = clust_colors_te)+
   facet_grid(rows = vars(cluster))+
   theme_bw(base_size = 14) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
@@ -1157,8 +1157,8 @@ ggplot(data = psd_clust_te,
        fill = "Cluster")+
   scale_x_log10() +
   expand_limits(x = c(20, 50000))+
-  scale_fill_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
-  scale_color_viridis_d(begin = 0.1, end = 0.8, option = "plasma")+
+  scale_fill_manual(values = clust_colors_te)+
+  scale_color_manual(values = clust_colors_te)+
   theme_bw(base_size = 14) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
