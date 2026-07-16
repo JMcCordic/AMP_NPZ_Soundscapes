@@ -256,18 +256,40 @@ hp_scene <- hp_allcols_light |>
   # add columns for individual components for easier plotting
    mutate(hour_start = hour(UTC),
          day_start = date(UTC),
-         )
+         # make labels for plot
+         source_lab = case_when(bio_type == "ves_pres" ~ "Vessel",
+                                bio_type == "hbw_pres" ~ "Humpback whale",
+                                bio_type == "dol_pres" ~ "Delphinidae spp.",
+                                bio_type == "shr_pres" ~ "Snapping shrimp",
+                                bio_type == "fish_c_pres" ~ "Fish chorus",
+                                bio_type == "mnk_pres" ~ "Minke whale",
+                                bio_type == "bal_pres" ~ "Low-frequency baleen whale",
+                                bio_type == "spwh_pres" ~ "Sperm whale"),
+         source_lab = factor(source_lab, levels = c("Low-frequency baleen whale", "Vessel", "Humpback whale","Minke whale","Fish chorus","Sperm whale","Delphinidae spp.","Snapping shrimp"), ordered = TRUE))
 
 # get df from plotAcousticScene() to put into more flexible ggplot
 hp_scene_day <- plotAcousticScene(hp_scene, 
-                                  typeCol = "bio_type", 
+                                  typeCol = "source_lab", 
                                   combineYears = TRUE, 
                                   by = "npz_id", 
                                   bin = "1day", 
                                   fill = TRUE, 
                                   returnData = TRUE) |>
   mutate(month_start = month(UTC),
-         month_end = month(end))
+         month_end = month(end),
+         # order NPZ ID for plotting
+         npz_id = factor(npz_id, levels = c("Cod Grounds","Solitary Islands","Dampier","Ningaloo","Murat","South-west Corner"), ordered = TRUE),
+         # make labels for plot
+         # source_lab = case_when(bio_type == "ves_pres" ~ "Vessel",
+         #                        bio_type == "hbw_pres" ~ "Humpback whale",
+         #                        bio_type == "dol_pres" ~ "Delphinidae spp.",
+         #                        bio_type == "shr_pres" ~ "Snapping shrimp",
+         #                        bio_type == "fish_c_pres" ~ "Fish chorus",
+         #                        bio_type == "mnk_pres" ~ "Minke whale",
+         #                        bio_type == "bal_pres" ~ "Low-frequency baleen whale",
+         #                        bio_type == "spwh_pres" ~ "Sperm whale"),
+         # source_lab = factor(source_lab, levels = c("Low-frequency baleen whale", "Vessel", "Humpback whale","Minke whale","Fish chorus","Sperm whale","Delphinidae spp.","Snapping shrimp"), ordered = TRUE)
+         )
 
 hp_scene_hour <- plotAcousticScene(hp_scene, typeCol = "bio_type", combineYears = TRUE, by = "npz_id", bin = "1hour", fill = TRUE, alpha = 0.7, returnData = TRUE) |>
   mutate(hour_start = hour(UTC),
@@ -334,24 +356,31 @@ gaps <- data.frame("Gap_start" = c(as.POSIXct("2019-02-20",format="%Y-%m-%d"), #
                               "Murat",
                               "South-west Corner",
                               "South-west Corner"))
+# order NPZ ID for plotting
+gaps <- gaps |>
+  mutate(npz_id = factor(npz_id, levels = c("Cod Grounds","Solitary Islands","Dampier","Ningaloo","Murat","South-west Corner"), ordered = TRUE))
 
 # plot daily presence
 ggplot() +
   geom_rect(data = hp_scene_day,
             aes(xmin = UTC, xmax = end,
                 ymin = freqMin, ymax = freqMax,
-                fill = bio_type)) +
+                fill = source_lab), show.legend = FALSE) +
   geom_rect(data = gaps,
             aes(xmin = Gap_start, xmax = Gap_end,
                 ymin = min(hp_scene_day$freqMin),
                 ymax = max(hp_scene_day$freqMax)),
             fill = "gray85")+
   scale_x_datetime(date_breaks = "month", date_labels = "%b")+
+  scale_y_continuous(breaks = seq(8,1,-1), labels = c("Low-frequency baleen whale", "Vessel", "Humpback whale","Minke whale","Fish chorus","Sperm whale","Delphinidae spp.","Snapping shrimp"), 
+                     transform = "reverse")+
+  # scale_y_reverse()+
   facet_grid(rows = vars(npz_id)) +
   theme_bw(base_size = 14) +
-  theme(axis.text.y = element_blank(), strip.text.y = element_text(face = "bold", angle = 0),
+  theme(#axis.text.y = element_blank(), 
+        strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
-
+# 
 # ggsave(paste0("figs/", "HP_summary_plot_daily.png"), width=16, height=12,
 #         units="in", dpi=300)
 
