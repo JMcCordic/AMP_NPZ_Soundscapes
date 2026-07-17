@@ -191,11 +191,11 @@ hp_allcols_light <- hp_env |>
          sun_elev_deg = (sun_elev_rad*180)/(pi),
          light_reg = case_when(
            # if sun elev is positive, daytime
-           sun_elev_deg > 0 ~ "day",
+           sun_elev_deg > 0 ~ "Day",
            # if sun elevation is less than -12, nighttime
-           sun_elev_deg < -12 ~ "night",
+           sun_elev_deg < -12 ~ "Night",
            # if between 0 and -12, "twilight"
-           sun_elev_deg <= 0 & sun_elev_deg >= -12 ~ "twilight"
+           sun_elev_deg <= 0 & sun_elev_deg >= -12 ~ "Twilight"
          )
   ) 
   
@@ -370,18 +370,18 @@ ggplot() +
             aes(xmin = Gap_start, xmax = Gap_end,
                 ymin = min(hp_scene_day$freqMin),
                 ymax = max(hp_scene_day$freqMax)),
-            fill = "gray85")+
-  scale_x_datetime(date_breaks = "month", date_labels = "%b")+
+            fill = "gray65", alpha = 0.5)+
+  scale_x_datetime(date_breaks = "month", date_labels = "%b", sec.axis = dup_axis())+
   scale_y_continuous(breaks = seq(8,1,-1), labels = c("Low-frequency baleen whale", "Vessel", "Humpback whale","Minke whale","Fish chorus","Sperm whale","Delphinidae spp.","Snapping shrimp"), 
                      transform = "reverse")+
   # scale_y_reverse()+
   facet_grid(rows = vars(npz_id)) +
-  theme_bw(base_size = 14) +
+  theme_bw(base_size = 16) +
   theme(#axis.text.y = element_blank(), 
         strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
 # 
-# ggsave(paste0("figs/", "HP_summary_plot_daily.png"), width=16, height=12,
+# ggsave(paste0("figs/", "HP_summary_plot_daily.png"), width=12, height=10,
 #         units="in", dpi=300)
 
 
@@ -398,16 +398,15 @@ ggplot(data = hp_monthlight_prop) +
 hp_monthlight_long <- hp_monthlight_prop |>
   pivot_longer(all_of(ends_with("_pres")), names_to = "bio_type", values_to = "presence") |>
   filter(presence > 0) |>
-  mutate(var_label = case_when(
-   bio_type == "bal_pres" ~ "Pygmy blue whale",
-   bio_type == "hbw_pres" ~ "Humpback",
-   bio_type == "fish_c_pres" ~ "Fish chorus",
-   bio_type == "dol_pres" ~ "Dolphin",
-   bio_type == "ves_pres" ~ "Vessel",
-   bio_type == "spwh_pres" ~ "Sperm whale",
-   bio_type == "mnk_pres" ~ "Minke",
-   bio_type == "shr_pres" ~ "Snapping shrimp"
-  ))
+  mutate(source_lab = case_when(bio_type == "ves_pres" ~ "Vessel",
+                                bio_type == "hbw_pres" ~ "Humpback whale",
+                                bio_type == "dol_pres" ~ "Delphinidae spp.",
+                                bio_type == "shr_pres" ~ "Snapping shrimp",
+                                bio_type == "fish_c_pres" ~ "Fish chorus",
+                                bio_type == "mnk_pres" ~ "Minke whale",
+                                bio_type == "bal_pres" ~ "Low-frequency baleen whale",
+                                bio_type == "spwh_pres" ~ "Sperm whale"),
+         source_lab = factor(source_lab, levels = c("Fish chorus","Snapping shrimp","Vessel", "Delphinidae spp.", "Low-frequency baleen whale", "Humpback whale","Minke whale","Sperm whale"), ordered = TRUE))
 
 
 ggplot() +
@@ -419,23 +418,26 @@ ggplot() +
   geom_boxplot(data = hp_monthlight_long,
             aes(x = light_reg,
                 y = presence, 
-                fill = light_reg)) +
-    geom_point(data = hp_monthlight_long,
-            aes(x = light_reg,
-                y = presence, 
-                color = Dep_ID),
-                position = position_jitterdodge())+
+                fill = light_reg),
+            show.legend = FALSE) +
+    # geom_point(data = hp_monthlight_long,
+    #         aes(x = light_reg,
+    #             y = presence, 
+    #             color = Dep_ID),
+    #             position = position_jitterdodge())+
   # scale_x_date(date_breaks = "1 month", date_labels = "%b")+
-   scale_fill_viridis_d(begin = 0.1, end = 0.9, 
-                        option = "plasma", direction = -1)+
-  facet_grid(cols = vars(var_label))+
+  # manually set colors (hex codes from viridis scale 'plasma')
+  scale_fill_manual(values = c("Day" = "#F0F921FF", "Night" = "#0D0887FF", "Twilight" = "#CC4678FF"))+
+   # scale_fill_viridis_d(begin = 0, end = 1, 
+   #                      option = "plasma", direction = -1)+
+  facet_wrap(vars(source_lab), ncol = 4)+
   labs(fill = "Light Regime", x = "", y = "Percent Hours Present")+
   theme_bw(base_size = 14) +
-  theme(strip.text.y = element_text(face = "bold", angle = 0),
-        strip.background.y = element_rect(fill = NA))
+  theme(strip.text = element_text(face = "bold", angle = 0),
+        strip.background = element_rect(fill = NA))
 
-
-# ggsave(paste0("figs/", "HP_boxplot_diel.png"), width=16, height=12,
+# 
+# ggsave(paste0("figs/", "HP_boxplot_diel.png"), width=12, height=6,
 #         units="in", dpi=300)
 
 
