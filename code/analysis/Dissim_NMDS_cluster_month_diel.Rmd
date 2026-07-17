@@ -24,7 +24,8 @@ library(fpc)
 library(RColorBrewer)
 library(here)
 library(PAMscapes)
-
+library(dendextend)
+library(scales)
 ```
 
 ## Vegan NMDS - Weekly comparisons by deployment
@@ -495,6 +496,22 @@ hull_clust <- nmdsScores_all |>
   group_by(cluster) |>
   slice(chull(NMDS1, NMDS2))
 
+# add column to nudge label y positions
+sig_scaled_scores <- sig_scaled_scores |>
+  mutate(lab_y_pos = case_when(
+        var_label == "Sperm whale" ~ NMDS2 - 0.002,
+    var_label == "Dolphin" ~ NMDS2 - 0.002,
+    var_label == "Rainfall" ~ NMDS2 - 0.002,
+    var_label == "Pygmy blue whale" ~ NMDS2 - 0.002,
+    TRUE ~ NMDS2
+  ),
+  lab_x_pos = case_when(
+    var_label == "Sperm whale" ~ NMDS1 + 0.004,
+    var_label == "Dolphin" ~ NMDS1 + 0.003,
+    var_label == "Rainfall" ~ NMDS1 - 0.004,
+    TRUE ~ NMDS1
+  ))
+
 
 ggplot(data = nmdsScores_all,
        aes(x = NMDS1, y = NMDS2)
@@ -506,7 +523,12 @@ ggplot(data = nmdsScores_all,
                    fill = cluster),
                geom = "polygon",
                size = 1,
-               alpha = 0.2)+
+               alpha = 0.2, 
+               show.legend = FALSE)+
+  geom_point(data = nmdsScores_all, 
+             aes(color = cluster,
+           shape = network), 
+           size = 3) +
   # add vectors for sig continuous variables
   geom_segment(data =sig_scaled_scores,
                aes(x=0,
@@ -517,45 +539,30 @@ ggplot(data = nmdsScores_all,
                              length = unit(0.25, "cm"),
                              type = "open"),
                colour = "grey45",
-               size = 1)+
-  geom_point(data = nmdsScores_all, 
-             aes(color = cluster,
-           shape = network), 
-           # alpha = 0.7,
-           size = 3) +
-  # geom_polygon(data = hull_clust,
-  #              aes(x = NMDS1, y = NMDS2,
-  #                  fill = cluster,
-  #                  color = cluster),
-  #              linewidth = 0.25,
-  #              alpha = 0.2)+
+               size = 1,
+               alpha = 0.7)+
   
+  # add labels to vectors for significant variables
   geom_text(data = sig_scaled_scores,
-            aes(x = NMDS1,
-                y = NMDS2,
+            aes(x = lab_x_pos,
+                y = lab_y_pos,
                 label = var_label),
             color = "grey45",
             fontface = "bold",
-            vjust = -0.5, hjust = 0.5)+
- # add npz centroids from envfit
-  # geom_point(data = envCent_npz,
-  #            aes(x = NMDS1, y = NMDS2),
-  #            shape = 21,
-  #            size = 3)+
-  # geom_text(data=envCent_npz,
-  #           aes(x=NMDS1,
-  #               y=NMDS2,
-  #               label=cent_label),
-  #           size=4)+
+            vjust = -0.5, 
+            hjust = 0.5,
+            size = 5)+
+ # set fill and color scales
  scale_fill_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
-  scale_color_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
-    labs(caption = paste0("stress = ", round(nmds_all$stress, digits =4)),
-         fill = "Cluster", shape = "Network")+
+ scale_color_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
+  # add plot labels
+  labs(caption = paste0("Stress = ", round(nmds_all$stress, digits =4)),
+       shape = "Network")+
   guides(color = "none")+
-  theme_bw(base_size = 14)
+  theme_bw(base_size = 20)
 
-# ggsave(paste0("figs/", "NMDS_month_diel_all_clust_ellipse.png"), width=8, height=6,
-#        units="in", dpi=300)
+ggsave(paste0("figs/", "NMDS_month_diel_all_clust_ellipse.png"), width=14, height=8,
+       units="in", dpi=300)
 
 
 
@@ -606,6 +613,7 @@ psd_clust <- psd_monthdiel_cluster |>
     cluster == 5 ~ "Ningaloo & \nSouth-west Corner"
   ))
 
+
 # plot median PSDs for each month x light, facet by cluster
 ggplot(data = psd_clust, 
        aes(x = frequency)) +
@@ -614,10 +622,6 @@ ggplot(data = psd_clust,
                   group = cluster,
                   fill = cluster),
               alpha = 0.2)+
-  # geom_line(aes(y = med_psd,
-  #               group = cluster,
-  #               color = cluster),
-  #           linewidth = 0.7) +
     geom_line(aes(y = min_psd,
                 group = cluster,
                 color = cluster),
@@ -639,16 +643,17 @@ ggplot(data = psd_clust,
        y = expression(paste("dB re 1", mu, "Pa"^"2", "Hz"^"-1")),
        color = "Cluster",
        fill = "Cluster")+
-  scale_x_log10() +
-scale_fill_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
+  scale_x_log10(minor_breaks = scales::minor_breaks_log()) +
+  guides(x = guide_axis_logticks())+
+  scale_fill_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
   scale_color_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
   facet_grid(rows = vars(cluster))+
-  theme_bw(base_size = 14) +
+  theme_bw(base_size = 20) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
 
 
-
+# 
 # ggsave(paste0("figs/", "PSD_by_clusters_shading_lines.png"), width=7, height=12,
 #        units="in", dpi=300)
 
@@ -672,24 +677,28 @@ ggplot(data = psd_clust,
   geom_line(aes(y = norm_med_psd,
                 group = cluster,
                 color = cluster),
-            linewidth = 1) +
+            linewidth = 1, 
+            show.legend = FALSE) +
   geom_label(data = psd_clust_labels,
             aes(y = norm_med_psd_labels,
                 label = clust_label,
                 hjust = -0.05,
-            color = cluster))+
+            color = cluster,
+            size = 5),
+            show.legend = FALSE)+
   labs(x = "Frequency", 
        y = "Normalized PSD",
        color = "Cluster",
        fill = "Cluster")+
-  scale_x_log10() +
+  scale_x_log10(minor_breaks = scales::minor_breaks_log()) +
+  guides(x = guide_axis_logticks())+
   expand_limits(x = c(20, 50000))+
   scale_fill_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
   scale_color_viridis_d(begin = 0.05, end = 0.75, option = "turbo")+
-  theme_bw(base_size = 14) +
+  theme_bw(base_size = 20) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
-
+# 
 # ggsave(paste0("figs/", "norm_PSD_by_clusters_medlines.png"), width=14, height=8,
 #        units="in", dpi=300)
 
@@ -974,6 +983,18 @@ envCent_npz_te = as.data.frame(scores(env_test_te,
 
 
 
+# add column to nudge label positions
+sig_scaled_scores_te <- sig_scaled_scores_te |>
+  mutate(lab_y_pos = case_when(
+        var_label == "Fish chorus" ~ NMDS2 + 0.001,
+    var_label == "Humpback" ~ NMDS2 - 0.001,
+    var_label == "Rainfall" ~ NMDS2 + 0.001,
+    TRUE ~ NMDS2
+  ),
+  lab_x_pos = case_when(
+    var_label == "Fish chorus" ~ NMDS1 + 0.0015,
+    TRUE ~ NMDS1
+  ))
 
 
 
@@ -991,14 +1012,16 @@ ggplot(data = nmdsScores_te,
   stat_ellipse(aes(fill = cluster,
                    color = cluster),
                geom = "polygon",
-               alpha = 0.2)+
+               alpha = 0.2,
+               show.legend = FALSE)+
   # use convex hull for cluster 4 since you need >3 points for an ellipse
   geom_polygon(data = hull_te |> filter(cluster == 4),
                aes(x = NMDS1, y = NMDS2,
                    fill = cluster,
                    color = cluster),
                linewidth = 0.25,
-               alpha = 0.2)+
+               alpha = 0.2,
+               show.legend = FALSE)+
   geom_point(data = nmdsScores_te, 
              aes(color = cluster,
                  shape = npz_id), 
@@ -1014,20 +1037,20 @@ ggplot(data = nmdsScores_te,
                colour = "grey45",
                size = 1)+
   geom_text(data = sig_scaled_scores_te,
-            aes(x = NMDS1,
-                y = NMDS2,
+            aes(x = lab_x_pos,
+                y = lab_y_pos,
                 label = var_label),
             color = "grey45",
-            fontface = "bold")+
+            fontface = "bold",
+            size = 5)+
   scale_color_manual(values = clust_colors_te)+
       scale_fill_manual(values = clust_colors_te)+
-    labs(caption = paste0("stress = ", round(nmds_te$stress, digits =4)), 
-         fill = "Cluster", 
-         shape = "NPZ") +
+    labs(caption = paste0("Stress = ", round(nmds_te$stress, digits =4)), 
+         shape = "Park Name") +
   guides(color = "none")+
-  theme_bw(base_size = 14)
+  theme_bw(base_size = 20)
 
-# ggsave(paste0("figs/", "NMDS_month_diel_tempeast_clust_vec.png"), width=8, height=6,
+# ggsave(paste0("figs/", "NMDS_month_diel_tempeast_clust_vec.png"), width=14, height=8,
 #        units="in", dpi=300)
 
 
@@ -1090,10 +1113,6 @@ ggplot(data = psd_clust_te,
                   group = cluster,
                   fill = cluster),
               alpha = 0.2)+
-  # geom_line(aes(y = med_psd,
-  #               group = cluster,
-  #               color = cluster),
-  #           linewidth = 0.7) +
     geom_line(aes(y = min_psd,
                 group = cluster,
                 color = cluster),
@@ -1115,16 +1134,17 @@ ggplot(data = psd_clust_te,
        y = expression(paste("dB re 1", mu, "Pa"^"2", "Hz"^"-1")),
        color = "Cluster",
        fill = "Cluster")+
-  scale_x_log10() +
+  scale_x_log10(minor_breaks = scales::minor_breaks_log()) +
+  guides(x = guide_axis_logticks())+
   scale_fill_manual(values = clust_colors_te)+
   scale_color_manual(values = clust_colors_te)+
   facet_grid(rows = vars(cluster))+
-  theme_bw(base_size = 14) +
+  theme_bw(base_size = 20) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
 
 
-# 
+
 # ggsave(paste0("figs/", "PSD_by_clusters_shading_lines_tempeast.png"), width=7, height=12,
 #        units="in", dpi=300)
 
@@ -1145,21 +1165,25 @@ ggplot(data = psd_clust_te,
   geom_line(aes(y = norm_med_psd,
                 group = cluster,
                 color = cluster),
-            linewidth = 1) +
+            linewidth = 1,
+            show.legend = FALSE) +
   geom_label(data = psd_clust_labels_te,
             aes(y = norm_med_psd_labels,
                 label = clust_label,
                 hjust = -0.05,
-            color = cluster))+
+            color = cluster,
+            size = 5),
+            show.legend = FALSE)+
   labs(x = "Frequency", 
        y = "Normalized PSD",
        color = "Cluster",
        fill = "Cluster")+
-  scale_x_log10() +
+  scale_x_log10(minor_breaks = scales::minor_breaks_log()) +
+  guides(x = guide_axis_logticks())+
   expand_limits(x = c(20, 50000))+
   scale_fill_manual(values = clust_colors_te)+
   scale_color_manual(values = clust_colors_te)+
-  theme_bw(base_size = 14) +
+  theme_bw(base_size = 20) +
   theme(strip.text.y = element_text(face = "bold", angle = 0),
         strip.background.y = element_rect(fill = NA))
 
