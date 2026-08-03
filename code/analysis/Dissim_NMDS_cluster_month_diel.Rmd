@@ -189,8 +189,22 @@ ggplot(data = monthly_pres_data,
            y = rain_month_avg_mm)) +
   geom_boxplot()
 
-
-
+# summary table for weather data
+weather_summ <- hp_month_prop |>
+  rowwise()|>
+  mutate(wind_ampm = mean(c(wind_am_month_avg_kmh, wind_pm_month_avg_kmh)))|>
+  group_by(Dep_ID, month_UTC, light_reg)|>
+  summarise(tide_min = min(tidal_mag_m),
+            tide_max = max(tidal_mag_m),
+            tide_med = median(tidal_mag_m),
+            rain_min = min(rain_month_avg_mm, na.rm = TRUE),
+            rain_max = max(rain_month_avg_mm, na.rm = TRUE),
+            rain_med = median(rain_month_avg_mm, na.rm = TRUE),
+            wind_min = min(wind_ampm, na.rm = TRUE),
+            wind_max = max(wind_ampm, na.rm = TRUE),
+            wind_med = median(wind_ampm, na.rm = TRUE))
+            
+write_csv(weather_summ, "output/weather_summary.csv")
 
 
 ```
