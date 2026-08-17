@@ -373,7 +373,7 @@ ggplot(data = nmdsScores_all,
 # clustering
 
 ```{r cluster}
-sdf_agnes = agnes(dissim_dist_all, diss = T, method = "ward")
+sdf_agnes <- agnes(dissim_dist_all, diss = T, method = "ward")
 
 # Visually assess the tree
 plot(sdf_agnes,which.plots = 2)
@@ -403,13 +403,13 @@ agnes_boot$bootbrd
 
 
 library(dendextend)
-sdf_agnes_cut <- dendextend::cutree(sdf_agnes, k = 5, 
+sdf_agnes_cut <- dendextend::cutree(sdf_agnes, k = 5,
                                     order_clusters_as_data = FALSE)
 cluster_ordered <- as.data.frame(sdf_agnes_cut) |>
   rownames_to_column(var = "dep") |>
   rename("cluster" = "sdf_agnes_cut")
-  
-nmdsScores_all <- left_join(nmdsScores_all, 
+
+nmdsScores_all <- left_join(nmdsScores_all,
                             cluster_ordered, by = "dep") |>
   mutate(cluster = as_factor(cluster))
 
@@ -466,24 +466,52 @@ perma_cluster
 
 library(factoextra)
 
-# try factoextra::fviz_dend()
-fviz_dend(sdf_agnes, 
+agnes_dend_plot <- sdf_agnes
+
+dend_labels_all <- dissim_all |>
+  select(dep) |>
+  separate(
+    col = dep,
+    into = c("park","year_mo","site","month_num","light_reg"),
+    sep = "_",
+    remove = FALSE
+  ) |>
+  mutate(month_num = as.numeric(month_num),
+    month_name = month.name[month_num],
+         park_name = case_when(
+           park == "CGMP" ~ "Cod Grounds",
+           park == "SIMP" ~ "Solitary Islands",
+           park == "DAMPIER" ~ "Dampier",
+           park == "NINGALOO" ~ "Ningaloo",
+           park == "MURAT" ~ "Murat",
+           park == "SWC" ~ "South-west Corner"
+         ),
+         leaf_label = paste0(park_name, ": ",month_name,", ", light_reg))
+
+agnes_dend_plot$order.lab <- dend_labels_all$leaf_label[agnes_dend_plot$order]
+
+clust_colors = viridis::viridis(n = 5, begin = 0.05, end = 0.75, option = "turbo")
+
+
+fviz_dend(agnes_dend_plot, 
           k = 5,
           color_labels_by_k = TRUE,
-          k_colors = viridis::viridis(n = 5, begin = 0.05, end = 0.75, option = "turbo"),
+          k_colors = clust_colors,
           labels_font = "bold",
-          
-          # match_coord_colors = FALSE,
+        
           rect = TRUE,
+          rect_border = clust_colors,
           rect_fill = TRUE,
-          # rect_border = clust_colors,
-          # rect_border = c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF"),
           
           lwd=1,
           horiz = TRUE,
-          ggtheme = theme_bw())
-# ggsave(paste0("figs/", "AGNES_all_clusters_k5.png"), width=12, height=12,
-#        units="in", dpi=300)
+          ggtheme = theme_bw())+
+  theme(axis.text = element_text(size = 16),
+        axis.title.x = element_text(size = 18),
+        title = element_blank())
+
+ggsave(paste0("figs/", "AGNES_all_clusters_k5.png"), width=14, height=12,
+       units="in", dpi=300)
 
 
 ggplot() + 
@@ -849,28 +877,49 @@ ggplot() +
 #        units="in", dpi=300)
 
 
+agnes_dend_plot_te <- sdf_agnes_te
+
+dend_labels_te <- dissim_te |>
+  select(dep) |>
+  separate(
+    col = dep,
+    into = c("park","year_mo","site","month_num","light_reg"),
+    sep = "_",
+    remove = FALSE
+  ) |>
+  mutate(month_num = as.numeric(month_num),
+    month_name = month.name[month_num],
+         park_name = case_when(
+           park == "CGMP" ~ "Cod Grounds",
+           park == "SIMP" ~ "Solitary Islands",
+           ),
+         leaf_label = paste0(park_name, ": ",month_name,", ", light_reg))
+
+agnes_dend_plot_te$order.lab <- dend_labels_te$leaf_label[agnes_dend_plot_te$order]
+
 
 clust_colors_te <- c(  "#362160FF", "#4454C3FF","#19E3B9FF", "#46F884FF")
 
 
 # try factoextra::fviz_dend()
-fviz_dend(sdf_agnes_te, 
+fviz_dend(agnes_dend_plot_te, 
           k = 4,
           color_labels_by_k = TRUE,
           k_colors = clust_colors_te,
           labels_font = "bold",
           
-          # match_coord_colors = FALSE,
           rect = TRUE,
           rect_fill = TRUE,
-          # rect_border = clust_colors,
-          # rect_border = c("#440154FF", "#414487FF", "#2A788EFF", "#22A884FF", "#7AD151FF"),
+          rect_border = clust_colors_te,
           
           lwd=1,
           horiz = TRUE,
-          ggtheme = theme_bw())
+          ggtheme = theme_bw())+
+   theme(axis.text = element_text(size = 16),
+        axis.title.x = element_text(size = 18),
+        title = element_blank())
 
-# ggsave(paste0("figs/", "AGNES_all_clusters_te_k4.png"), width=12, height=12,
+# ggsave(paste0("figs/", "AGNES_all_clusters_te_k4.png"), width=13, height=9,
 #        units="in", dpi=300)
 
 ```
