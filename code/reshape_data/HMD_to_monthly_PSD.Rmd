@@ -91,6 +91,78 @@ hmd_data <- all_hmd_og |>
          )
   ) 
 
+```
+
+```{r LTSA}
+
+
+# subset to pull 1 representative month from each deployment
+
+ltsa_df <- all_hmd_data |>
+  group_by(Dep_ID) |>
+  mutate(month_dep = month(UTC), 
+         ltsa_keep = case_when(
+           # select months to use for LTSA
+           Dep_ID == "PARKSAUSTRALIA_CGMP_201807_CG" ~ 7,
+           Dep_ID == "PARKSAUSTRALIA_CGMP_201812_CG" ~ 1,
+           Dep_ID == "PARKSAUSTRALIA_CGMP_201904_CG" ~ 5,     
+           Dep_ID == "PARKSAUSTRALIA_DAMPIER_202009_DNE" ~ 10,  
+           Dep_ID == "PARKSAUSTRALIA_MURAT_202002_MRE" ~ 4,     
+           Dep_ID == "PARKSAUSTRALIA_NINGALOO_201909_NGN" ~ 10,
+           Dep_ID == "PARKSAUSTRALIA_SIMP_201808_WP" ~ 8, 
+           Dep_ID == "PARKSAUSTRALIA_SIMP_201812_WP" ~ 12,       
+           Dep_ID == "PARKSAUSTRALIA_SIMP_201906_WP" ~ 7,     
+           Dep_ID == "PARKSAUSTRALIA_SWC_202201_SWS" ~ 2)
+         ) |>
+  filter(month_dep == ltsa_keep) |>
+  mutate(ltsa_label = paste0(npz_id, ": ", month.name[month_dep]))
+
+year(ltsa_df$UTC) <- 2019
+# 
+# plot_sep_LTSA <- function(ltsa_lab, ltsa_df) {
+#   ltsa_sub <- ltsa_df |>
+#     filter(ltsa_label == ltsa_lab)
+#   
+#   plotLTSA(x = ltsa_sub,
+#             bin = '12hour',
+#          scale = "log",
+#          units= expression(paste("dB re 1 \u00b5Pa" ^ "2", "/Hz")))+
+#     theme_bw() +
+#   theme(axis.text.x = element_text(size= 18),
+#         axis.text.y= element_text(size= 18),
+#         legend.title= element_text(size= 18),
+#         legend.text= element_text(size= 18))
+# 
+# }
+# 
+# plot_sep_LTSA(ltsa_lab = ltsa_df$ltsa_label[1], ltsa_df = ltsa_df)
+# 
+ltsa_plot_data <- plotLTSA(x=ltsa_df, 
+         bin = '4hour',
+         scale = "log",
+         units= expression(paste("dB re 1 \u00b5Pa" ^ "2", "/Hz")), 
+         facet = "ltsa_label",
+         maxBins = 2500) +
+  facet_wrap(vars(ltsa_label), nrow = 10,
+             scales = "free_x") +
+  theme_bw() +
+  theme(axis.text.x = element_text(size= 18),
+        axis.text.y= element_text(size= 18),
+        strip.text= element_text(size= 18),
+        legend.title= element_text(size= 18),
+        legend.text= element_text(size= 18),
+        plot.margin=margin(0, 0, 0, 1,unit = "cm"))
+
+ggsave(plot = ltsa_plot_data, 
+       filename = paste0("figs/", "Monthly_rep_LTSA_4h.png"), width=12, height=20,
+        units="in", dpi=300)
+
+
+```
+
+
+```{r month grouping}
+
 # group to month level  
 
 hmd_data_month <- hmd_data |>
